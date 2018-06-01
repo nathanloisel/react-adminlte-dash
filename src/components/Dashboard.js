@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 
 import Header from './Header';
@@ -103,18 +104,18 @@ class Dashboard extends React.Component {
 }
 
 Dashboard.propTypes = {
-  children: React.PropTypes.node,
-  logoOnClick: React.PropTypes.func,
-  logoHref: React.PropTypes.string,
-  logoLg: React.PropTypes.element,
-  logoSm: React.PropTypes.element,
-  navbarChildren: React.PropTypes.node,
-  sidebarChildren: React.PropTypes.node,
-  footerChildren: React.PropTypes.node,
-  fixed: React.PropTypes.bool,
-  sidebarMini: React.PropTypes.bool,
-  initialCollapse: React.PropTypes.bool,
-  theme: React.PropTypes.string,
+  children: PropTypes.node,
+  logoOnClick: PropTypes.func,
+  logoHref: PropTypes.string,
+  logoLg: PropTypes.element,
+  logoSm: PropTypes.element,
+  navbarChildren: PropTypes.node,
+  sidebarChildren: PropTypes.node,
+  footerChildren: PropTypes.node,
+  fixed: PropTypes.bool,
+  sidebarMini: PropTypes.bool,
+  initialCollapse: PropTypes.bool,
+  theme: PropTypes.string,
 };
 
 Dashboard.defaultProps = {

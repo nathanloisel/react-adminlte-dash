@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
@@ -184,10 +185,10 @@ class Search extends React.Component {
 }
 
 Search.propTypes = {
-  name: React.PropTypes.string,
-  placeholder: React.PropTypes.string,
-  onClick: React.PropTypes.func,
-  collapse: React.PropTypes.bool,
+  name: PropTypes.string,
+  placeholder: PropTypes.string,
+  onClick: PropTypes.func,
+  collapse: PropTypes.bool,
 };
 
 Search.defaultProps = {

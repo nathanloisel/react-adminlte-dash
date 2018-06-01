@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import tinycolor from 'tinycolor2';
 
@@ -399,16 +400,16 @@ class MenuItem extends React.Component {
 }
 
 MenuItem.propTypes = {
-  children: React.PropTypes.node,
-  active: React.PropTypes.bool,
-  collapse: React.PropTypes.bool,
-  icon: React.PropTypes.objectOf(React.PropTypes.string),
-  href: React.PropTypes.string,
-  labels: React.PropTypes.arrayOf(React.PropTypes.object),
-  level: React.PropTypes.number,
-  onClick: React.PropTypes.func,
-  parentHover: React.PropTypes.bool,
-  title: React.PropTypes.string,
+  children: PropTypes.node,
+  active: PropTypes.bool,
+  collapse: PropTypes.bool,
+  icon: PropTypes.objectOf(PropTypes.string),
+  href: PropTypes.string,
+  labels: PropTypes.arrayOf(PropTypes.object),
+  level: PropTypes.number,
+  onClick: PropTypes.func,
+  parentHover: PropTypes.bool,
+  title: PropTypes.string,
 };
 
 MenuItem.defaultProps = {

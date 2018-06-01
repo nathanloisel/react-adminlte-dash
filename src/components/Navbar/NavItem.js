@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
@@ -169,11 +170,11 @@ const NavItem = ({ title, onClick, href, image, iconClass }) => (
 );
 
 NavItem.propTypes = {
-  title: React.PropTypes.string,
-  onClick: React.PropTypes.func,
-  href: React.PropTypes.string,
-  image: React.PropTypes.string,
-  iconClass: React.PropTypes.string,
+  title: PropTypes.string,
+  onClick: PropTypes.func,
+  href: PropTypes.string,
+  image: PropTypes.string,
+  iconClass: PropTypes.string,
 };
 
 export default NavItem;

@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
@@ -116,11 +117,11 @@ const UserPanel = ({ name, image, href = null, online, collapse }) => (
 );
 
 UserPanel.propTypes = {
-  name: React.PropTypes.string,
-  image: React.PropTypes.string,
-  href: React.PropTypes.string,
-  online: React.PropTypes.bool,
-  collapse: React.PropTypes.bool,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  href: PropTypes.string,
+  online: PropTypes.bool,
+  collapse: PropTypes.bool,
 };
 
 export default UserPanel;

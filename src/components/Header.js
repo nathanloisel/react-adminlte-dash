@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Navbar from './Navbar/Navbar';
@@ -53,15 +54,15 @@ const Header = props => (
 );
 
 Header.propTypes = {
-  children: React.PropTypes.node,
-  fixed: React.PropTypes.bool,
-  logoOnClick: React.PropTypes.func,
-  logoHref: React.PropTypes.string,
-  logoLg: React.PropTypes.element,
-  logoSm: React.PropTypes.element,
-  sidebarMini: React.PropTypes.bool,
-  sidebarCollapse: React.PropTypes.bool,
-  sidebarToggle: React.PropTypes.func.isRequired,
+  children: PropTypes.node,
+  fixed: PropTypes.bool,
+  logoOnClick: PropTypes.func,
+  logoHref: PropTypes.string,
+  logoLg: PropTypes.element,
+  logoSm: PropTypes.element,
+  sidebarMini: PropTypes.bool,
+  sidebarCollapse: PropTypes.bool,
+  sidebarToggle: PropTypes.func.isRequired,
 };
 
 Header.defaultProps = {

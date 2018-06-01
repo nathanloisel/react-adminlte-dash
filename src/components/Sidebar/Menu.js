@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import MenuItem from './MenuItem';
@@ -29,8 +30,8 @@ const StyledHeader = styled.li`
   ${props => props.collapse && '-webkit-transform: translateZ(0);'}
 
   /* theme */
-  color: ${props => props.theme.sidebarHeaderColor || '#fff'}
-  background-color: ${props => props.theme.sidebarHeaderBg || '#fff'}
+  color: ${props => props.theme.sidebarHeaderColor || '#fff'};
+  background-color: ${props => props.theme.sidebarHeaderBg || '#fff'};
 `;
 
 const StyledMenu = styled.ul`
@@ -61,9 +62,9 @@ const Menu = ({ children, header, collapse }) => (
 );
 
 Menu.propTypes = {
-  children: React.PropTypes.node,
-  header: React.PropTypes.string,
-  collapse: React.PropTypes.bool,
+  children: PropTypes.node,
+  header: PropTypes.string,
+  collapse: PropTypes.bool,
 };
 
 Menu.Item = MenuItem;

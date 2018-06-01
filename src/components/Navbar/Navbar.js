@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import ToggleButton from './ToggleButton';
@@ -99,11 +100,11 @@ const Navbar = props => (
 );
 
 Navbar.propTypes = {
-  children: React.PropTypes.node,
-  toggle: React.PropTypes.func.isRequired,
-  topNav: React.PropTypes.bool,
-  sidebarMini: React.PropTypes.bool,
-  collapse: React.PropTypes.bool,
+  children: PropTypes.node,
+  toggle: PropTypes.func.isRequired,
+  topNav: PropTypes.bool,
+  sidebarMini: PropTypes.bool,
+  collapse: PropTypes.bool,
 };
 
 export default Navbar;

@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import DropdownMenu from './DropdownMenu';
@@ -12,6 +13,7 @@ import {
   navbarPaddingHorizontal,
   navbarPaddingVertical,
   screenXsMin,
+  screenSmMax,
 } from '../../styles/variables';
 
 const imageSize = `${Math.floor(parseInt(navbarHeight, 10) / 2)}px`;
@@ -112,7 +114,7 @@ const UserFooterButton = styled.button`
   background-image: none;
 
   &:hover {
-    @media (max-width: @screen-sm-max) {
+    @media (max-width:${screenSmMax}) {
       background-color: #f9f9f9;
     }
   }
@@ -199,23 +201,24 @@ class UserMenu extends React.Component {
   }
 
   render() {
+    const { userImageRenderer, headerImageRenderer, image, profileAction, signOutAction, name, className } = this.props;
     return (
-      <StyledUserMenu onClick={this._toggleMenu} onMouseLeave={this._closeMenu} >
-        <StyledUserImage src={this.props.image} />
-        <StyledUserName>{this.props.name}</StyledUserName>
+      <StyledUserMenu onClick={this._toggleMenu} onMouseLeave={this._closeMenu} className={className}>
+        {userImageRenderer ? userImageRenderer(image) : <StyledUserImage src={image} />}
+        <StyledUserName>{name}</StyledUserName>
         <UserDropDown open={this.state.open} >
           <UserMenuHeader>
-            <UserMenuHeaderImage src={this.props.image} />
-            <UserMenuHeaderName>{this.props.name}</UserMenuHeaderName>
+            {headerImageRenderer ? headerImageRenderer(image) : <UserMenuHeaderImage src={image} />}
+            <UserMenuHeaderName>{name}</UserMenuHeaderName>
           </UserMenuHeader>
           <UserFooter>
-            {this.props.profileAction &&
+            {profileAction &&
               <div style={{ float: 'left' }}>
-                <UserFooterButton onClick={this.props.profileAction}>Profile</UserFooterButton>
+                <UserFooterButton onClick={profileAction}>Profile</UserFooterButton>
               </div>}
-            {this.props.signOutAction &&
+            {signOutAction &&
               <div style={{ float: 'right' }}>
-                <UserFooterButton onClick={this.props.signOutAction}>Sign Out</UserFooterButton>
+                <UserFooterButton onClick={signOutAction}>Sign Out</UserFooterButton>
               </div>}
           </UserFooter>
         </UserDropDown>
@@ -225,10 +228,13 @@ class UserMenu extends React.Component {
 }
 
 UserMenu.propTypes = {
-  name: React.PropTypes.string,
-  image: React.PropTypes.string,
-  profileAction: React.PropTypes.func,
-  signOutAction: React.PropTypes.func,
+  name: PropTypes.string,
+  image: PropTypes.string,
+  className: PropTypes.string,
+  profileAction: PropTypes.func,
+  signOutAction: PropTypes.func,
+  headerImageRenderer: PropTypes.func,
+  userImageRenderer: PropTypes.func,
 };
 
 export default UserMenu;

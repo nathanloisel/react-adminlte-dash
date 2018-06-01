@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import UserPanel from './Sidebar/UserPanel';
@@ -29,7 +30,7 @@ const StyledAside = styled.aside`
   }
 
   /* theme */
-  background-color: ${props => props.theme.sidebarBg}
+  background-color: ${props => props.theme.sidebarBg};
 
   position: ${props => (props.fixed ? 'fixed' : 'absolute')};
   top: 0;
@@ -115,10 +116,10 @@ const Sidebar = ({
 );
 
 Sidebar.propTypes = {
-  children: React.PropTypes.node,
-  fixed: React.PropTypes.bool,
-  sidebarMini: React.PropTypes.bool,
-  sidebarCollapse: React.PropTypes.bool,
+  children: PropTypes.node,
+  fixed: PropTypes.bool,
+  sidebarMini: PropTypes.bool,
+  sidebarCollapse: PropTypes.bool,
 };
 
 Sidebar.UserPanel = UserPanel;

@@ -1,5 +1,6 @@
 /* eslint-disable no-alert */
 import React from 'react';
+import PropTypes from 'prop-types';
 import tinycolor from 'tinycolor2';
 
 import pkgInfo from '../package.json';
@@ -207,9 +208,9 @@ const App = ({ children, theme, pickTheme }) => (
 );
 
 App.propTypes = {
-  children: React.PropTypes.node,
-  pickTheme: React.PropTypes.func,
-  theme: React.PropTypes.string,
+  children: PropTypes.node,
+  pickTheme: PropTypes.func,
+  theme: PropTypes.string,
 };
 
 export default App;
