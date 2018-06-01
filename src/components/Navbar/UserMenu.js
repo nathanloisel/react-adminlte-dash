@@ -19,14 +19,18 @@ import {
 const imageSize = `${Math.floor(parseInt(navbarHeight, 10) / 2)}px`;
 const imageMarginTop = `-${Math.ceil(
   ((parseInt(imageSize, 10) +
-  parseInt(navbarPaddingHorizontal, 10) +
-  parseInt(navbarPaddingVertical, 10)) -
-  parseInt(navbarHeight, 10)) / 2)}px`;
+    parseInt(navbarPaddingHorizontal, 10) +
+    parseInt(navbarPaddingVertical, 10)) -
+    parseInt(navbarHeight, 10)) /
+    2,
+)}px`;
 const imageMarginBottom = `-${Math.floor(
   ((parseInt(imageSize, 10) +
-  parseInt(navbarPaddingHorizontal, 10) +
-  parseInt(navbarPaddingVertical, 10)) -
-  parseInt(navbarHeight, 10)) / 2)}px`;
+    parseInt(navbarPaddingHorizontal, 10) +
+    parseInt(navbarPaddingVertical, 10)) -
+    parseInt(navbarHeight, 10)) /
+    2,
+)}px`;
 
 const StyledUserImage = styled.img`
   box-sizing: border-box;
@@ -65,7 +69,8 @@ const StyledUserName = styled.span`
 `;
 
 const UserMenuHeader = styled.li`
-  background-color: ${props => props.theme.navbarUserMenuHeaderBg || props.theme.backgroundColor};
+  background-color: ${props =>
+    props.theme.navbarUserMenuHeaderBg || props.theme.backgroundColor};
   padding: 10px;
   text-align: center;
 `;
@@ -114,7 +119,7 @@ const UserFooterButton = styled.button`
   background-image: none;
 
   &:hover {
-    @media (max-width:${screenSmMax}) {
+    @media (max-width: ${screenSmMax}) {
       background-color: #f9f9f9;
     }
   }
@@ -122,7 +127,8 @@ const UserFooterButton = styled.button`
 
 const UserFooter = styled.li`
   /* clearfix */
-  &:before, &:after {
+  &:before,
+  &:after {
     display: table;
     content: " ";
     -webkit-box-sizing: border-box;
@@ -163,7 +169,10 @@ const StyledUserMenu = styled.li`
   position: relative;
   text-decoration: none;
   cursor: pointer;
-  &:focus, &:active { background: transparent; }
+  &:focus,
+  &:active {
+    background: transparent;
+  }
 
   /* theme */
   color: ${props => props.theme.navbarFontColor || '#fff'};
@@ -201,25 +210,51 @@ class UserMenu extends React.Component {
   }
 
   render() {
-    const { userImageRenderer, headerImageRenderer, image, profileAction, signOutAction, name, className } = this.props;
+    const {
+      userImageRenderer,
+      headerImageRenderer,
+      image,
+      profileAction,
+      signOutAction,
+      name,
+      className,
+    } = this.props;
     return (
-      <StyledUserMenu onClick={this._toggleMenu} onMouseLeave={this._closeMenu} className={className}>
-        {userImageRenderer ? userImageRenderer(image) : <StyledUserImage src={image} />}
+      <StyledUserMenu
+        onClick={this._toggleMenu}
+        onMouseLeave={this._closeMenu}
+        className={className}
+      >
+        {userImageRenderer ? (
+          userImageRenderer(image)
+        ) : (
+          <StyledUserImage src={image} />
+        )}
         <StyledUserName>{name}</StyledUserName>
-        <UserDropDown open={this.state.open} >
+        <UserDropDown open={this.state.open}>
           <UserMenuHeader>
-            {headerImageRenderer ? headerImageRenderer(image) : <UserMenuHeaderImage src={image} />}
+            {headerImageRenderer ? (
+              headerImageRenderer(image)
+            ) : (
+              <UserMenuHeaderImage src={image} />
+            )}
             <UserMenuHeaderName>{name}</UserMenuHeaderName>
           </UserMenuHeader>
           <UserFooter>
-            {profileAction &&
+            {profileAction && (
               <div style={{ float: 'left' }}>
-                <UserFooterButton onClick={profileAction}>Profile</UserFooterButton>
-              </div>}
-            {signOutAction &&
+                <UserFooterButton onClick={profileAction}>
+                  Profile
+                </UserFooterButton>
+              </div>
+            )}
+            {signOutAction && (
               <div style={{ float: 'right' }}>
-                <UserFooterButton onClick={signOutAction}>Sign Out</UserFooterButton>
-              </div>}
+                <UserFooterButton onClick={signOutAction}>
+                  Sign Out
+                </UserFooterButton>
+              </div>
+            )}
           </UserFooter>
         </UserDropDown>
       </StyledUserMenu>

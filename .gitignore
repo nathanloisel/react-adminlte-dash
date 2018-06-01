@@ -6,3 +6,4 @@ dist-modules/
 node_modules/
 coverage/
 .eslintcache
+.vscode
