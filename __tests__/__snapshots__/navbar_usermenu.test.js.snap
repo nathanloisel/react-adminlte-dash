@@ -1,6 +1,6 @@
 exports[`<UserMenu /> opens and closes when clicked 1`] = `
 <li
-  className="cGfuqK"
+  className="bpGGKb"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -20,14 +20,14 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
         className="fVcwYn" />
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> opens and closes when clicked 2`] = `
 <li
-  className="cGfuqK"
+  className="bpGGKb"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -47,14 +47,14 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
         className="fVcwYn" />
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with default options 1`] = `
 <li
-  className="cGfuqK"
+  className="bpGGKb"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -74,14 +74,14 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
         className="fVcwYn" />
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with image 1`] = `
 <li
-  className="cGfuqK"
+  className="bpGGKb"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -101,14 +101,14 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
         className="fVcwYn" />
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with name 1`] = `
 <li
-  className="cGfuqK"
+  className="bpGGKb"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -132,14 +132,14 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
       </p>
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with theme 1`] = `
 <li
-  className="jIwgmN"
+  className="cfQGye"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
@@ -159,7 +159,7 @@ exports[`<UserMenu /> renders correctly with theme 1`] = `
         className="fVcwYn" />
     </li>
     <li
-      className="encofi" />
+      className="aecUu" />
   </ul>
 </li>
 `;
