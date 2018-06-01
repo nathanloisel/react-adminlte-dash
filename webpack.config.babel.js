@@ -3,6 +3,7 @@ import * as path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import SystemBellPlugin from 'system-bell-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import merge from 'webpack-merge';
@@ -58,10 +59,6 @@ const common = {
       {
         test: /\.md$/,
         loader: 'raw',
-      },
-      {
-        test: /\.css$/,
-        loaders: ['style', 'css'],
       },
     ],
   },
@@ -121,6 +118,10 @@ if (TARGET === 'start') {
             config.paths.demo,
             config.paths.src,
           ],
+        },
+        {
+          test: /\.css$/,
+          loaders: ['style', 'css'],
         },
       ],
     },
@@ -205,6 +206,10 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
             config.paths.src,
           ],
         },
+        {
+          test: /\.css$/,
+          loaders: ['style', 'css'],
+        },
       ],
     },
   });
@@ -224,10 +229,17 @@ const distCommon = {
           config.paths.src,
         ],
       },
+      {
+        test: /\.css$/,
+        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?minimize=true'),
+      },
     ],
   },
   entry: {
     app: config.paths.src,
+    'bundle.min.css': [
+      `${config.paths.src}/main.css`,
+    ],
   },
 };
 
@@ -236,6 +248,9 @@ if (TARGET === 'dist') {
     output: {
       filename: `${config.filename}.js`,
     },
+    plugins: [
+      new ExtractTextPlugin(),
+    ],
   });
 }
 
@@ -250,6 +265,7 @@ if (TARGET === 'dist:min') {
           warnings: false,
         },
       }),
+      new ExtractTextPlugin('[name].css'),
     ],
   });
 }
