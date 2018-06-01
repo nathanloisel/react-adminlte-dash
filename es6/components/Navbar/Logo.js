@@ -1,17 +1,33 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _templateObject = _taggedTemplateLiteral(['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;;\n  border-right: ', ' !important;;\n  &:hover {\n    background-color: ', ' !important;;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n'], ['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;;\n  border-right: ', ' !important;;\n  &:hover {\n    background-color: ', ' !important;;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  display: block;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n'], ['\n  display: block;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  display: none;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n'], ['\n  display: none;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n']);
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+var _react = require('react');
 
-/* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+var _react2 = _interopRequireDefault(_react);
 
-import { transitionSpeed, transitionFn, screenSmMin, sidebarWidth, sidebarMiniWidth, navbarHeight, screenHeaderCollapse } from '../../styles/variables';
+var _propTypes = require('prop-types');
 
-var StyledLogo = styled.a(_templateObject, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, function (props) {
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _variables = require('../../styles/variables');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
+
+
+var StyledLogo = _styledComponents2.default.a(_templateObject, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, function (props) {
   return props.theme.logoBgColor || '#fff';
 }, function (props) {
   return props.theme.logoColor || '#000';
@@ -21,19 +37,19 @@ var StyledLogo = styled.a(_templateObject, transitionSpeed, transitionFn, transi
   return props.theme.navbarItemBorder || 'none';
 }, function (props) {
   return props.theme.logoHover || '#f6f6f6';
-}, navbarHeight, navbarHeight, screenHeaderCollapse, function (props) {
+}, _variables.navbarHeight, _variables.navbarHeight, _variables.screenHeaderCollapse, function (props) {
   return props.theme.logoSmallVariant || '';
-}, screenSmMin, function (props) {
-  return props.sidebarMini && props.collapse ? sidebarMiniWidth : sidebarWidth;
+}, _variables.screenSmMin, function (props) {
+  return props.sidebarMini && props.collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
 }, function (props) {
   return props.sidebarMini && props.collapse && 'padding: 0;';
 });
 
-var LargeLogo = styled.span(_templateObject2, screenSmMin, function (props) {
+var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (props) {
   return props.sidebarMini && props.collapse ? 'none' : 'block';
 });
 
-var SmallLogo = styled.span(_templateObject3, screenSmMin, function (props) {
+var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (props) {
   return props.sidebarMini && props.collapse ? 'block' : 'none';
 });
 
@@ -45,28 +61,28 @@ var Logo = function Logo(_ref) {
       logoSm = _ref.logoSm,
       sidebarMini = _ref.sidebarMini,
       collapse = _ref.collapse;
-  return onClick ? React.createElement(
+  return onClick ? _react2.default.createElement(
     StyledLogo,
     { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', onClick: onClick, href: null },
-    React.createElement(
+    _react2.default.createElement(
       LargeLogo,
       { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-lg' },
       logoLg
     ),
-    React.createElement(
+    _react2.default.createElement(
       SmallLogo,
       { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-sm' },
       logoSm
     )
-  ) : React.createElement(
+  ) : _react2.default.createElement(
     StyledLogo,
     { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', href: href },
-    React.createElement(
+    _react2.default.createElement(
       LargeLogo,
       { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-lg' },
       logoLg
     ),
-    React.createElement(
+    _react2.default.createElement(
       SmallLogo,
       { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-sm' },
       logoSm
@@ -75,12 +91,12 @@ var Logo = function Logo(_ref) {
 };
 
 process.env.NODE_ENV !== "production" ? Logo.propTypes = {
-  href: PropTypes.string,
-  onClick: PropTypes.func,
-  logoLg: PropTypes.element,
-  logoSm: PropTypes.element,
-  sidebarMini: PropTypes.bool,
-  collapse: PropTypes.bool
+  href: _propTypes2.default.string,
+  onClick: _propTypes2.default.func,
+  logoLg: _propTypes2.default.element,
+  logoSm: _propTypes2.default.element,
+  sidebarMini: _propTypes2.default.bool,
+  collapse: _propTypes2.default.bool
 } : void 0;
 
-export default Logo;
+exports.default = Logo;

@@ -1,40 +1,64 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _templateObject = _taggedTemplateLiteral(['\n  height: auto;\n  padding-bottom: 10px;\n  display: block;\n'], ['\n  height: auto;\n  padding-bottom: 10px;\n  display: block;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  &:before, &:after {\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  -webkit-transition: ', ' ', ', width ', ' ', ';\n  -moz-transition: ', ' ', ', width ', ' ', ';\n  -o-transition: ', ' ', ', width ', ' ', ';\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n'], ['\n  &:before, &:after {\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  -webkit-transition: ', ' ', ', width ', ' ', ';\n  -moz-transition: ', ' ', ', width ', ' ', ';\n  -o-transition: ', ' ', ', width ', ' ', ';\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n']);
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+var _react = require('react');
 
-/* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+var _react2 = _interopRequireDefault(_react);
 
-import UserPanel from './Sidebar/UserPanel';
-import Search from './Sidebar/Search';
-import Menu from './Sidebar/Menu';
+var _propTypes = require('prop-types');
 
-import { screenXsMax, screenSmMin, sidebarWidth, sidebarMiniWidth, transitionSpeed, transitionFn } from '../styles/variables';
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var StyledSection = styled.section(_templateObject);
+var _styledComponents = require('styled-components');
 
-var StyledAside = styled.aside(_templateObject2, function (props) {
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _UserPanel = require('./Sidebar/UserPanel');
+
+var _UserPanel2 = _interopRequireDefault(_UserPanel);
+
+var _Search = require('./Sidebar/Search');
+
+var _Search2 = _interopRequireDefault(_Search);
+
+var _Menu = require('./Sidebar/Menu');
+
+var _Menu2 = _interopRequireDefault(_Menu);
+
+var _variables = require('../styles/variables');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
+
+
+var StyledSection = _styledComponents2.default.section(_templateObject);
+
+var StyledAside = _styledComponents2.default.aside(_templateObject2, function (props) {
   return props.theme.sidebarBg;
 }, function (props) {
   return props.fixed ? 'fixed' : 'absolute';
-}, sidebarWidth, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, transitionSpeed, transitionFn, screenSmMin, function (props) {
+}, _variables.sidebarWidth, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.screenSmMin, function (props) {
   if (props.collapse) {
     if (props.mini) {
-      return '\n            width: ' + sidebarMiniWidth + ';\n            z-index: 850;\n          ';
+      return '\n            width: ' + _variables.sidebarMiniWidth + ';\n            z-index: 850;\n          ';
     }
-    return '\n          -webkit-transform: translate(-' + sidebarWidth + ', 0);\n          -ms-transform: translate(-' + sidebarWidth + ', 0);\n          -o-transform: translate(-' + sidebarWidth + ', 0);\n          transform: translate(-' + sidebarWidth + ', 0);\n        ';
+    return '\n          -webkit-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          -ms-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          -o-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          transform: translate(-' + _variables.sidebarWidth + ', 0);\n        ';
   }
   return '\n        -webkit-transform: translate(0, 0);\n        -ms-transform: translate(0, 0);\n        -o-transform: translate(0, 0);\n        transform: translate(0, 0);\n      ';
-}, screenXsMax, function (props) {
-  return props.collapse ? '\n      -webkit-transform: translate(-' + sidebarWidth + ', 0);\n      -ms-transform: translate(-' + sidebarWidth + ', 0);\n      -o-transform: translate(-' + sidebarWidth + ', 0);\n      transform: translate(-' + sidebarWidth + ', 0);\n    ' : '\n      -webkit-transform: translate(0, 0);\n      -ms-transform: translate(0, 0);\n      -o-transform: translate(0, 0);\n      transform: translate(0, 0);\n    ';
+}, _variables.screenXsMax, function (props) {
+  return props.collapse ? '\n      -webkit-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      -ms-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      -o-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      transform: translate(-' + _variables.sidebarWidth + ', 0);\n    ' : '\n      -webkit-transform: translate(0, 0);\n      -ms-transform: translate(0, 0);\n      -o-transform: translate(0, 0);\n      transform: translate(0, 0);\n    ';
 });
 
 var renderChildren = function renderChildren(children, sidebarCollapse) {
-  return React.Children.map(children, function (child) {
-    return React.cloneElement(child, {
+  return _react2.default.Children.map(children, function (child) {
+    return _react2.default.cloneElement(child, {
       collapse: sidebarCollapse
     });
   });
@@ -48,14 +72,14 @@ var Sidebar = function Sidebar(_ref) {
       sidebarMini = _ref$sidebarMini === undefined ? false : _ref$sidebarMini,
       _ref$sidebarCollapse = _ref.sidebarCollapse,
       sidebarCollapse = _ref$sidebarCollapse === undefined ? false : _ref$sidebarCollapse;
-  return React.createElement(
+  return _react2.default.createElement(
     StyledAside,
     {
       fixed: fixed,
       collapse: sidebarCollapse,
       mini: sidebarMini
     },
-    React.createElement(
+    _react2.default.createElement(
       StyledSection,
       { name: 'sidebar-wrapper' },
       renderChildren(children, sidebarCollapse)
@@ -64,14 +88,14 @@ var Sidebar = function Sidebar(_ref) {
 };
 
 process.env.NODE_ENV !== "production" ? Sidebar.propTypes = {
-  children: PropTypes.node,
-  fixed: PropTypes.bool,
-  sidebarMini: PropTypes.bool,
-  sidebarCollapse: PropTypes.bool
+  children: _propTypes2.default.node,
+  fixed: _propTypes2.default.bool,
+  sidebarMini: _propTypes2.default.bool,
+  sidebarCollapse: _propTypes2.default.bool
 } : void 0;
 
-Sidebar.UserPanel = UserPanel;
-Sidebar.Search = Search;
-Sidebar.Menu = Menu;
+Sidebar.UserPanel = _UserPanel2.default;
+Sidebar.Search = _Search2.default;
+Sidebar.Menu = _Menu2.default;
 
-export default Sidebar;
+exports.default = Sidebar;

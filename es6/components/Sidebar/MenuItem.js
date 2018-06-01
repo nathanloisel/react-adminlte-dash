@@ -1,3 +1,9 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n']),
@@ -9,80 +15,93 @@ var _templateObject = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-
     _templateObject7 = _taggedTemplateLiteral(['\n  display: ', ';\n  list-style: none;\n  padding: 0 0 0 ', 'px;\n\n  /* ----- theme ----- */\n  margin: ', ';\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n  ', '\n'], ['\n  display: ', ';\n  list-style: none;\n  padding: 0 0 0 ', 'px;\n\n  /* ----- theme ----- */\n  margin: ', ';\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n  ', '\n']),
     _templateObject8 = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  list-style: none;\n  position: relative;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  display: list-item;\n  text-align: -webkit-match-parent;\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  list-style: none;\n  position: relative;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  display: list-item;\n  text-align: -webkit-match-parent;\n']);
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _tinycolor = require('tinycolor2');
+
+var _tinycolor2 = _interopRequireDefault(_tinycolor);
+
+var _variables = require('../../styles/variables');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
-/* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import tinycolor from 'tinycolor2';
 
-import { fontFamilyBase, fontSizeBase, lineHeightBase, fontWeightBase, sidebarWidth, sidebarMiniWidth, screenSmMin, lightBlue, green, yellow, red, aqua } from '../../styles/variables';
-
-var Label = styled.div(_templateObject, fontFamilyBase, function (props) {
+var Label = _styledComponents2.default.div(_templateObject, _variables.fontFamilyBase, function (props) {
   switch (props.type) {
     case 'primary':
-      return lightBlue;
+      return _variables.lightBlue;
     case 'success':
-      return green;
+      return _variables.green;
     case 'danger':
-      return red;
+      return _variables.red;
     case 'warning':
-      return yellow;
+      return _variables.yellow;
     case 'information':
-      return aqua;
+      return _variables.aqua;
     default:
-      return lightBlue;
+      return _variables.lightBlue;
   }
 }, function (props) {
   return props.collapse && '\n    display: ' + (props.hover ? 'block' : 'none') + ';\n    float: right;\n  ';
 });
 
-var RightSpan = styled.span(_templateObject2, function (props) {
+var RightSpan = _styledComponents2.default.span(_templateObject2, function (props) {
   return props.theme.sidebarLinkColor || '#fff';
 }, function (props) {
-  return props.collapse && props.hover && !props.level && '\n    display: block;\n    left: ' + (parseInt(sidebarWidth, 10) - 30) + 'px;\n    top: 10px!important;\n    margin-left: -3px;\n    padding: 12px 5px 12px 20px;\n    float: right;\n    overflow-x: visible;\n  ';
+  return props.collapse && props.hover && !props.level && '\n    display: block;\n    left: ' + (parseInt(_variables.sidebarWidth, 10) - 30) + 'px;\n    top: 10px!important;\n    margin-left: -3px;\n    padding: 12px 5px 12px 20px;\n    float: right;\n    overflow-x: visible;\n  ';
 });
 
-var StyledTitle = styled.span(_templateObject3, function (props) {
-  return !props.level && props.collapse && '@media (min-width: ' + screenSmMin + ') {\n      border-top-right-radius: 4px;\n      ' + (props.hover ? '\n          display: block !important;\n          position: absolute;\n          width: ' + (parseInt(sidebarWidth, 10) - parseInt(sidebarMiniWidth, 10)) + 'px;\n          left: ' + sidebarMiniWidth + ';\n          top: 0;\n          margin-left: -3px;\n          padding: 12px 5px 12px 20px;\n          background-color: inherit;\n        ' : '\n          display: none !important;\n          -webkit-transform: translateZ(0);\n        ') + '\n    }';
+var StyledTitle = _styledComponents2.default.span(_templateObject3, function (props) {
+  return !props.level && props.collapse && '@media (min-width: ' + _variables.screenSmMin + ') {\n      border-top-right-radius: 4px;\n      ' + (props.hover ? '\n          display: block !important;\n          position: absolute;\n          width: ' + (parseInt(_variables.sidebarWidth, 10) - parseInt(_variables.sidebarMiniWidth, 10)) + 'px;\n          left: ' + _variables.sidebarMiniWidth + ';\n          top: 0;\n          margin-left: -3px;\n          padding: 12px 5px 12px 20px;\n          background-color: inherit;\n        ' : '\n          display: none !important;\n          -webkit-transform: translateZ(0);\n        ') + '\n    }';
 });
 
-var StyledRightIcon = styled.i(_templateObject4, function (props) {
+var StyledRightIcon = _styledComponents2.default.i(_templateObject4, function (props) {
   return props.open && '\n    -ms-transform: rotate(-90deg);\n    -webkit-transform: rotate(-90deg);\n    transform: rotate(-90deg);\n  ';
 }, function (props) {
   return props.collapse && !props.hover && 'display: none !important;';
 });
 
-var StyledLeftIcon = styled.i(_templateObject5, function (props) {
+var StyledLeftIcon = _styledComponents2.default.i(_templateObject5, function (props) {
   switch (props.color) {
     case 'primary':
-      return 'color: ' + lightBlue + ';';
+      return 'color: ' + _variables.lightBlue + ';';
     case 'success':
-      return 'color: ' + green + ';';
+      return 'color: ' + _variables.green + ';';
     case 'danger':
-      return 'color: ' + red + ';';
+      return 'color: ' + _variables.red + ';';
     case 'warning':
-      return 'color: ' + yellow + ';';
+      return 'color: ' + _variables.yellow + ';';
     case 'information':
-      return 'color: ' + aqua + ';';
+      return 'color: ' + _variables.aqua + ';';
     default:
       {
-        var c = tinycolor(props.color);
+        var c = (0, _tinycolor2.default)(props.color);
         return c.isValid() ? 'color: ' + c.toString() + ';' : null;
       }
   }
 });
 
-var StyledLink = styled.a(_templateObject6, function (props) {
+var StyledLink = _styledComponents2.default.a(_templateObject6, function (props) {
   return !props.level ? '12px 5px 12px 15px' : '5px 5px 5px 15px';
-}, fontSizeBase, function (props) {
+}, _variables.fontSizeBase, function (props) {
   return props.level ? props.theme.sidebarSubmenuLinkColor : props.theme.sidebarLinkColor;
 }, function (props) {
   return !props.level ? props.theme.sidebarLinkBorderLeft : 'none';
@@ -94,7 +113,7 @@ var StyledLink = styled.a(_templateObject6, function (props) {
   return (props.active || props.hover) && '\n    color: ' + (props.theme.sidebarLinkActiveColor || '#fff') + ' !important;\n    background: ' + (!props.level && props.theme.sidebarLinkActiveBg) + ';\n    border-left-color: ' + (props.theme.sidebarLinkActiveBorderLeftColor || '#3c8dbc') + ';\n    font-weight: ' + (props.theme.sidebarLinkActiveFontWeight || 'normal') + ';\n    text-decoration: none !important;\n  ';
 });
 
-var StyledSubMenu = styled.ul(_templateObject7, function (props) {
+var StyledSubMenu = _styledComponents2.default.ul(_templateObject7, function (props) {
   return props.open ? 'block' : 'none';
 }, function (props) {
   return (props.level + 1) * 5;
@@ -103,17 +122,17 @@ var StyledSubMenu = styled.ul(_templateObject7, function (props) {
 }, function (props) {
   return props.theme.sidebarSubmenuBg || '#222d32';
 }, function (props) {
-  return props.collapse && '@media (min-width: ' + screenSmMin + ') {\n      ' + (props.theme.sidebarSubmenuLgBorderLeft && 'border-left: ' + props.theme.sidebarSubmenuLgBorderLeft) + '\n    }';
+  return props.collapse && '@media (min-width: ' + _variables.screenSmMin + ') {\n      ' + (props.theme.sidebarSubmenuLgBorderLeft && 'border-left: ' + props.theme.sidebarSubmenuLgBorderLeft) + '\n    }';
 }, function (props) {
-  return props.collapse && props.open && !props.level && '@media (min-width: ' + screenSmMin + ') {\n      position: absolute;\n      width: ' + (parseInt(sidebarWidth, 10) - 50) + 'px;\n      left: ' + sidebarMiniWidth + ';\n      top: 44px;\n      margin-left: 0;\n      border-bottom-right-radius: 4px;\n      ' + (props.theme.sidebarSubmenuLgBorderLeft && 'border-left: ' + props.theme.sidebarSubmenuLgBorderLeft) + '\n    }';
+  return props.collapse && props.open && !props.level && '@media (min-width: ' + _variables.screenSmMin + ') {\n      position: absolute;\n      width: ' + (parseInt(_variables.sidebarWidth, 10) - 50) + 'px;\n      left: ' + _variables.sidebarMiniWidth + ';\n      top: 44px;\n      margin-left: 0;\n      border-bottom-right-radius: 4px;\n      ' + (props.theme.sidebarSubmenuLgBorderLeft && 'border-left: ' + props.theme.sidebarSubmenuLgBorderLeft) + '\n    }';
 });
 
-var StyledMenuItem = styled.li(_templateObject8, fontFamilyBase, fontWeightBase, fontSizeBase, lineHeightBase);
+var StyledMenuItem = _styledComponents2.default.li(_templateObject8, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase);
 
 var renderChildren = function renderChildren(children, sidebarCollapse, level, hover) {
   var newLevel = level + 1;
-  return React.Children.map(children, function (child, index) {
-    return React.cloneElement(child, {
+  return _react2.default.Children.map(children, function (child, index) {
+    return _react2.default.cloneElement(child, {
       key: index.toString(),
       collapse: sidebarCollapse,
       level: newLevel,
@@ -126,7 +145,7 @@ var renderLabels = function renderLabels(labels, collapse, hover) {
   return labels.map(function (l) {
     if (l.key && l.type && l.text) {
       if (l.key === 1) {
-        return React.createElement(
+        return _react2.default.createElement(
           Label,
           {
             collapse: collapse,
@@ -137,7 +156,7 @@ var renderLabels = function renderLabels(labels, collapse, hover) {
           l.text
         );
       } else if (!collapse) {
-        return React.createElement(
+        return _react2.default.createElement(
           Label,
           {
             collapse: collapse,
@@ -190,7 +209,7 @@ var MenuItem = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(
+      return _react2.default.createElement(
         StyledMenuItem,
         {
           collapse: this.props.collapse,
@@ -200,7 +219,7 @@ var MenuItem = function (_React$Component) {
             return _this2._toggleHover(false);
           }
         },
-        React.createElement(
+        _react2.default.createElement(
           StyledLink,
           {
             active: this.props.active,
@@ -213,11 +232,11 @@ var MenuItem = function (_React$Component) {
               return _this2._toggleHover(true);
             }
           },
-          React.createElement(StyledLeftIcon, {
+          _react2.default.createElement(StyledLeftIcon, {
             className: 'fa ' + (this.props.icon.className || 'fa-circle-o'),
             color: this.props.icon.color || 'none'
           }),
-          React.createElement(
+          _react2.default.createElement(
             StyledTitle,
             {
               collapse: this.props.collapse,
@@ -226,14 +245,14 @@ var MenuItem = function (_React$Component) {
             },
             this.props.title
           ),
-          React.createElement(
+          _react2.default.createElement(
             RightSpan,
             {
               collapse: this.props.collapse,
               hover: this.state.hover,
               level: this.props.level
             },
-            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && React.createElement(StyledRightIcon, {
+            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && _react2.default.createElement(StyledRightIcon, {
               className: 'fa fa-angle-left',
               open: this.state.open,
               collapse: this.props.collapse,
@@ -241,7 +260,7 @@ var MenuItem = function (_React$Component) {
             })
           )
         ),
-        this.props.children && React.createElement(
+        this.props.children && _react2.default.createElement(
           StyledSubMenu,
           {
             collapse: this.props.collapse,
@@ -256,19 +275,19 @@ var MenuItem = function (_React$Component) {
   }]);
 
   return MenuItem;
-}(React.Component);
+}(_react2.default.Component);
 
 process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
-  children: PropTypes.node,
-  active: PropTypes.bool,
-  collapse: PropTypes.bool,
-  icon: PropTypes.objectOf(PropTypes.string),
-  href: PropTypes.string,
-  labels: PropTypes.arrayOf(PropTypes.object),
-  level: PropTypes.number,
-  onClick: PropTypes.func,
-  parentHover: PropTypes.bool,
-  title: PropTypes.string
+  children: _propTypes2.default.node,
+  active: _propTypes2.default.bool,
+  collapse: _propTypes2.default.bool,
+  icon: _propTypes2.default.objectOf(_propTypes2.default.string),
+  href: _propTypes2.default.string,
+  labels: _propTypes2.default.arrayOf(_propTypes2.default.object),
+  level: _propTypes2.default.number,
+  onClick: _propTypes2.default.func,
+  parentHover: _propTypes2.default.bool,
+  title: _propTypes2.default.string
 } : void 0;
 
 MenuItem.defaultProps = {
@@ -280,4 +299,4 @@ MenuItem.defaultProps = {
   title: 'Title'
 };
 
-export default MenuItem;
+exports.default = MenuItem;

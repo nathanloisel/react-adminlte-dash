@@ -1,3 +1,9 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n'], ['\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n']),
@@ -7,24 +13,34 @@ var _templateObject = _taggedTemplateLiteral(['\n  cursor: pointer;\n  -webkit-t
     _templateObject5 = _taggedTemplateLiteral(['\n  position: relative;\n  display: table;\n  border-collapse: separate;\n\n  &:focus { outline: -webkit-focus-ring-color auto 5px; }\n'], ['\n  position: relative;\n  display: table;\n  border-collapse: separate;\n\n  &:focus { outline: -webkit-focus-ring-color auto 5px; }\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  overflow: hidden;\n  text-overflow: clip;\n  border-radius: ', ';\n  border: ', ';\n  margin: ', ';\n\n  /* collapse */\n  ', '\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  overflow: hidden;\n  text-overflow: clip;\n  border-radius: ', ';\n  border: ', ';\n  margin: ', ';\n\n  /* collapse */\n  ', '\n']);
 
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _styledComponents = require('styled-components');
+
+var _styledComponents2 = _interopRequireDefault(_styledComponents);
+
+var _variables = require('../../styles/variables');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
-/* eslint-disable react/jsx-filename-extension */
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
-import { fontFamilyBase, fontSizeBase, fontWeightBase, lineHeightBase } from '../../styles/variables';
+var StyledIcon = _styledComponents2.default.i(_templateObject);
 
-var StyledIcon = styled.i(_templateObject);
-
-var StyledButton = styled.button(_templateObject2, fontSizeBase, fontFamilyBase, lineHeightBase, function (props) {
+var StyledButton = _styledComponents2.default.button(_templateObject2, _variables.fontSizeBase, _variables.fontFamilyBase, _variables.lineHeightBase, function (props) {
   return props.theme.sidebarFormButtonColor;
 }, function (props) {
   return props.theme.sidebarFormButtonBorderRadius;
@@ -38,9 +54,9 @@ var StyledButton = styled.button(_templateObject2, fontSizeBase, fontFamilyBase,
   return props.theme.sidebarFormInputHeight;
 });
 
-var StyledInputButton = styled.span(_templateObject3);
+var StyledInputButton = _styledComponents2.default.span(_templateObject3);
 
-var StyledInput = styled.input(_templateObject4, function (props) {
+var StyledInput = _styledComponents2.default.input(_templateObject4, function (props) {
   return props.theme.sidebarFormInputBoxShadow;
 }, function (props) {
   return props.theme.sidebarFormInputBg;
@@ -60,9 +76,9 @@ var StyledInput = styled.input(_templateObject4, function (props) {
   return props.theme.sidebarFormInputFocusBorderLeftColor;
 });
 
-var InputGroup = styled.div(_templateObject5);
+var InputGroup = _styledComponents2.default.div(_templateObject5);
 
-var StyledForm = styled.form(_templateObject6, fontFamilyBase, fontWeightBase, fontSizeBase, lineHeightBase, function (props) {
+var StyledForm = _styledComponents2.default.form(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase, function (props) {
   return props.theme.sidebarFormBorderRadius || '0';
 }, function (props) {
   return props.theme.sidebarFormBorder || '0';
@@ -102,26 +118,26 @@ var Search = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return React.createElement(
+      return _react2.default.createElement(
         StyledForm,
         { collapse: this.props.collapse },
-        React.createElement(
+        _react2.default.createElement(
           InputGroup,
           null,
-          React.createElement(StyledInput, {
+          _react2.default.createElement(StyledInput, {
             type: 'text',
             name: this.props.name,
             placeholder: this.props.placeholder,
             value: this.state.value,
             onChange: this._changeValue
           }),
-          React.createElement(
+          _react2.default.createElement(
             StyledInputButton,
             null,
-            React.createElement(
+            _react2.default.createElement(
               StyledButton,
               { name: 'searchButton', onClick: this._buttonClick },
-              React.createElement(StyledIcon, { className: 'fa fa-search' })
+              _react2.default.createElement(StyledIcon, { className: 'fa fa-search' })
             )
           )
         )
@@ -130,13 +146,13 @@ var Search = function (_React$Component) {
   }]);
 
   return Search;
-}(React.Component);
+}(_react2.default.Component);
 
 process.env.NODE_ENV !== "production" ? Search.propTypes = {
-  name: PropTypes.string,
-  placeholder: PropTypes.string,
-  onClick: PropTypes.func,
-  collapse: PropTypes.bool
+  name: _propTypes2.default.string,
+  placeholder: _propTypes2.default.string,
+  onClick: _propTypes2.default.func,
+  collapse: _propTypes2.default.bool
 } : void 0;
 
 Search.defaultProps = {
@@ -147,4 +163,4 @@ Search.defaultProps = {
   collapse: false
 };
 
-export default Search;
+exports.default = Search;

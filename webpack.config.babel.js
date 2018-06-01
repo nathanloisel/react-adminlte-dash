@@ -215,6 +215,73 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   });
 }
 
+const distCommon = {
+  output: {
+    path: config.paths.dist,
+    library: 'react-adminlte-dash',
+    libraryTarget: 'umd',
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loaders: ['babel'],
+        include: [
+          config.paths.src,
+        ],
+      },
+    ],
+  },
+  entry: {
+    app: config.paths.src,
+    style: [
+      `${config.paths.src}/main.css`,
+    ],
+  },
+};
+
+if (TARGET === 'dist') {
+  module.exports = merge(common, distCommon, {
+    output: {
+      filename: `${config.filename}.js`,
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+        },
+      ],
+    },
+    plugins: [
+      new ExtractTextPlugin('[name].css'),
+    ],
+  });
+}
+
+if (TARGET === 'dist:min') {
+  module.exports = merge(common, distCommon, {
+    output: {
+      filename: `${config.filename}.min.js`,
+    },
+    module: {
+      loaders: [
+        {
+          test: /\.css$/,
+          loader: ExtractTextPlugin.extract('style-loader', 'css-loader?minimize=true'),
+        },
+      ],
+    },
+    plugins: [
+      new webpack.optimize.UglifyJsPlugin({
+        compress: {
+          warnings: false,
+        },
+      }),
+      new ExtractTextPlugin('[name].min.css'),
+    ],
+  });
+}
 
 if (!TARGET) {
   module.exports = common;
