@@ -14,18 +14,22 @@
     "gh-pages": "webpack",
     "gh-pages:deploy": "gh-pages -d gh-pages",
     "gh-pages:stats": "webpack --profile --json > stats.json",
-    "dist": "webpack",
-    "dist:min": "webpack",
-    "preversion": "npm run test && npm run dist:min",
-    "prepublish": "npm run dist:min",
+    "build": "npm run build:es6 && npm run build:cjs",
+    "build:es6": "babel ./src -d es6",
+    "build:cjs": "cross-env NODE_ENV=commonjs babel ./src -d dist",
+    "preversion": "npm run test && npm run build",
+    "prepublish": "npm run build",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy"
   },
-  "main": "dist/index.min.js",
+  "main": "lib/index",
+  "module": "es6/index",
+  "jsnext:main": "es6/index",
   "files": [
-    "dist"
+    "es6",
+    "lib",
+    "umd",
+    "src"
   ],
-  "module": "src",
-  "jsnext:main": "src",
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
@@ -39,6 +43,7 @@
     "babel-preset-react-hmre": "^1.1.1",
     "clean-webpack-plugin": "^0.1.15",
     "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^5.1.6",
     "css-loader": "^0.26.1",
     "enzyme": "^2.7.1",
     "enzyme-to-json": "^1.4.5",

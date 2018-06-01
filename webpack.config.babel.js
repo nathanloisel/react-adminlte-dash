@@ -15,7 +15,7 @@ const ROOT_PATH = __dirname;
 const config = {
   paths: {
     demo: path.join(ROOT_PATH, 'demo'),
-    dist: path.join(ROOT_PATH, 'dist'),
+    dist: path.join(ROOT_PATH, 'umd'),
     gh: path.join(ROOT_PATH, 'gh-pages'),
     src: path.join(ROOT_PATH, 'src'),
     style: path.join(ROOT_PATH, 'src', 'main.css'),
@@ -215,64 +215,6 @@ if (TARGET === 'gh-pages' || TARGET === 'gh-pages:stats') {
   });
 }
 
-const distCommon = {
-  output: {
-    path: config.paths.dist,
-    libraryTarget: 'umd',
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['babel'],
-        include: [
-          config.paths.src,
-        ],
-      },
-      {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader?minimize=true'),
-      },
-    ],
-  },
-  entry: {
-    app: config.paths.src,
-    'bundle.min.css': [
-      `${config.paths.src}/main.css`,
-    ],
-  },
-};
-
-if (TARGET === 'dist') {
-  module.exports = merge(common, distCommon, {
-    output: {
-      filename: `${config.filename}.js`,
-      library: 'react-adminlte-dash',
-      libraryTarget: 'umd',
-    },
-    plugins: [
-      new ExtractTextPlugin(),
-    ],
-  });
-}
-
-if (TARGET === 'dist:min') {
-  module.exports = merge(common, distCommon, {
-    output: {
-      filename: `${config.filename}.min.js`,
-      library: 'react-adminlte-dash',
-      libraryTarget: 'umd',
-    },
-    plugins: [
-      new webpack.optimize.UglifyJsPlugin({
-        compress: {
-          warnings: false,
-        },
-      }),
-      new ExtractTextPlugin('[name].css'),
-    ],
-  });
-}
 
 if (!TARGET) {
   module.exports = common;

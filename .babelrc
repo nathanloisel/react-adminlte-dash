@@ -1,6 +1,6 @@
 {
   "presets": [
-    "latest",
+    ["es2015", { "modules": false }],
     "react"
   ],
   "plugins": [
@@ -15,6 +15,14 @@
     "start": {
       "presets": [
         "react-hmre"
+      ]
+    },
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs", "istanbul"]
+    },
+    "commonjs": {
+      "plugins": [
+        ["transform-es2015-modules-commonjs", { "loose": false }]
       ]
     }
   }
