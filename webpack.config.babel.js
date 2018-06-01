@@ -247,6 +247,8 @@ if (TARGET === 'dist') {
   module.exports = merge(common, distCommon, {
     output: {
       filename: `${config.filename}.js`,
+      library: 'react-adminlte-dash',
+      libraryTarget: 'umd',
     },
     plugins: [
       new ExtractTextPlugin(),
@@ -258,6 +260,8 @@ if (TARGET === 'dist:min') {
   module.exports = merge(common, distCommon, {
     output: {
       filename: `${config.filename}.min.js`,
+      library: 'react-adminlte-dash',
+      libraryTarget: 'umd',
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({
