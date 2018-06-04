@@ -144,7 +144,8 @@ const UserFooter = styled.li`
 `;
 
 const UserDropDown = styled(DropdownMenu)`
-  border-top-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-top: 0;
   padding: 1px 0 0 0;
   width: 280px;
@@ -209,15 +210,78 @@ class UserMenu extends React.Component {
     });
   }
 
-  render() {
+  getUserMenuDropDown() {
     const {
-      userImageRenderer,
       headerImageRenderer,
       image,
-      profileAction,
-      signOutAction,
       name,
+    } = this.props;
+    if (name || image || headerImageRenderer) {
+      return (
+        <UserMenuHeader>
+          {headerImageRenderer ? (
+              headerImageRenderer()
+            ) : (
+              image && <UserMenuHeaderImage src={image} />
+            )}
+          {name && <UserMenuHeaderName>{name}</UserMenuHeaderName>}
+        </UserMenuHeader>
+      );
+    }
+    return null;
+  }
+
+
+  getUserMenuHeader() {
+    const {
+      userImageRenderer,
+      image,
+      name,
+    } = this.props;
+    if (name || image || userImageRenderer) {
+      return [
+        userImageRenderer ? (
+          userImageRenderer('userMenuImage')
+        ) : (
+          <StyledUserImage src={image} key="userMenuImage" />
+        ),
+        <StyledUserName key="userMenuName" >{name}</StyledUserName>,
+      ];
+    }
+    return null;
+  }
+
+  getSignOutAction() {
+    const {
+      signOutAction,
+    } = this.props;
+    return signOutAction && (
+      <div style={{ float: 'right' }}>
+        <UserFooterButton onClick={signOutAction}>
+          Sign Out
+        </UserFooterButton>
+      </div>
+    );
+  }
+
+  getProfileAction() {
+    const {
+      profileAction,
+    } = this.props;
+    return profileAction && (
+      <div style={{ float: 'left' }}>
+        <UserFooterButton onClick={profileAction}>
+          Profile
+        </UserFooterButton>
+      </div>
+    );
+  }
+
+  render() {
+    const {
       className,
+      signOutAction,
+      profileAction,
     } = this.props;
     return (
       <StyledUserMenu
@@ -225,37 +289,13 @@ class UserMenu extends React.Component {
         onMouseLeave={this._closeMenu}
         className={className}
       >
-        {userImageRenderer ? (
-          userImageRenderer(image)
-        ) : (
-          <StyledUserImage src={image} />
-        )}
-        <StyledUserName>{name}</StyledUserName>
+        {this.getUserMenuHeader()}
         <UserDropDown open={this.state.open}>
-          <UserMenuHeader>
-            {headerImageRenderer ? (
-              headerImageRenderer(image)
-            ) : (
-              <UserMenuHeaderImage src={image} />
-            )}
-            <UserMenuHeaderName>{name}</UserMenuHeaderName>
-          </UserMenuHeader>
-          <UserFooter>
-            {profileAction && (
-              <div style={{ float: 'left' }}>
-                <UserFooterButton onClick={profileAction}>
-                  Profile
-                </UserFooterButton>
-              </div>
-            )}
-            {signOutAction && (
-              <div style={{ float: 'right' }}>
-                <UserFooterButton onClick={signOutAction}>
-                  Sign Out
-                </UserFooterButton>
-              </div>
-            )}
-          </UserFooter>
+          {this.getUserMenuDropDown()}
+          {profileAction && signOutAction && <UserFooter>
+            {this.getProfileAction()}
+            {this.getSignOutAction()}
+          </UserFooter>}
         </UserDropDown>
       </StyledUserMenu>
     );

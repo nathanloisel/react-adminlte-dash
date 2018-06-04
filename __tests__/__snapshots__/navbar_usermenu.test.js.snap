@@ -3,25 +3,9 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
   className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
-  <img
-    className="sc-bwzfXH fQDxRm"
-    src={undefined} />
-  <span
-    className="sc-htpNat eEPncd" />
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
-    open={false}>
-    <li
-      className="sc-bxivhb lgaxW">
-      <img
-        className="sc-ifAKCX iAcooV"
-        src={undefined} />
-      <p
-        className="sc-EHOje dMSiCa" />
-    </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
-  </ul>
+    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    open={false} />
 </li>
 `;
 
@@ -30,25 +14,9 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
   className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
-  <img
-    className="sc-bwzfXH fQDxRm"
-    src={undefined} />
-  <span
-    className="sc-htpNat eEPncd" />
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa hrCPNf"
-    open={true}>
-    <li
-      className="sc-bxivhb lgaxW">
-      <img
-        className="sc-ifAKCX iAcooV"
-        src={undefined} />
-      <p
-        className="sc-EHOje dMSiCa" />
-    </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
-  </ul>
+    className="sc-htoDjs cRiYQQ sc-bdVaJa hrCPNf"
+    open={true} />
 </li>
 `;
 
@@ -57,25 +25,9 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
   className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
-  <img
-    className="sc-bwzfXH fQDxRm"
-    src={undefined} />
-  <span
-    className="sc-htpNat eEPncd" />
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
-    open={false}>
-    <li
-      className="sc-bxivhb lgaxW">
-      <img
-        className="sc-ifAKCX iAcooV"
-        src={undefined} />
-      <p
-        className="sc-EHOje dMSiCa" />
-    </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
-  </ul>
+    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    open={false} />
 </li>
 `;
 
@@ -90,18 +42,14 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
   <span
     className="sc-htpNat eEPncd" />
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
     open={false}>
     <li
       className="sc-bxivhb lgaxW">
       <img
         className="sc-ifAKCX iAcooV"
         src="/some/path" />
-      <p
-        className="sc-EHOje dMSiCa" />
     </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
@@ -119,20 +67,15 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
     Another name
   </span>
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
     open={false}>
     <li
       className="sc-bxivhb lgaxW">
-      <img
-        className="sc-ifAKCX iAcooV"
-        src={undefined} />
       <p
         className="sc-EHOje dMSiCa">
         Another name
       </p>
     </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
@@ -142,24 +85,8 @@ exports[`<UserMenu /> renders correctly with theme 1`] = `
   className="sc-dnqmqq kkSNAT"
   onClick={[Function]}
   onMouseLeave={[Function]}>
-  <img
-    className="sc-bwzfXH fQDxRm"
-    src={undefined} />
-  <span
-    className="sc-htpNat eEPncd" />
   <ul
-    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
-    open={false}>
-    <li
-      className="sc-bxivhb dmJpqD">
-      <img
-        className="sc-ifAKCX iAcooV"
-        src={undefined} />
-      <p
-        className="sc-EHOje dMSiCa" />
-    </li>
-    <li
-      className="sc-gzVnrw jOZrNO" />
-  </ul>
+    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    open={false} />
 </li>
 `;
