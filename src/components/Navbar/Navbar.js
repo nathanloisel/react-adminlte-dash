@@ -82,14 +82,30 @@ const StyledNavbar = styled.nav`
       sidebarWidth)};
   }
 `;
+const NoPaddingToggleButton = styled(ToggleButton)`
+  padding: 0;
+`;
 
 
 function getToggleButton(toggle, toggleIcon) {
   if (typeof toggleIcon !== 'undefined') {
     if (typeof toggleIcon !== 'string') {
-      return <ToggleButton name="sidebar-toggle" onClick={toggle}>{toggleIcon}</ToggleButton>;
+      return (
+        <NoPaddingToggleButton
+          name="sidebar-toggle"
+          onClick={toggle}
+        >
+          {toggleIcon}
+        </NoPaddingToggleButton>
+      );
     } else if (typeof toggleIcon === 'string') {
-      return <ToggleButton name="sidebar-toggle" className={toggleIcon} onClick={toggle} />;
+      return (
+        <NoPaddingToggleButton
+          name="sidebar-toggle"
+          className={toggleIcon}
+          onClick={toggle}
+        />
+      );
     }
   }
   return <ToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={toggle} />;
