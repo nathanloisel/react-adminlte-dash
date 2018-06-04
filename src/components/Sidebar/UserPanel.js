@@ -25,7 +25,7 @@ const StyledLink = styled.a`
   margin-top: 3px;
   font-size: 11px;
   background-color: transparent;
-  color: ${props => props.theme.userPanelColor || '#fff'} !important;
+  color: ${({ theme }) => theme.userPanelColor || '#fff'} !important;
 
   cursor: pointer;
   -webkit-touch-callout: none; /* iOS Safari */
@@ -40,8 +40,8 @@ const StyledInfo = styled.div`
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: ${props => props.theme.userPanelColor || '#fff'};
-  display: ${props => (props.collapse ? 'none !important' : 'block')};
+  color: ${({ theme }) => theme.userPanelColor || '#fff'};
+  display: ${({ collapse }) => (collapse ? 'none !important' : 'block')};
   float: left !important;
   padding: 5px 5px 5px 15px;
   line-height: 1;
@@ -49,7 +49,7 @@ const StyledInfo = styled.div`
   left: 55px;
 
   /* collapse transform */
-  ${props => props.collapse && '-webkit-transform: translateZ(0);'}
+  ${({ collapse }) => collapse && '-webkit-transform: translateZ(0);'}
 `;
 
 const StyledImage = styled.img`
@@ -60,7 +60,6 @@ const StyledImage = styled.img`
   float: left!important;
   width: 100%;
   max-width: 45px;
-  vertical-align: middle;
   height: auto;
   border-radius: 50%;
   border: 0;
@@ -103,13 +102,29 @@ const StyledPanel = styled.div`
   white-space: nowrap;
 `;
 
-const UserPanel = ({ name, image, href = null, online, collapse }) => (
+function getAuthStatusIcon(online, authStatusIcon) {
+  if (typeof authStatusIcon !== 'undefined') {
+    if (typeof authStatusIcon === 'object' && typeof authStatusIcon.online !== 'undefined' && typeof authStatusIcon.offline !== 'undefined') {
+      if (online) {
+        return authStatusIcon.online;
+      }
+      return authStatusIcon.offline;
+    } else if (typeof authStatusIcon === 'string') {
+      return <StyledIcon className={authStatusIcon} online={online} />;
+    }
+    console.warn('if authStatusIcon is an object, it must have an online and a offline property otherwise, use a string that represente the class name.'); // eslint-disable-line no-console
+    return null;
+  }
+  return <StyledIcon className="fa fa-circle" online={online} />;
+}
+
+const UserPanel = ({ name, image, href = null, online, collapse, authStatusIcon }) => (
   <StyledPanel collapse={collapse} >
     <StyledImage src={image} />
     <StyledInfo collapse={collapse} >
       <StyledP>{name}</StyledP>
       <StyledLink href={href}>
-        <StyledIcon className="fa fa-circle" online={online} />
+        {getAuthStatusIcon(online, authStatusIcon)}
         {online ? ' Online' : ' Offline'}
       </StyledLink>
     </StyledInfo>
@@ -122,6 +137,10 @@ UserPanel.propTypes = {
   href: PropTypes.string,
   online: PropTypes.bool,
   collapse: PropTypes.bool,
+  authStatusIcon: PropTypes.shape({
+    online: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+    offline: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+  }),
 };
 
 export default UserPanel;

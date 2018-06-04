@@ -328,6 +328,41 @@ class MenuItem extends React.Component {
 
   toggleHover(state) { this.setState({ hover: state }); }
 
+  getCollapseIcon() {
+    const { collapseIcon } = this.props;
+    if (typeof collapseIcon !== 'undefined') {
+      if (typeof collapseIcon === 'string') {
+        return (<StyledRightIcon
+          className={collapseIcon}
+          open={this.state.open}
+          collapse={this.props.collapse}
+          hover={this.state.hover}
+        />);
+      }
+
+      return collapseIcon;
+    }
+    return (<StyledRightIcon
+      className="fa fa-angle-left"
+      open={this.state.open}
+      collapse={this.props.collapse}
+      hover={this.state.hover}
+    />);
+  }
+
+  getItemMenuIcon() {
+    const { icon } = this.props;
+    if ((typeof icon !== 'undefined' && typeof icon === 'object' && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined')) || typeof icon === 'undefined') {
+      return (
+        <StyledLeftIcon
+          className={this.props.icon.className || 'fa fa-circle-o'}
+          color={this.props.icon.color || 'none'}
+        />
+      );
+    }
+    return icon;
+  }
+
   render() {
     return (
       <StyledMenuItem
@@ -347,10 +382,6 @@ class MenuItem extends React.Component {
             this._toggleMenu : this.props.onClick}
           onMouseEnter={() => this._toggleHover(true)}
         >
-          <StyledLeftIcon
-            className={`fa ${this.props.icon.className || 'fa-circle-o'}`}
-            color={this.props.icon.color || 'none'}
-          />
           <StyledTitle
             collapse={this.props.collapse}
             hover={this.state.hover}
@@ -358,6 +389,7 @@ class MenuItem extends React.Component {
           >
             {this.props.title}
           </StyledTitle>
+          {this.getItemMenuIcon()}
           <RightSpan
             collapse={this.props.collapse}
             hover={this.state.hover}
@@ -369,13 +401,7 @@ class MenuItem extends React.Component {
                 this.props.collapse,
                 this.state.hover,
               ) :
-              this.props.children &&
-                (<StyledRightIcon
-                  className="fa fa-angle-left"
-                  open={this.state.open}
-                  collapse={this.props.collapse}
-                  hover={this.state.hover}
-                />)
+              this.props.children && this.getCollapseIcon()
             )}
           </RightSpan>
         </StyledLink>
@@ -403,7 +429,14 @@ MenuItem.propTypes = {
   children: PropTypes.node,
   active: PropTypes.bool,
   collapse: PropTypes.bool,
-  icon: PropTypes.objectOf(PropTypes.string),
+  icon: PropTypes.oneOfType([
+    PropTypes.shape({
+      className: PropTypes.string,
+      color: PropTypes.string,
+    }),
+    PropTypes.element,
+  ]),
+  collapseIcon: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
   href: PropTypes.string,
   labels: PropTypes.arrayOf(PropTypes.object),
   level: PropTypes.number,

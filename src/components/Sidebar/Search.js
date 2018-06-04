@@ -132,12 +132,12 @@ const StyledForm = styled.form`
 
   overflow: hidden;
   text-overflow: clip;
-  border-radius: ${props => props.theme.sidebarFormBorderRadius || '0'};
-  border: ${props => props.theme.sidebarFormBorder || '0'};
-  margin: ${props => props.theme.sidebarFormMargin || '0'};
+  border-radius: ${({ theme }) => theme.sidebarFormBorderRadius || '0'};
+  border: ${({ theme }) => theme.sidebarFormBorder || '0'};
+  margin: ${({ theme }) => theme.sidebarFormMargin || '0'};
 
   /* collapse */
-  ${props => props.collapse && `
+  ${({ collapse }) => collapse && `
     display: none !important;
     -webkit-transform: translateZ(0);
   `}
@@ -162,20 +162,32 @@ class Search extends React.Component {
     this.setState({ value: '' });
   }
 
+  getSearchIcon() {
+    const { searchIcon } = this.props;
+    if (typeof searchIcon !== 'undefined') {
+      if (typeof searchIcon === 'string') {
+        return <StyledIcon className={searchIcon} />;
+      }
+      return searchIcon;
+    }
+    return <StyledIcon className="fa fa-search" />;
+  }
+
   render() {
+    const { name, placeholder, collapse } = this.props;
     return (
-      <StyledForm collapse={this.props.collapse} >
+      <StyledForm collapse={collapse} >
         <InputGroup>
           <StyledInput
             type="text"
-            name={this.props.name}
-            placeholder={this.props.placeholder}
+            name={name}
+            placeholder={placeholder}
             value={this.state.value}
             onChange={this._changeValue}
           />
           <StyledInputButton>
             <StyledButton name="searchButton" onClick={this._buttonClick}>
-              <StyledIcon className="fa fa-search" />
+              {this.getSearchIcon()}
             </StyledButton>
           </StyledInputButton>
         </InputGroup>
@@ -189,6 +201,7 @@ Search.propTypes = {
   placeholder: PropTypes.string,
   onClick: PropTypes.func,
   collapse: PropTypes.bool,
+  searchIcon: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
 };
 
 Search.defaultProps = {

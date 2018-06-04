@@ -21,34 +21,35 @@ const StyledHeader = styled.header`
     clear: both;
   }
 
-  position: ${props => (props.fixed ? 'fixed' : 'relative')};
-  width: ${props => (props.boxed ? '1024px' : '100%')};
+  position: ${({ fixed }) => (fixed ? 'fixed' : 'relative')};
+  width: ${({ boxed }) => (boxed ? '1024px' : '100%')};
   max-height: 100px;
   z-index: 1030;
 
   /* theme */
-  ${props => props.theme.headerBoxShadow && `
-    -webkit-box-shadow: ${props.theme.headerBoxShadow};
-    box-shadow: ${props.theme.headerBoxShadow};
+  ${({ theme }) => theme.headerBoxShadow && `
+    -webkit-box-shadow: ${theme.headerBoxShadow};
+    box-shadow: ${theme.headerBoxShadow};
   `}
 `;
 
-const Header = props => (
-  <StyledHeader fixed={props.fixed} >
+const Header = ({ fixed, sidebarCollapse, sidebarMini, logoOnClick, logoHref, logoLg, logoSm, sidebarToggle, sidebarToggleIcon, children }) => (
+  <StyledHeader fixed={fixed} >
     <Logo
-      collapse={props.sidebarCollapse}
-      sidebarMini={props.sidebarMini}
-      onClick={props.logoOnClick}
-      href={props.logoHref}
-      logoLg={props.logoLg}
-      logoSm={props.logoSm}
+      collapse={sidebarCollapse}
+      sidebarMini={sidebarMini}
+      onClick={logoOnClick}
+      href={logoHref}
+      logoLg={logoLg}
+      logoSm={logoSm}
     />
     <Navbar
-      toggle={props.sidebarToggle}
-      collapse={props.sidebarCollapse}
-      sidebarMini={props.sidebarMini}
+      toggle={sidebarToggle}
+      toggleIcon={sidebarToggleIcon}
+      collapse={sidebarCollapse}
+      sidebarMini={sidebarMini}
     >
-      {props.children}
+      {children}
     </Navbar>
   </StyledHeader>
 );
@@ -63,6 +64,7 @@ Header.propTypes = {
   sidebarMini: PropTypes.bool,
   sidebarCollapse: PropTypes.bool,
   sidebarToggle: PropTypes.func.isRequired,
+  sidebarToggleIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
 Header.defaultProps = {

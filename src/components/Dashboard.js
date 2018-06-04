@@ -27,13 +27,13 @@ const StyledDashboard = styled.div`
   }
 
   /* theme */
-  ${props => (props.theme.sidebarBg && `background-color: ${props.theme.sidebarBg};`)}
+  ${({ theme }) => (theme.sidebarBg && `background-color: ${theme.sidebarBg};`)}
 
   min-height: 100vh;
   position: relative;
   overflow: hidden;
 
-  ${props => (props.boxed && `
+  ${({ boxed }) => (boxed && `
     max-width: ${boxedLayoutMaxWidth};
     margin: 0 auto;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -55,47 +55,49 @@ class Dashboard extends React.Component {
 
   render() {
     const theme = themes[this.props.theme];
+    const { logoOnClick, logoHref, logoLg, logoSm, fixed, sidebarMini, sidebarToggleIcon, navbarChildren, sidebarChildren, children, footerChildren } = this.props;
     return (
       <StyledDashboard>
         <ThemeProvider theme={theme}>
           <Header
-            logoOnClick={this.props.logoOnClick}
-            logoHref={this.props.logoHref}
-            logoLg={this.props.logoLg}
-            logoSm={this.props.logoSm}
-            fixed={this.props.fixed}
+            logoOnClick={logoOnClick}
+            logoHref={logoHref}
+            logoLg={logoLg}
+            logoSm={logoSm}
+            fixed={fixed}
             sidebarToggle={this._sidebarToggle}
             sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
+            sidebarMini={sidebarMini}
+            sidebarToggleIcon={sidebarToggleIcon}
           >
-            {this.props.navbarChildren}
+            {navbarChildren}
           </Header>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Sidebar
-            fixed={this.props.fixed}
+            fixed={fixed}
             sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
+            sidebarMini={sidebarMini}
           >
-            {this.props.sidebarChildren}
+            {sidebarChildren}
           </Sidebar>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Content
-            fixed={this.props.fixed}
+            fixed={fixed}
             name="content-wrapper"
             sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
+            sidebarMini={sidebarMini}
           >
-            {this.props.children}
+            {children}
           </Content>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
           <Footer
             sidebarCollapse={this.state.sidebarCollapse}
-            sidebarMini={this.props.sidebarMini}
+            sidebarMini={sidebarMini}
           >
-            {this.props.footerChildren}
+            {footerChildren}
           </Footer>
         </ThemeProvider>
       </StyledDashboard>
@@ -115,6 +117,7 @@ Dashboard.propTypes = {
   fixed: PropTypes.bool,
   sidebarMini: PropTypes.bool,
   initialCollapse: PropTypes.bool,
+  sidebarToggleIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   theme: PropTypes.string,
 };
 

@@ -48,25 +48,25 @@ const StyledLogo = styled.a`
   @media (max-width: ${screenHeaderCollapse}) {
     width: 100%;
     float: none;
-    ${props => props.theme.logoSmallVariant || ''}
+    ${({ theme }) => theme.logoSmallVariant || ''}
   }
   @media (min-width: ${screenSmMin}) {
-    width: ${props => ((props.sidebarMini && props.collapse) ? sidebarMiniWidth : sidebarWidth)};
-    ${props => ((props.sidebarMini && props.collapse) && 'padding: 0;')};
+    width: ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) ? sidebarMiniWidth : sidebarWidth)};
+    ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) && 'padding: 0;')};
   }
 `;
 
 const LargeLogo = styled.span`
   display: block;
   @media (min-width: ${screenSmMin}) {
-    display: ${props => ((props.sidebarMini && props.collapse) ? 'none' : 'block')}
+    display: ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) ? 'none' : 'block')}
   }
 `;
 
 const SmallLogo = styled.span`
   display: none;
   @media (min-width: ${screenSmMin}) {
-    display: ${props => ((props.sidebarMini && props.collapse) ? 'block' : 'none')}
+    display: ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) ? 'block' : 'none')}
   }
 `;
 

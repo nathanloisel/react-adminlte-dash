@@ -58,17 +58,17 @@ const StyledNavbar = styled.nav`
   -o-transition: margin-left ${transitionSpeed} ${transitionFn};
   transition: margin-left ${transitionSpeed} ${transitionFn};
 
-  color: ${props => props.theme.navbarFontColor || '#333'};
+  color: ${({ theme }) => theme.navbarFontColor || '#333'};
   display: block;
   font-weight: 400;
   position: relative;
   min-height: ${navbarHeight};
   z-index: 1000;
   margin-bottom: 0;
-  margin-left: ${props => (props.topNav ? '0' : sidebarWidth)};
+  margin-left: ${({ topNav }) => (topNav ? '0' : sidebarWidth)};
   border: none;
   border-radius: 0;
-  background-color: ${props => props.theme.backgroundColor || '#fff'};
+  background-color: ${({ theme }) => theme.backgroundColor || '#fff'};
 
   /* media queries */
   @media (max-width: ${screenHeaderCollapse}) {
@@ -77,23 +77,35 @@ const StyledNavbar = styled.nav`
     margin: 0;
   }
   @media (min-width: ${screenSmMin}) {
-    margin-left: ${props => ((!props.topNav && props.sidebarMini && props.collapse) ?
+    margin-left: ${({ topNav, sidebarMini, collapse }) => ((!topNav && sidebarMini && collapse) ?
       sidebarMiniWidth :
       sidebarWidth)};
   }
 `;
 
-const Navbar = props => (
+
+function getToggleButton(toggle, toggleIcon) {
+  if (typeof icon !== 'undefined') {
+    if (typeof icon !== 'string') {
+      return <ToggleButton name="sidebar-toggle" onClick={toggle}>{toggleIcon}</ToggleButton>;
+    } else if (typeof icon === 'string') {
+      return <ToggleButton name="sidebar-toggle" className={toggleIcon} onClick={toggle} />;
+    }
+  }
+  return <ToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={toggle} />;
+}
+
+const Navbar = ({ topNav, sidebarMini, collapse, toggle, children, toggleIcon }) => (
   <StyledNavbar
-    topNav={props.topNav}
-    sidebarMini={props.sidebarMini}
-    collapse={props.collapse}
+    topNav={topNav}
+    sidebarMini={sidebarMini}
+    collapse={collapse}
   >
-    <ToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={props.toggle} />
+    {getToggleButton(toggle, toggleIcon)}
 
     <StyledNavbarMenu>
       <StyledNavbarMenuList name="navbar-menu-wrapper">
-        {props.children}
+        {children}
       </StyledNavbarMenuList>
     </StyledNavbarMenu>
   </StyledNavbar>
@@ -105,6 +117,7 @@ Navbar.propTypes = {
   topNav: PropTypes.bool,
   sidebarMini: PropTypes.bool,
   collapse: PropTypes.bool,
+  toggleIcon: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 };
 
 export default Navbar;

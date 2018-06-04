@@ -2,7 +2,7 @@ exports[`<UserPanel /> renders children correctly 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
@@ -23,7 +23,7 @@ exports[`<UserPanel /> renders correctly with collapse option 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb eIFiiD">
@@ -44,7 +44,7 @@ exports[`<UserPanel /> renders correctly with default options 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
@@ -65,7 +65,7 @@ exports[`<UserPanel /> renders correctly with image 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src="/some/path" />
   <div
     className="sc-bxivhb ivIdti">
@@ -86,7 +86,7 @@ exports[`<UserPanel /> renders correctly with link 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
@@ -107,7 +107,7 @@ exports[`<UserPanel /> renders correctly with name 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
@@ -130,7 +130,7 @@ exports[`<UserPanel /> renders correctly with online status option 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
@@ -151,7 +151,7 @@ exports[`<UserPanel /> renders correctly with theme 1`] = `
 <div
   className="sc-EHOje xDBnt">
   <img
-    className="sc-ifAKCX bYelyc"
+    className="sc-ifAKCX dVxDDW"
     src={undefined} />
   <div
     className="sc-bxivhb ivIdti">
