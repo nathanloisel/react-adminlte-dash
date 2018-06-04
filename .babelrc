@@ -2,13 +2,21 @@
   "env": {
     "build": {
       "presets": [
-        "es2015",
+        "latest",
         "react"
+      ],
+      "plugins": [
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ]
       ]
     },
     "start": {
       "presets": [
-        "es2015",
+        "latest",
         "react",
         "react-hmre"
       ],
@@ -23,7 +31,7 @@
     },
     "test": {
       "presets": [
-        "es2015",
+        "latest",
         "react"
       ],
       "plugins": [
@@ -33,11 +41,17 @@
     },
     "commonjs": {
       "presets": [
-        "es2015",
+        "latest",
         "react"
       ],
       "plugins": [
-        ["transform-es2015-modules-commonjs", { "loose": false }]
+        ["transform-es2015-modules-commonjs", { "loose": false }],
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ]
       ]
     }
   }

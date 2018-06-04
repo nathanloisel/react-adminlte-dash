@@ -5,7 +5,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -14,8 +14,8 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -24,7 +24,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -49,7 +49,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -58,8 +58,8 @@ exports[`<Header /> renders correctly with default options 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -68,7 +68,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -93,7 +93,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -102,8 +102,8 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -112,7 +112,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -137,7 +137,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -146,8 +146,8 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -156,7 +156,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -181,14 +181,14 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         Large
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -197,7 +197,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -222,7 +222,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -231,14 +231,14 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         Small
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb fGPksR">
@@ -263,7 +263,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
     className="sc-ifAKCX jSovmm"
     href="/"
     name="navbar-logo">
-    <div
+    <span
       className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
@@ -272,8 +272,8 @@ exports[`<Header /> renders correctly with theme 1`] = `
         </b>
         LTE
       </span>
-    </div>
-    <div
+    </span>
+    <span
       className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
@@ -282,7 +282,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
         </b>
         LT
       </span>
-    </div>
+    </span>
   </a>
   <nav
     className="sc-bxivhb kuJgEm">

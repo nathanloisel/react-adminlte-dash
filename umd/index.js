@@ -11064,11 +11064,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return props.sidebarMini && props.collapse && 'padding: 0;';
 	});
 
-	var LargeLogo = _styledComponents2.default.div(_templateObject2, _variables.screenSmMin, function (props) {
+	var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (props) {
 	  return props.sidebarMini && props.collapse ? 'none' : 'block';
 	});
 
-	var SmallLogo = _styledComponents2.default.div(_templateObject3, _variables.screenSmMin, function (props) {
+	var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (props) {
 	  return props.sidebarMini && props.collapse ? 'block' : 'none';
 	});
 

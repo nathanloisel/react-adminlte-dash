@@ -56,14 +56,14 @@ const StyledLogo = styled.a`
   }
 `;
 
-const LargeLogo = styled.div`
+const LargeLogo = styled.span`
   display: block;
   @media (min-width: ${screenSmMin}) {
     display: ${props => ((props.sidebarMini && props.collapse) ? 'none' : 'block')}
   }
 `;
 
-const SmallLogo = styled.div`
+const SmallLogo = styled.span`
   display: none;
   @media (min-width: ${screenSmMin}) {
     display: ${props => ((props.sidebarMini && props.collapse) ? 'block' : 'none')}
@@ -72,14 +72,14 @@ const SmallLogo = styled.div`
 
 const Logo = ({ href = '/', onClick, logoLg, logoSm, sidebarMini, collapse }) => (
   onClick ?
-    <StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" onClick={onClick} href={null} >
+    (<StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" onClick={onClick} href={null} >
       <LargeLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-lg">{logoLg}</LargeLogo>
       <SmallLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-sm">{logoSm}</SmallLogo>
-    </StyledLogo> :
-    <StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" href={href} >
+    </StyledLogo>) :
+    (<StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" href={href} >
       <LargeLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-lg">{logoLg}</LargeLogo>
       <SmallLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-sm">{logoSm}</SmallLogo>
-    </StyledLogo>
+    </StyledLogo>)
 );
 
 Logo.propTypes = {

@@ -88,8 +88,7 @@
   "peerDependencies": {
     "react": ">= 15.0.0",
     "prop-types": ">=15.0.0",
-    "styled-components": ">=2.0.0 || >=3.0.0",
-    "tinycolor2": ">=1.4.0"
+    "styled-components": ">=2.0.0 || >=3.0.0"
   },
   "repository": {
     "type": "git",
