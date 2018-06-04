@@ -16,7 +16,7 @@
     "gh-pages:stats": "webpack --profile --json > stats.json",
     "dist": "webpack",
     "build": "npm run build:umd && npm run build:es6 && npm run build:cjs",
-    "build:es6": "babel ./src -d es6",
+    "build:es6": "cross-env NODE_ENV=build babel ./src -d es6",
     "build:cjs": "cross-env NODE_ENV=commonjs babel ./src -d dist",
     "build:umd": "npm run dist && npm run dist:min",
     "dist:min": "webpack",
@@ -56,7 +56,6 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "gh-pages": "^0.12.0",
     "git-prepush-hook": "^1.0.1",
@@ -75,7 +74,6 @@
     "react-test-renderer": "^15.4.2",
     "redux": "^3.6.0",
     "style-loader": "0.13.1",
-    "styled-components": "^1.4.0",
     "sync-exec": "^0.6.2",
     "system-bell-webpack-plugin": "^1.0.0",
     "url-loader": "^0.5.7",
@@ -118,6 +116,7 @@
   ],
   "dependencies": {
     "prop-types": "^15.6.1",
+    "styled-components": "^3.3.2",
     "tinycolor2": "^1.4.1"
   }
 }

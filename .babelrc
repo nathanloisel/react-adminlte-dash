@@ -1,27 +1,62 @@
 {
-  "presets": [
-    "latest",
-    "react"
-  ],
-  "plugins": [
-    [
-      "transform-react-remove-prop-types",
-      {
-        "mode": "wrap"
-      }
-    ]
-  ],
   "env": {
+    "build": {
+      "presets": [
+        "es2015",
+        "react"
+      ],
+      "plugins": [
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ]
+      ]
+    },
     "start": {
       "presets": [
+        "es2015",
+        "react",
         "react-hmre"
+      ],
+      "plugins": [
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ]
       ]
     },
     "test": {
-      "plugins": ["transform-es2015-modules-commonjs", "istanbul"]
+      "presets": [
+        "es2015",
+        "react"
+      ],
+      "plugins": [
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ],
+        "transform-es2015-modules-commonjs",
+        "istanbul"
+      ]
     },
     "commonjs": {
+      "presets": [
+        "es2015",
+        "react"
+      ],
       "plugins": [
+        [
+          "transform-react-remove-prop-types",
+          {
+            "mode": "wrap"
+          }
+        ],
         ["transform-es2015-modules-commonjs", { "loose": false }]
       ]
     }

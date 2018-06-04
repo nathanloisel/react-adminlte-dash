@@ -1,14 +1,11 @@
-import * as path from 'path';
-
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
-import SystemBellPlugin from 'system-bell-webpack-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
-import merge from 'webpack-merge';
-
-import pkg from './package.json';
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const SystemBellPlugin = require('system-bell-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const merge = require('webpack-merge');
+const pkg = require('./package.json');
 
 const TARGET = process.env.npm_lifecycle_event || '';
 const ROOT_PATH = __dirname;
@@ -225,18 +222,18 @@ const distCommon = {
     loaders: [
       {
         test: /\.jsx?$/,
-        loaders: ['babel'],
+        loader: ['babel'],
         include: [
           config.paths.src,
         ],
+        query: {
+          presets: ['es2015', 'react'],
+        },
       },
     ],
   },
   entry: {
     app: config.paths.src,
-    style: [
-      `${config.paths.src}/main.css`,
-    ],
   },
 };
 
@@ -245,17 +242,6 @@ if (TARGET === 'dist') {
     output: {
       filename: `${config.filename}.js`,
     },
-    module: {
-      loaders: [
-        {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-        },
-      ],
-    },
-    plugins: [
-      new ExtractTextPlugin('[name].css'),
-    ],
   });
 }
 
@@ -264,21 +250,12 @@ if (TARGET === 'dist:min') {
     output: {
       filename: `${config.filename}.min.js`,
     },
-    module: {
-      loaders: [
-        {
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract('style-loader', 'css-loader?minimize=true'),
-        },
-      ],
-    },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({
         compress: {
           warnings: false,
         },
       }),
-      new ExtractTextPlugin('[name].min.css'),
     ],
   });
 }
