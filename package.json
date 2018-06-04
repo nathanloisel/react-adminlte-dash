@@ -77,17 +77,19 @@
     "styled-components": "^3.2.6",
     "sync-exec": "^0.6.2",
     "system-bell-webpack-plugin": "^1.0.0",
-    "tinycolor2": "^1.4.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2",
     "webpack-merge": "^2.4.0"
   },
+  "dependencies": {
+    "tinycolor2": "^1.4.1"
+  },
   "peerDependencies": {
-    "react": ">= 15.0.0 < 16.0.0",
+    "react": ">= 15.0.0",
     "prop-types": ">=15.0.0",
     "styled-components": ">=2.0.0 || >=3.0.0",
-    "tinycolor2": ">=1.0.0"
+    "tinycolor2": ">=1.4.0"
   },
   "repository": {
     "type": "git",
