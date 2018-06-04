@@ -71,7 +71,7 @@ var Header = function Header(props) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? Header.propTypes = {
+Header.propTypes = {
   children: _propTypes2.default.node,
   fixed: _propTypes2.default.bool,
   logoOnClick: _propTypes2.default.func,
@@ -81,7 +81,7 @@ process.env.NODE_ENV !== "production" ? Header.propTypes = {
   sidebarMini: _propTypes2.default.bool,
   sidebarCollapse: _propTypes2.default.bool,
   sidebarToggle: _propTypes2.default.func.isRequired
-} : void 0;
+};
 
 Header.defaultProps = {
   fixed: false,

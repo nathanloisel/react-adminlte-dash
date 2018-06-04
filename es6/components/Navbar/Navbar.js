@@ -66,12 +66,12 @@ var Navbar = function Navbar(props) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? Navbar.propTypes = {
+Navbar.propTypes = {
   children: _propTypes2.default.node,
   toggle: _propTypes2.default.func.isRequired,
   topNav: _propTypes2.default.bool,
   sidebarMini: _propTypes2.default.bool,
   collapse: _propTypes2.default.bool
-} : void 0;
+};
 
 exports.default = Navbar;

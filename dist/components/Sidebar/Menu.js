@@ -64,11 +64,11 @@ var Menu = function Menu(_ref) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? Menu.propTypes = {
+Menu.propTypes = {
   children: _propTypes2.default.node,
   header: _propTypes2.default.string,
   collapse: _propTypes2.default.bool
-} : void 0;
+};
 
 Menu.Item = _MenuItem2.default;
 

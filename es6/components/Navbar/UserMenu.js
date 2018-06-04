@@ -175,7 +175,7 @@ var UserMenu = function (_React$Component) {
   return UserMenu;
 }(_react2.default.Component);
 
-process.env.NODE_ENV !== "production" ? UserMenu.propTypes = {
+UserMenu.propTypes = {
   name: _propTypes2.default.string,
   image: _propTypes2.default.string,
   className: _propTypes2.default.string,
@@ -183,6 +183,6 @@ process.env.NODE_ENV !== "production" ? UserMenu.propTypes = {
   signOutAction: _propTypes2.default.func,
   headerImageRenderer: _propTypes2.default.func,
   userImageRenderer: _propTypes2.default.func
-} : void 0;
+};
 
 exports.default = UserMenu;

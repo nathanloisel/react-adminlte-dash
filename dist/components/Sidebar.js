@@ -87,12 +87,12 @@ var Sidebar = function Sidebar(_ref) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? Sidebar.propTypes = {
+Sidebar.propTypes = {
   children: _propTypes2.default.node,
   fixed: _propTypes2.default.bool,
   sidebarMini: _propTypes2.default.bool,
   sidebarCollapse: _propTypes2.default.bool
-} : void 0;
+};
 
 Sidebar.UserPanel = _UserPanel2.default;
 Sidebar.Search = _Search2.default;

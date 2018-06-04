@@ -56,14 +56,14 @@ const StyledLogo = styled.a`
   }
 `;
 
-const LargeLogo = styled.span`
+const LargeLogo = styled.div`
   display: block;
   @media (min-width: ${screenSmMin}) {
     display: ${props => ((props.sidebarMini && props.collapse) ? 'none' : 'block')}
   }
 `;
 
-const SmallLogo = styled.span`
+const SmallLogo = styled.div`
   display: none;
   @media (min-width: ${screenSmMin}) {
     display: ${props => ((props.sidebarMini && props.collapse) ? 'block' : 'none')}

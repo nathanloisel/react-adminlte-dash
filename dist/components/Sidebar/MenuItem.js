@@ -277,7 +277,7 @@ var MenuItem = function (_React$Component) {
   return MenuItem;
 }(_react2.default.Component);
 
-process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
+MenuItem.propTypes = {
   children: _propTypes2.default.node,
   active: _propTypes2.default.bool,
   collapse: _propTypes2.default.bool,
@@ -288,7 +288,7 @@ process.env.NODE_ENV !== "production" ? MenuItem.propTypes = {
   onClick: _propTypes2.default.func,
   parentHover: _propTypes2.default.bool,
   title: _propTypes2.default.string
-} : void 0;
+};
 
 MenuItem.defaultProps = {
   collapse: false,

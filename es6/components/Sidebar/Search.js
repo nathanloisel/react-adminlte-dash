@@ -148,12 +148,12 @@ var Search = function (_React$Component) {
   return Search;
 }(_react2.default.Component);
 
-process.env.NODE_ENV !== "production" ? Search.propTypes = {
+Search.propTypes = {
   name: _propTypes2.default.string,
   placeholder: _propTypes2.default.string,
   onClick: _propTypes2.default.func,
   collapse: _propTypes2.default.bool
-} : void 0;
+};
 
 Search.defaultProps = {
   placeholder: 'Search...',

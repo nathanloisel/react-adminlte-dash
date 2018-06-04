@@ -4,14 +4,6 @@
       "presets": [
         "es2015",
         "react"
-      ],
-      "plugins": [
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ]
       ]
     },
     "start": {
@@ -35,12 +27,6 @@
         "react"
       ],
       "plugins": [
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ],
         "transform-es2015-modules-commonjs",
         "istanbul"
       ]
@@ -51,12 +37,6 @@
         "react"
       ],
       "plugins": [
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ],
         ["transform-es2015-modules-commonjs", { "loose": false }]
       ]
     }

@@ -92,12 +92,12 @@ var NavItem = function NavItem(_ref) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? NavItem.propTypes = {
+NavItem.propTypes = {
   title: _propTypes2.default.string,
   onClick: _propTypes2.default.func,
   href: _propTypes2.default.string,
   image: _propTypes2.default.string,
   iconClass: _propTypes2.default.string
-} : void 0;
+};
 
 exports.default = NavItem;

@@ -45,11 +45,11 @@ var StyledLogo = _styledComponents2.default.a(_templateObject, _variables.transi
   return props.sidebarMini && props.collapse && 'padding: 0;';
 });
 
-var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (props) {
+var LargeLogo = _styledComponents2.default.div(_templateObject2, _variables.screenSmMin, function (props) {
   return props.sidebarMini && props.collapse ? 'none' : 'block';
 });
 
-var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (props) {
+var SmallLogo = _styledComponents2.default.div(_templateObject3, _variables.screenSmMin, function (props) {
   return props.sidebarMini && props.collapse ? 'block' : 'none';
 });
 
@@ -90,13 +90,13 @@ var Logo = function Logo(_ref) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? Logo.propTypes = {
+Logo.propTypes = {
   href: _propTypes2.default.string,
   onClick: _propTypes2.default.func,
   logoLg: _propTypes2.default.element,
   logoSm: _propTypes2.default.element,
   sidebarMini: _propTypes2.default.bool,
   collapse: _propTypes2.default.bool
-} : void 0;
+};
 
 exports.default = Logo;

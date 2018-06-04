@@ -151,7 +151,7 @@ var Dashboard = function (_React$Component) {
   return Dashboard;
 }(_react2.default.Component);
 
-process.env.NODE_ENV !== "production" ? Dashboard.propTypes = {
+Dashboard.propTypes = {
   children: _propTypes2.default.node,
   logoOnClick: _propTypes2.default.func,
   logoHref: _propTypes2.default.string,
@@ -164,7 +164,7 @@ process.env.NODE_ENV !== "production" ? Dashboard.propTypes = {
   sidebarMini: _propTypes2.default.bool,
   initialCollapse: _propTypes2.default.bool,
   theme: _propTypes2.default.string
-} : void 0;
+};
 
 Dashboard.defaultProps = {
   fixed: false,

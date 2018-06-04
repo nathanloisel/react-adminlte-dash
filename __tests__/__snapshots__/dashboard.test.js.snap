@@ -7,7 +7,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       className="sc-ifAKCX gCKhyf"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -16,8 +16,8 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -26,7 +26,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb fGPksR">
@@ -65,7 +65,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       className="sc-ifAKCX gCKhyf"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -74,8 +74,8 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -84,7 +84,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb fGPksR">
@@ -123,7 +123,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -132,8 +132,8 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -142,7 +142,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -181,7 +181,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -190,8 +190,8 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -200,7 +200,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -239,7 +239,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -248,8 +248,8 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -258,7 +258,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -297,7 +297,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -306,8 +306,8 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -316,7 +316,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -355,7 +355,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       className="sc-ifAKCX eGsiFE"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje bSbLWf"
         name="navbar-logo-lg">
         <span>
@@ -364,8 +364,8 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM grAVBT"
         name="navbar-logo-sm">
         <span>
@@ -374,7 +374,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb jHIWoV">
@@ -413,7 +413,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       className="sc-ifAKCX fQHIGA"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -422,8 +422,8 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -432,7 +432,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb kigmzE">
@@ -471,7 +471,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       className="sc-ifAKCX fQHIGA"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -480,8 +480,8 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -490,7 +490,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb kigmzE">
@@ -529,7 +529,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       className="sc-ifAKCX eGsiFE"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje bSbLWf"
         name="navbar-logo-lg">
         <span>
@@ -538,8 +538,8 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM grAVBT"
         name="navbar-logo-sm">
         <span>
@@ -548,7 +548,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb jHIWoV">
@@ -587,7 +587,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -596,8 +596,8 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -606,7 +606,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -645,7 +645,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -654,8 +654,8 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -664,7 +664,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -703,7 +703,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       className="sc-ifAKCX fwdUUX"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -712,8 +712,8 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -722,7 +722,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb jwLIpi">
@@ -761,7 +761,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       className="sc-ifAKCX fwdUUX"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -770,8 +770,8 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -780,7 +780,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb jwLIpi">
@@ -819,7 +819,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       className="sc-ifAKCX jSovmm"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -828,8 +828,8 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -838,7 +838,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb kuJgEm">
@@ -877,7 +877,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       className="sc-ifAKCX jSovmm"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -886,8 +886,8 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -896,7 +896,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb kuJgEm">
@@ -935,7 +935,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -944,8 +944,8 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -954,7 +954,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb ciCesD">
@@ -993,7 +993,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       className="sc-ifAKCX FpDji"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -1002,8 +1002,8 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -1012,7 +1012,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb hWVPkT">
@@ -1051,7 +1051,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       className="sc-ifAKCX FpDji"
       href="/"
       name="navbar-logo">
-      <span
+      <div
         className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
@@ -1060,8 +1060,8 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
           </b>
           LTE
         </span>
-      </span>
-      <span
+      </div>
+      <div
         className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
@@ -1070,7 +1070,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
           </b>
           LT
         </span>
-      </span>
+      </div>
     </a>
     <nav
       className="sc-bxivhb hWVPkT">

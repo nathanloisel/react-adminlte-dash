@@ -81,12 +81,12 @@ var UserPanel = function UserPanel(_ref) {
   );
 };
 
-process.env.NODE_ENV !== "production" ? UserPanel.propTypes = {
+UserPanel.propTypes = {
   name: _propTypes2.default.string,
   image: _propTypes2.default.string,
   href: _propTypes2.default.string,
   online: _propTypes2.default.bool,
   collapse: _propTypes2.default.bool
-} : void 0;
+};
 
 exports.default = UserPanel;
