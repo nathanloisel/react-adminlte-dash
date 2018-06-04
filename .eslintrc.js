@@ -19,6 +19,7 @@ module.exports = {
     "no-underscore-dangle": 0,
     "no-unused-expressions": 0,
     "no-use-before-define": 0,
+    "max-len": [2, { code: 100 }],
     "react/sort-comp": 0,
     "react/no-multi-comp": 0,
     "react/require-default-props": 0,

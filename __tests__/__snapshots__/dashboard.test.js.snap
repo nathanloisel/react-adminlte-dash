@@ -4,7 +4,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
   <header
     className="sc-kpOJdX dZFqcM">
     <a
-      className="sc-ifAKCX gCKhyf"
+      className="sc-ifAKCX ezTeTD"
       href="/"
       name="navbar-logo">
       <span
@@ -62,7 +62,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
   <header
     className="sc-kpOJdX dZFqcM">
     <a
-      className="sc-ifAKCX gCKhyf"
+      className="sc-ifAKCX ezTeTD"
       href="/"
       name="navbar-logo">
       <span
@@ -120,7 +120,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -178,7 +178,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -236,7 +236,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
   <header
     className="sc-kpOJdX fBGbcj">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -294,7 +294,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
   <header
     className="sc-kpOJdX fBGbcj">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -352,7 +352,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
   <header
     className="sc-kpOJdX fBGbcj">
     <a
-      className="sc-ifAKCX eGsiFE"
+      className="sc-ifAKCX hbCNdl"
       href="/"
       name="navbar-logo">
       <span
@@ -410,7 +410,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX fQHIGA"
+      className="sc-ifAKCX ekfaNZ"
       href="/"
       name="navbar-logo">
       <span
@@ -468,7 +468,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX fQHIGA"
+      className="sc-ifAKCX ekfaNZ"
       href="/"
       name="navbar-logo">
       <span
@@ -526,7 +526,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX eGsiFE"
+      className="sc-ifAKCX hbCNdl"
       href="/"
       name="navbar-logo">
       <span
@@ -584,7 +584,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -642,7 +642,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -700,7 +700,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX fwdUUX"
+      className="sc-ifAKCX Bsnzz"
       href="/"
       name="navbar-logo">
       <span
@@ -758,7 +758,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX fwdUUX"
+      className="sc-ifAKCX Bsnzz"
       href="/"
       name="navbar-logo">
       <span
@@ -816,7 +816,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX jSovmm"
+      className="sc-ifAKCX kfhTjd"
       href="/"
       name="navbar-logo">
       <span
@@ -874,7 +874,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX jSovmm"
+      className="sc-ifAKCX kfhTjd"
       href="/"
       name="navbar-logo">
       <span
@@ -932,7 +932,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX gnZuMN"
+      className="sc-ifAKCX haVtxY"
       href="/"
       name="navbar-logo">
       <span
@@ -990,7 +990,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX FpDji"
+      className="sc-ifAKCX mmdtU"
       href="/"
       name="navbar-logo">
       <span
@@ -1048,7 +1048,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
   <header
     className="sc-kpOJdX bMoDGb">
     <a
-      className="sc-ifAKCX FpDji"
+      className="sc-ifAKCX mmdtU"
       href="/"
       name="navbar-logo">
       <span

@@ -352,7 +352,10 @@ class MenuItem extends React.Component {
 
   getItemMenuIcon() {
     const { icon } = this.props;
-    if ((typeof icon !== 'undefined' && typeof icon === 'object' && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined')) || typeof icon === 'undefined') {
+    if ((typeof icon !== 'undefined'
+      && typeof icon === 'object'
+      && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined'))
+      || typeof icon === 'undefined') {
       return (
         <StyledLeftIcon
           className={this.props.icon.className || 'fa fa-circle-o'}

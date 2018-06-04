@@ -55,7 +55,20 @@ class Dashboard extends React.Component {
 
   render() {
     const theme = themes[this.props.theme];
-    const { logoOnClick, logoHref, logoLg, logoSm, fixed, sidebarMini, sidebarToggleIcon, navbarChildren, sidebarChildren, children, footerChildren } = this.props;
+
+    const {
+      logoOnClick,
+      logoHref,
+      logoLg,
+      logoSm,
+      fixed,
+      sidebarMini,
+      sidebarToggleIcon,
+      navbarChildren,
+      sidebarChildren,
+      children,
+      footerChildren,
+      } = this.props;
     return (
       <StyledDashboard>
         <ThemeProvider theme={theme}>

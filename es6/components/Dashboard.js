@@ -86,6 +86,7 @@ var Dashboard = function (_React$Component) {
     key: 'render',
     value: function render() {
       var theme = _styles2.default[this.props.theme];
+
       var _props = this.props,
           logoOnClick = _props.logoOnClick,
           logoHref = _props.logoHref,

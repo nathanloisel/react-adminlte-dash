@@ -22,10 +22,10 @@ const StyledLogo = styled.a`
   /* theme */
   background-color: ${props => props.theme.logoBgColor || '#fff'} !important;
   color: ${props => props.theme.logoColor || '#000'} !important;
-  border-bottom: ${props => props.theme.logoBorderBottom || 'none'} !important;;
-  border-right: ${props => props.theme.navbarItemBorder || 'none'} !important;;
+  border-bottom: ${props => props.theme.logoBorderBottom || 'none'} !important;
+  border-right: ${props => props.theme.navbarItemBorder || 'none'} !important;
   &:hover {
-    background-color: ${props => props.theme.logoHover || '#f6f6f6'} !important;;
+    background-color: ${props => props.theme.logoHover || '#f6f6f6'} !important;
   }
 
   display: block;
@@ -51,7 +51,9 @@ const StyledLogo = styled.a`
     ${({ theme }) => theme.logoSmallVariant || ''}
   }
   @media (min-width: ${screenSmMin}) {
-    width: ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) ? sidebarMiniWidth : sidebarWidth)};
+    width: ${
+      ({ sidebarMini, collapse }) => ((sidebarMini && collapse) ? sidebarMiniWidth : sidebarWidth)
+    };
     ${({ sidebarMini, collapse }) => ((sidebarMini && collapse) && 'padding: 0;')};
   }
 `;
@@ -72,13 +74,48 @@ const SmallLogo = styled.span`
 
 const Logo = ({ href = '/', onClick, logoLg, logoSm, sidebarMini, collapse }) => (
   onClick ?
-    (<StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" onClick={onClick} href={null} >
-      <LargeLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-lg">{logoLg}</LargeLogo>
-      <SmallLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-sm">{logoSm}</SmallLogo>
+    (<StyledLogo
+      sidebarMini={sidebarMini}
+      collapse={collapse}
+      name="navbar-logo"
+      onClick={onClick}
+      href={null}
+    >
+      <LargeLogo
+        sidebarMini={sidebarMini}
+        collapse={collapse}
+        name="navbar-logo-lg"
+      >
+        {logoLg}
+      </LargeLogo>
+      <SmallLogo
+        sidebarMini={sidebarMini}
+        collapse={collapse}
+        name="navbar-logo-sm"
+      >
+        {logoSm}
+      </SmallLogo>
     </StyledLogo>) :
-    (<StyledLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo" href={href} >
-      <LargeLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-lg">{logoLg}</LargeLogo>
-      <SmallLogo sidebarMini={sidebarMini} collapse={collapse} name="navbar-logo-sm">{logoSm}</SmallLogo>
+    (<StyledLogo
+      sidebarMini={sidebarMini}
+      collapse={collapse}
+      name="navbar-logo"
+      href={href}
+    >
+      <LargeLogo
+        sidebarMini={sidebarMini}
+        collapse={collapse}
+        name="navbar-logo-lg"
+      >
+        {logoLg}
+      </LargeLogo>
+      <SmallLogo
+        sidebarMini={sidebarMini}
+        collapse={collapse}
+        name="navbar-logo-sm"
+      >
+        {logoSm}
+      </SmallLogo>
     </StyledLogo>)
 );
 

@@ -52,14 +52,14 @@ var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.t
 });
 
 function getToggleButton(toggle, toggleIcon) {
-  if (typeof icon !== 'undefined') {
-    if (typeof icon !== 'string') {
+  if (typeof toggleIcon !== 'undefined') {
+    if (typeof toggleIcon !== 'string') {
       return _react2.default.createElement(
         _ToggleButton2.default,
         { name: 'sidebar-toggle', onClick: toggle },
         toggleIcon
       );
-    } else if (typeof icon === 'string') {
+    } else if (typeof toggleIcon === 'string') {
       return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: toggleIcon, onClick: toggle });
     }
   }

@@ -55,7 +55,8 @@ export const gridGutterWidth = '30px';
 // Navbar heights
 export const navbarHeight = '50px';
 export const navbarPaddingHorizontal = `${Math.floor(parseInt(gridGutterWidth, 10) / 2)}px`;
-export const navbarPaddingVertical = `${(parseInt(navbarHeight, 10) - parseInt(lineHeightComputed, 10)) / 2}px`;
+export const navbarPaddingVertical =
+  `${(parseInt(navbarHeight, 10) - parseInt(lineHeightComputed, 10)) / 2}px`;
 // Side bar and logo width
 export const sidebarWidth = '230px';
 export const sidebarMiniWidth = '50px';

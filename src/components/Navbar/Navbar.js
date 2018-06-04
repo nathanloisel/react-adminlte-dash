@@ -85,10 +85,10 @@ const StyledNavbar = styled.nav`
 
 
 function getToggleButton(toggle, toggleIcon) {
-  if (typeof icon !== 'undefined') {
-    if (typeof icon !== 'string') {
+  if (typeof toggleIcon !== 'undefined') {
+    if (typeof toggleIcon !== 'string') {
       return <ToggleButton name="sidebar-toggle" onClick={toggle}>{toggleIcon}</ToggleButton>;
-    } else if (typeof icon === 'string') {
+    } else if (typeof toggleIcon === 'string') {
       return <ToggleButton name="sidebar-toggle" className={toggleIcon} onClick={toggle} />;
     }
   }

@@ -33,25 +33,36 @@ const StyledHeader = styled.header`
   `}
 `;
 
-const Header = ({ fixed, sidebarCollapse, sidebarMini, logoOnClick, logoHref, logoLg, logoSm, sidebarToggle, sidebarToggleIcon, children }) => (
-  <StyledHeader fixed={fixed} >
-    <Logo
-      collapse={sidebarCollapse}
-      sidebarMini={sidebarMini}
-      onClick={logoOnClick}
-      href={logoHref}
-      logoLg={logoLg}
-      logoSm={logoSm}
-    />
-    <Navbar
-      toggle={sidebarToggle}
-      toggleIcon={sidebarToggleIcon}
-      collapse={sidebarCollapse}
-      sidebarMini={sidebarMini}
-    >
-      {children}
-    </Navbar>
-  </StyledHeader>
+const Header = ({
+  fixed,
+  sidebarCollapse,
+  sidebarMini,
+  logoOnClick,
+  logoHref,
+  logoLg,
+  logoSm,
+  sidebarToggle,
+  sidebarToggleIcon,
+  children,
+  }) => (
+    <StyledHeader fixed={fixed} >
+      <Logo
+        collapse={sidebarCollapse}
+        sidebarMini={sidebarMini}
+        onClick={logoOnClick}
+        href={logoHref}
+        logoLg={logoLg}
+        logoSm={logoSm}
+      />
+      <Navbar
+        toggle={sidebarToggle}
+        toggleIcon={sidebarToggleIcon}
+        collapse={sidebarCollapse}
+        sidebarMini={sidebarMini}
+      >
+        {children}
+      </Navbar>
+    </StyledHeader>
 );
 
 Header.propTypes = {

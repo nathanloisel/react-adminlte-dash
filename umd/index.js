@@ -168,6 +168,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var theme = _styles2.default[this.props.theme];
+
 	      var _props = this.props,
 	          logoOnClick = _props.logoOnClick,
 	          logoHref = _props.logoHref,
@@ -9525,14 +9526,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	});
 
 	function getToggleButton(toggle, toggleIcon) {
-	  if (typeof icon !== 'undefined') {
-	    if (typeof icon !== 'string') {
+	  if (typeof toggleIcon !== 'undefined') {
+	    if (typeof toggleIcon !== 'string') {
 	      return _react2.default.createElement(
 	        _ToggleButton2.default,
 	        { name: 'sidebar-toggle', onClick: toggle },
 	        toggleIcon
 	      );
-	    } else if (typeof icon === 'string') {
+	    } else if (typeof toggleIcon === 'string') {
 	      return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: toggleIcon, onClick: toggle });
 	    }
 	  }
@@ -11083,7 +11084,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _templateObject = _taggedTemplateLiteral(['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;;\n  border-right: ', ' !important;;\n  &:hover {\n    background-color: ', ' !important;;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n'], ['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;;\n  border-right: ', ' !important;;\n  &:hover {\n    background-color: ', ' !important;;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n']),
+	var _templateObject = _taggedTemplateLiteral(['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;\n  border-right: ', ' !important;\n  &:hover {\n    background-color: ', ' !important;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n'], ['\n  /* transitions */\n  -webkit-transition: width ', ' ', ';\n  -o-transition: width ', ' ', ';\n  transition: width ', ' ', ';\n\n  /* theme */\n  background-color: ', ' !important;\n  color: ', ' !important;\n  border-bottom: ', ' !important;\n  border-right: ', ' !important;\n  &:hover {\n    background-color: ', ' !important;\n  }\n\n  display: block;\n  text-decoration: none;\n  float: left;\n  height: ', ';\n  font-size: 20px;\n  line-height: ', ';\n  text-align: center;\n  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden;\n  &:hover, &:focus {\n    text-decoration: none !important;\n    outline: none;\n  }\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    ', '\n  }\n  @media (min-width: ', ') {\n    width: ', ';\n    ', ';\n  }\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n  display: block;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n'], ['\n  display: block;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n  display: none;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n'], ['\n  display: none;\n  @media (min-width: ', ') {\n    display: ', '\n  }\n']);
 
@@ -11151,28 +11152,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	      collapse = _ref6.collapse;
 	  return onClick ? _react2.default.createElement(
 	    StyledLogo,
-	    { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', onClick: onClick, href: null },
+	    {
+	      sidebarMini: sidebarMini,
+	      collapse: collapse,
+	      name: 'navbar-logo',
+	      onClick: onClick,
+	      href: null
+	    },
 	    _react2.default.createElement(
 	      LargeLogo,
-	      { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-lg' },
+	      {
+	        sidebarMini: sidebarMini,
+	        collapse: collapse,
+	        name: 'navbar-logo-lg'
+	      },
 	      logoLg
 	    ),
 	    _react2.default.createElement(
 	      SmallLogo,
-	      { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-sm' },
+	      {
+	        sidebarMini: sidebarMini,
+	        collapse: collapse,
+	        name: 'navbar-logo-sm'
+	      },
 	      logoSm
 	    )
 	  ) : _react2.default.createElement(
 	    StyledLogo,
-	    { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', href: href },
+	    {
+	      sidebarMini: sidebarMini,
+	      collapse: collapse,
+	      name: 'navbar-logo',
+	      href: href
+	    },
 	    _react2.default.createElement(
 	      LargeLogo,
-	      { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-lg' },
+	      {
+	        sidebarMini: sidebarMini,
+	        collapse: collapse,
+	        name: 'navbar-logo-lg'
+	      },
 	      logoLg
 	    ),
 	    _react2.default.createElement(
 	      SmallLogo,
-	      { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo-sm' },
+	      {
+	        sidebarMini: sidebarMini,
+	        collapse: collapse,
+	        name: 'navbar-logo-sm'
+	      },
 	      logoSm
 	    )
 	  );
@@ -11733,7 +11761,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else if (typeof authStatusIcon === 'string') {
 	      return _react2.default.createElement(StyledIcon, { className: authStatusIcon, online: online });
 	    }
-	    console.warn('if authStatusIcon is an object, it must have an online and a offline property otherwise, use a string that represente the class name.'); // eslint-disable-line no-console
+	    console.warn( // eslint-disable-line no-console
+	    'if authStatusIcon is an object, it must have an online and a' + ' offline property otherwise, use a string that represente the class name.');
 	    return null;
 	  }
 	  return _react2.default.createElement(StyledIcon, { className: 'fa fa-circle', online: online });

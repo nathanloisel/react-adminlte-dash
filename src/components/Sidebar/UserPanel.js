@@ -104,7 +104,9 @@ const StyledPanel = styled.div`
 
 function getAuthStatusIcon(online, authStatusIcon) {
   if (typeof authStatusIcon !== 'undefined') {
-    if (typeof authStatusIcon === 'object' && typeof authStatusIcon.online !== 'undefined' && typeof authStatusIcon.offline !== 'undefined') {
+    if (typeof authStatusIcon === 'object'
+    && typeof authStatusIcon.online !== 'undefined'
+    && typeof authStatusIcon.offline !== 'undefined') {
       if (online) {
         return authStatusIcon.online;
       }
@@ -112,7 +114,10 @@ function getAuthStatusIcon(online, authStatusIcon) {
     } else if (typeof authStatusIcon === 'string') {
       return <StyledIcon className={authStatusIcon} online={online} />;
     }
-    console.warn('if authStatusIcon is an object, it must have an online and a offline property otherwise, use a string that represente the class name.'); // eslint-disable-line no-console
+    console.warn( // eslint-disable-line no-console
+      'if authStatusIcon is an object, it must have an online and a'
+      + ' offline property otherwise, use a string that represente the class name.',
+    );
     return null;
   }
   return <StyledIcon className="fa fa-circle" online={online} />;
