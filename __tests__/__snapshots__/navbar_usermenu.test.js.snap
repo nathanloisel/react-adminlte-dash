@@ -39,8 +39,6 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
   <img
     className="sc-bwzfXH fQDxRm"
     src="/some/path" />
-  <span
-    className="sc-htpNat eEPncd" />
   <ul
     className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
     open={false}>
@@ -59,9 +57,6 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
   className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
-  <img
-    className="sc-bwzfXH fQDxRm"
-    src={undefined} />
   <span
     className="sc-htpNat eEPncd">
     Another name

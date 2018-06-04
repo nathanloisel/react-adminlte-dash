@@ -243,9 +243,9 @@ class UserMenu extends React.Component {
         userImageRenderer ? (
           userImageRenderer('userMenuImage')
         ) : (
-          <StyledUserImage src={image} key="userMenuImage" />
+          image && <StyledUserImage src={image} key="userMenuImage" />
         ),
-        <StyledUserName key="userMenuName" >{name}</StyledUserName>,
+        name && <StyledUserName key="userMenuName" >{name}</StyledUserName>,
       ];
     }
     return null;
