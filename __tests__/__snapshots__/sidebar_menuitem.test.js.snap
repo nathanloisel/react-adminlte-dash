@@ -16,7 +16,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -25,14 +25,14 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="dkcmMY"
+          className="sc-EHOje jwlYFz"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -40,7 +40,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
             hover={true}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -49,7 +49,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 1`] = `
             hover={true}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -76,7 +76,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -85,14 +85,14 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -100,7 +100,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -109,7 +109,7 @@ exports[`<MenuItem /> changes properties on hover (level 1) 2`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -136,7 +136,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -146,7 +146,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -154,7 +154,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -162,7 +162,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -171,14 +171,14 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={false}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left lnEeZG"
+                  className="fa fa-angle-left sc-bxivhb khdcYs"
                   open={false} />
               </styled.i>
             </span>
@@ -191,7 +191,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
         level={0}
         open={false}>
         <ul
-          className="bHwOxX"
+          className="sc-bZQynM hTFmts"
           open={false}>
           <MenuItem
             collapse={false}
@@ -210,7 +210,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={false}
@@ -219,14 +219,14 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="cZtdGY"
+                    className="sc-EHOje hPAdKy"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -234,7 +234,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
                       hover={true}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -243,7 +243,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 1`] = `
                       hover={true}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -275,7 +275,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -285,7 +285,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -293,7 +293,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -301,7 +301,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -310,14 +310,14 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={false}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left lnEeZG"
+                  className="fa fa-angle-left sc-bxivhb khdcYs"
                   open={false} />
               </styled.i>
             </span>
@@ -330,7 +330,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
         level={0}
         open={false}>
         <ul
-          className="bHwOxX"
+          className="sc-bZQynM hTFmts"
           open={false}>
           <MenuItem
             collapse={false}
@@ -349,7 +349,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={false}
@@ -358,14 +358,14 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -373,7 +373,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -382,7 +382,7 @@ exports[`<MenuItem /> changes properties on hover (level 2-) 2`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -414,7 +414,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={true}
@@ -424,7 +424,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="dkcmMY"
+          className="sc-EHOje jwlYFz"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -432,7 +432,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -440,7 +440,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
             hover={true}
             level={0}>
             <span
-              className="faDDsz">
+              className="sc-htpNat ChTag">
               Title
             </span>
           </styled.span>
@@ -449,14 +449,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
             hover={true}
             level={0}>
             <span
-              className="jRTxgl">
+              className="sc-bwzfXH lglpWA">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={true}
                 hover={true}
                 open={false}>
                 <i
-                  className="fa fa-angle-left lnEeZG"
+                  className="fa fa-angle-left sc-bxivhb khdcYs"
                   open={false} />
               </styled.i>
             </span>
@@ -469,7 +469,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
         level={0}
         open={false}>
         <ul
-          className="giTliU"
+          className="sc-bZQynM hBWCow"
           open={false}>
           <MenuItem
             collapse={true}
@@ -488,7 +488,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={true}
@@ -497,14 +497,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -512,7 +512,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -521,7 +521,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 1`] =
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -553,7 +553,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={true}
@@ -563,7 +563,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -571,7 +571,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -579,7 +579,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
             hover={false}
             level={0}>
             <span
-              className="dBfQfb">
+              className="sc-htpNat dYxBut">
               Title
             </span>
           </styled.span>
@@ -588,14 +588,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={true}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left bwXLtf"
+                  className="fa fa-angle-left sc-bxivhb diMiR"
                   open={false} />
               </styled.i>
             </span>
@@ -608,7 +608,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
         level={0}
         open={false}>
         <ul
-          className="giTliU"
+          className="sc-bZQynM hBWCow"
           open={false}>
           <MenuItem
             collapse={true}
@@ -627,7 +627,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={true}
@@ -636,14 +636,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -651,7 +651,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -660,7 +660,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 1) 2`] =
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -692,7 +692,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
     level={1}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={true}
@@ -701,14 +701,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
         level={1}
         onMouseEnter={[Function]}>
         <a
-          className="cZtdGY"
+          className="sc-EHOje hPAdKy"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -716,7 +716,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
             hover={true}
             level={1}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -725,7 +725,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 1`] 
             hover={true}
             level={1}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -752,7 +752,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
     level={1}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={true}
@@ -761,14 +761,14 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
         level={1}
         onMouseEnter={[Function]}>
         <a
-          className="dNojns"
+          className="sc-EHOje cGNlvO"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -776,7 +776,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
             hover={false}
             level={1}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -785,7 +785,7 @@ exports[`<MenuItem /> changes properties on hover when collapsed (level 2-) 2`] 
             hover={false}
             level={1}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -812,7 +812,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -822,7 +822,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -830,7 +830,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -838,7 +838,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -847,14 +847,14 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={false}
                 hover={false}
                 open={true}>
                 <i
-                  className="fa fa-angle-left hPfrBs"
+                  className="fa fa-angle-left sc-bxivhb kakpWc"
                   open={true} />
               </styled.i>
             </span>
@@ -867,7 +867,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
         level={0}
         open={true}>
         <ul
-          className="dYyCpJ"
+          className="sc-bZQynM QOuzx"
           open={true}>
           <MenuItem
             collapse={false}
@@ -886,7 +886,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={false}
@@ -895,14 +895,14 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -910,7 +910,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -919,7 +919,7 @@ exports[`<MenuItem /> opens and closes on click 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -951,7 +951,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -961,7 +961,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -969,7 +969,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -977,7 +977,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -986,14 +986,14 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={false}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left lnEeZG"
+                  className="fa fa-angle-left sc-bxivhb khdcYs"
                   open={false} />
               </styled.i>
             </span>
@@ -1006,7 +1006,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
         level={0}
         open={false}>
         <ul
-          className="bHwOxX"
+          className="sc-bZQynM hTFmts"
           open={false}>
           <MenuItem
             collapse={false}
@@ -1025,7 +1025,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={false}
@@ -1034,14 +1034,14 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -1049,7 +1049,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -1058,7 +1058,7 @@ exports[`<MenuItem /> opens and closes on click 2`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -1090,7 +1090,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={true}
@@ -1100,7 +1100,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -1108,7 +1108,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -1116,7 +1116,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
             hover={false}
             level={0}>
             <span
-              className="dBfQfb">
+              className="sc-htpNat dYxBut">
               Title
             </span>
           </styled.span>
@@ -1125,14 +1125,14 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={true}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left bwXLtf"
+                  className="fa fa-angle-left sc-bxivhb diMiR"
                   open={false} />
               </styled.i>
             </span>
@@ -1145,7 +1145,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
         level={0}
         open={false}>
         <ul
-          className="giTliU"
+          className="sc-bZQynM hBWCow"
           open={false}>
           <MenuItem
             collapse={true}
@@ -1164,7 +1164,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={true}
@@ -1173,14 +1173,14 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
                   level={1}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onMouseEnter={[Function]}>
                     <styled.i
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -1188,7 +1188,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Title
                       </span>
                     </styled.span>
@@ -1197,7 +1197,7 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw" />
+                        className="sc-bwzfXH hvfKsK" />
                     </styled.span>
                   </a>
                 </styled.a>
@@ -1213,66 +1213,66 @@ exports[`<MenuItem /> renders correctly collapsed with multiple levels 1`] = `
 
 exports[`<MenuItem /> renders correctly with active option 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="dkcmMY"
+    className="sc-EHOje jwlYFz"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       Title
     </span>
     <span
-      className="iDlnxw" />
+      className="sc-bwzfXH hvfKsK" />
   </a>
 </li>
 `;
 
 exports[`<MenuItem /> renders correctly with collapse option 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="dBfQfb">
+      className="sc-htpNat dYxBut">
       Title
     </span>
     <span
-      className="iDlnxw" />
+      className="sc-bwzfXH hvfKsK" />
   </a>
 </li>
 `;
 
 exports[`<MenuItem /> renders correctly with default options 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       Title
     </span>
     <span
-      className="iDlnxw" />
+      className="sc-bwzfXH hvfKsK" />
   </a>
 </li>
 `;
@@ -1296,7 +1296,7 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1305,14 +1305,14 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
             color="primary">
             <i
-              className="fa fa-dashboard iRZUGg"
+              className="fa fa-dashboard sc-ifAKCX epqAOq"
               color="primary" />
           </styled.i>
           <styled.span
@@ -1320,7 +1320,7 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -1329,7 +1329,7 @@ exports[`<MenuItem /> renders correctly with icon options 1`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -1357,7 +1357,7 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1366,14 +1366,14 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
             color="success">
             <i
-              className="fa fa-dashboard jNsFFj"
+              className="fa fa-dashboard sc-ifAKCX kAMHao"
               color="success" />
           </styled.i>
           <styled.span
@@ -1381,7 +1381,7 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -1390,7 +1390,7 @@ exports[`<MenuItem /> renders correctly with icon options 2`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -1418,7 +1418,7 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1427,14 +1427,14 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
             color="danger">
             <i
-              className="fa fa-dashboard cPsLNM"
+              className="fa fa-dashboard sc-ifAKCX dYpNUJ"
               color="danger" />
           </styled.i>
           <styled.span
@@ -1442,7 +1442,7 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -1451,7 +1451,7 @@ exports[`<MenuItem /> renders correctly with icon options 3`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -1479,7 +1479,7 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1488,14 +1488,14 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
             color="warning">
             <i
-              className="fa fa-dashboard kheFvg"
+              className="fa fa-dashboard sc-ifAKCX dQPsqb"
               color="warning" />
           </styled.i>
           <styled.span
@@ -1503,7 +1503,7 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -1512,7 +1512,7 @@ exports[`<MenuItem /> renders correctly with icon options 4`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -1540,7 +1540,7 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1549,14 +1549,14 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
         level={0}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onMouseEnter={[Function]}>
           <styled.i
             className="fa fa-dashboard"
             color="information">
             <i
-              className="fa fa-dashboard llWRJU"
+              className="fa fa-dashboard sc-ifAKCX cNnXsv"
               color="information" />
           </styled.i>
           <styled.span
@@ -1564,7 +1564,7 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Title
             </span>
           </styled.span>
@@ -1573,7 +1573,7 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw" />
+              className="sc-bwzfXH hvfKsK" />
           </styled.span>
         </a>
       </styled.a>
@@ -1584,44 +1584,44 @@ exports[`<MenuItem /> renders correctly with icon options 5`] = `
 
 exports[`<MenuItem /> renders correctly with labels 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       Title
     </span>
     <span
-      className="iDlnxw">
+      className="sc-bwzfXH hvfKsK">
       <div
-        className="xAaMi"
+        className="sc-bdVaJa lcarIx"
         type="danger">
         10
       </div>
       <div
-        className="ekrxEo"
+        className="sc-bdVaJa fbpTjh"
         type="warning">
         12
       </div>
       <div
-        className="eqRcwW"
+        className="sc-bdVaJa hlFsLa"
         type="information">
         8
       </div>
       <div
-        className="cjptwd"
+        className="sc-bdVaJa hGDFlx"
         type="success">
         12
       </div>
       <div
-        className="FyFvV"
+        className="sc-bdVaJa cTZDcX"
         type="other">
         8
       </div>
@@ -1632,24 +1632,24 @@ exports[`<MenuItem /> renders correctly with labels 1`] = `
 
 exports[`<MenuItem /> renders correctly with labels while collapsed 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="dBfQfb">
+      className="sc-htpNat dYxBut">
       Title
     </span>
     <span
-      className="iDlnxw">
+      className="sc-bwzfXH hvfKsK">
       <div
-        className="hBixlm"
+        className="sc-bdVaJa fjzrQr"
         type="primary">
         10
       </div>
@@ -1660,22 +1660,22 @@ exports[`<MenuItem /> renders correctly with labels while collapsed 1`] = `
 
 exports[`<MenuItem /> renders correctly with link 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href="/some/link"
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       Title
     </span>
     <span
-      className="iDlnxw" />
+      className="sc-bwzfXH hvfKsK" />
   </a>
 </li>
 `;
@@ -1698,7 +1698,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
     level={0}
     onMouseLeave={[Function]}>
     <li
-      className="iglJgb"
+      className="sc-gzVnrw bAnrUd"
       onMouseLeave={[Function]}>
       <styled.a
         collapse={false}
@@ -1708,7 +1708,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}>
         <a
-          className="cbDFam"
+          className="sc-EHOje hjNqII"
           href={null}
           onClick={[Function]}
           onMouseEnter={[Function]}>
@@ -1716,7 +1716,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
             className="fa fa-circle-o"
             color="none">
             <i
-              className="fa fa-circle-o dIWQSm"
+              className="fa fa-circle-o sc-ifAKCX gNVYmm"
               color="none" />
           </styled.i>
           <styled.span
@@ -1724,7 +1724,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
             hover={false}
             level={0}>
             <span
-              className="eIMDyQ">
+              className="sc-htpNat kAgXoo">
               Level 1
             </span>
           </styled.span>
@@ -1733,14 +1733,14 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
             hover={false}
             level={0}>
             <span
-              className="iDlnxw">
+              className="sc-bwzfXH hvfKsK">
               <styled.i
                 className="fa fa-angle-left"
                 collapse={false}
                 hover={false}
                 open={false}>
                 <i
-                  className="fa fa-angle-left lnEeZG"
+                  className="fa fa-angle-left sc-bxivhb khdcYs"
                   open={false} />
               </styled.i>
             </span>
@@ -1753,7 +1753,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
         level={0}
         open={false}>
         <ul
-          className="bHwOxX"
+          className="sc-bZQynM hTFmts"
           open={false}>
           <MenuItem
             collapse={false}
@@ -1772,7 +1772,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
               level={1}
               onMouseLeave={[Function]}>
               <li
-                className="iglJgb"
+                className="sc-gzVnrw bAnrUd"
                 onMouseLeave={[Function]}>
                 <styled.a
                   collapse={false}
@@ -1782,7 +1782,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                   onClick={[Function]}
                   onMouseEnter={[Function]}>
                   <a
-                    className="dNojns"
+                    className="sc-EHOje cGNlvO"
                     href={null}
                     onClick={[Function]}
                     onMouseEnter={[Function]}>
@@ -1790,7 +1790,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                       className="fa fa-circle-o"
                       color="none">
                       <i
-                        className="fa fa-circle-o dIWQSm"
+                        className="fa fa-circle-o sc-ifAKCX gNVYmm"
                         color="none" />
                     </styled.i>
                     <styled.span
@@ -1798,7 +1798,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="eIMDyQ">
+                        className="sc-htpNat kAgXoo">
                         Level 2
                       </span>
                     </styled.span>
@@ -1807,14 +1807,14 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                       hover={false}
                       level={1}>
                       <span
-                        className="iDlnxw">
+                        className="sc-bwzfXH hvfKsK">
                         <styled.i
                           className="fa fa-angle-left"
                           collapse={false}
                           hover={false}
                           open={false}>
                           <i
-                            className="fa fa-angle-left lnEeZG"
+                            className="fa fa-angle-left sc-bxivhb khdcYs"
                             open={false} />
                         </styled.i>
                       </span>
@@ -1827,7 +1827,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                   level={1}
                   open={false}>
                   <ul
-                    className="hmWEpk"
+                    className="sc-bZQynM gLFAUt"
                     open={false}>
                     <MenuItem
                       collapse={false}
@@ -1846,7 +1846,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                         level={2}
                         onMouseLeave={[Function]}>
                         <li
-                          className="iglJgb"
+                          className="sc-gzVnrw bAnrUd"
                           onMouseLeave={[Function]}>
                           <styled.a
                             collapse={false}
@@ -1855,14 +1855,14 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                             level={2}
                             onMouseEnter={[Function]}>
                             <a
-                              className="dNojns"
+                              className="sc-EHOje cGNlvO"
                               href={null}
                               onMouseEnter={[Function]}>
                               <styled.i
                                 className="fa fa-circle-o"
                                 color="none">
                                 <i
-                                  className="fa fa-circle-o dIWQSm"
+                                  className="fa fa-circle-o sc-ifAKCX gNVYmm"
                                   color="none" />
                               </styled.i>
                               <styled.span
@@ -1870,7 +1870,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                                 hover={false}
                                 level={2}>
                                 <span
-                                  className="eIMDyQ">
+                                  className="sc-htpNat kAgXoo">
                                   Level 3
                                 </span>
                               </styled.span>
@@ -1879,7 +1879,7 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
                                 hover={false}
                                 level={2}>
                                 <span
-                                  className="iDlnxw" />
+                                  className="sc-bwzfXH hvfKsK" />
                               </styled.span>
                             </a>
                           </styled.a>
@@ -1900,44 +1900,44 @@ exports[`<MenuItem /> renders correctly with multiple levels 1`] = `
 
 exports[`<MenuItem /> renders correctly with theme 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="gRaRhn"
+    className="sc-EHOje gYcDH"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       Title
     </span>
     <span
-      className="eEWqfs" />
+      className="sc-bwzfXH cOIusL" />
   </a>
 </li>
 `;
 
 exports[`<MenuItem /> renders correctly with title 1`] = `
 <li
-  className="iglJgb"
+  className="sc-gzVnrw bAnrUd"
   onMouseLeave={[Function]}>
   <a
-    className="cbDFam"
+    className="sc-EHOje hjNqII"
     href={null}
     onClick={undefined}
     onMouseEnter={[Function]}>
     <i
-      className="fa fa-circle-o dIWQSm"
+      className="fa fa-circle-o sc-ifAKCX gNVYmm"
       color="none" />
     <span
-      className="eIMDyQ">
+      className="sc-htpNat kAgXoo">
       My Title
     </span>
     <span
-      className="iDlnxw" />
+      className="sc-bwzfXH hvfKsK" />
   </a>
 </li>
 `;

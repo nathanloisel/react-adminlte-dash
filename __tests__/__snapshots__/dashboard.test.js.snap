@@ -1,14 +1,14 @@
 exports[`<Dashboard /> renders correctly with black theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="dKNVKA">
+    className="sc-kpOJdX dZFqcM">
     <a
-      className="gmrfSu"
+      className="sc-ifAKCX gCKhyf"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -18,7 +18,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -29,44 +29,44 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       </span>
     </a>
     <nav
-      className="kHaBoX">
+      className="sc-bxivhb fGPksR">
       <button
-        className="fa fa-bars fIoQlD"
+        className="fa fa-bars sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="dKNVKA">
+    className="sc-kpOJdX dZFqcM">
     <a
-      className="gmrfSu"
+      className="sc-ifAKCX gCKhyf"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -76,7 +76,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -87,44 +87,44 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="kHaBoX">
+      className="sc-bxivhb fGPksR">
       <button
-        className="fa fa-bars fIoQlD"
+        className="fa fa-bars sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with blue theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -134,7 +134,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -145,44 +145,44 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -192,7 +192,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -203,44 +203,44 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="glmcVm">
+    className="sc-kpOJdX fBGbcj">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -250,7 +250,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -261,44 +261,44 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="RdKGu">
+    className="sc-hzDkRC hfDpYe">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="drFMkG"
+    className="sc-jhAzac eirIAT"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed option 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="glmcVm">
+    className="sc-kpOJdX fBGbcj">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -308,7 +308,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -319,44 +319,44 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="RdKGu">
+    className="sc-hzDkRC hfDpYe">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="drFMkG"
+    className="sc-jhAzac eirIAT"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sidebarMini options 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="glmcVm">
+    className="sc-kpOJdX fBGbcj">
     <a
-      className="dcCjbj"
+      className="sc-ifAKCX eGsiFE"
       href="/"
       name="navbar-logo">
       <span
-        className="gdnkfC"
+        className="sc-EHOje bSbLWf"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -366,7 +366,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
         </span>
       </span>
       <span
-        className="bgyKpT"
+        className="sc-bZQynM grAVBT"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -377,44 +377,44 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       </span>
     </a>
     <nav
-      className="haKxdF">
+      className="sc-bxivhb jHIWoV">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="ggrMeJ">
+    className="sc-hzDkRC bssGBJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="bKmtkn"
+    className="sc-jhAzac kTqlab"
     name="content-wrapper" />
   <footer
-    className="cgYtLz" />
+    className="sc-fBuWsC fvMOBO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with green theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="bfsaBT"
+      className="sc-ifAKCX fQHIGA"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -424,7 +424,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -435,44 +435,44 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       </span>
     </a>
     <nav
-      className="gcPMli">
+      className="sc-bxivhb kigmzE">
       <button
-        className="fa fa-bars biMfWR"
+        className="fa fa-bars sc-bdVaJa gicuGo"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="bfsaBT"
+      className="sc-ifAKCX fQHIGA"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -482,7 +482,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -493,44 +493,44 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="gcPMli">
+      className="sc-bxivhb kigmzE">
       <button
-        className="fa fa-bars biMfWR"
+        className="fa fa-bars sc-bdVaJa gicuGo"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini options 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="dcCjbj"
+      className="sc-ifAKCX eGsiFE"
       href="/"
       name="navbar-logo">
       <span
-        className="gdnkfC"
+        className="sc-EHOje bSbLWf"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -540,7 +540,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
         </span>
       </span>
       <span
-        className="bgyKpT"
+        className="sc-bZQynM grAVBT"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -551,44 +551,44 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       </span>
     </a>
     <nav
-      className="haKxdF">
+      className="sc-bxivhb jHIWoV">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="dZomAf">
+    className="sc-hzDkRC jpdOXb">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="kqnetR"
+    className="sc-jhAzac lnXLKC"
     name="content-wrapper" />
   <footer
-    className="cgYtLz" />
+    className="sc-fBuWsC fvMOBO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -598,7 +598,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -609,44 +609,44 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="jkIMgM">
+    className="sc-hzDkRC dbAPkL">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="bHreLo"
+    className="sc-jhAzac dmNFwB"
     name="content-wrapper" />
   <footer
-    className="dOICQB" />
+    className="sc-fBuWsC cOGHtI" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with no options 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -656,7 +656,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -667,44 +667,44 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with purple theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="fiPoix"
+      className="sc-ifAKCX fwdUUX"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -714,7 +714,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -725,44 +725,44 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       </span>
     </a>
     <nav
-      className="kwFmkS">
+      className="sc-bxivhb jwLIpi">
       <button
-        className="fa fa-bars btgbpw"
+        className="fa fa-bars sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="fiPoix"
+      className="sc-ifAKCX fwdUUX"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -772,7 +772,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -783,44 +783,44 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="kwFmkS">
+      className="sc-bxivhb jwLIpi">
       <button
-        className="fa fa-bars btgbpw"
+        className="fa fa-bars sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with red theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="dXzCJS"
+      className="sc-ifAKCX jSovmm"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -830,7 +830,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -841,44 +841,44 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       </span>
     </a>
     <nav
-      className="rOyox">
+      className="sc-bxivhb kuJgEm">
       <button
-        className="fa fa-bars jatJFQ"
+        className="fa fa-bars sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="dXzCJS"
+      className="sc-ifAKCX jSovmm"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -888,7 +888,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -899,44 +899,44 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="rOyox">
+      className="sc-bxivhb kuJgEm">
       <button
-        className="fa fa-bars jatJFQ"
+        className="fa fa-bars sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="Mdmhi"
+      className="sc-ifAKCX gnZuMN"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -946,7 +946,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -957,44 +957,44 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       </span>
     </a>
     <nav
-      className="cPKxdA">
+      className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars eNPEzI"
+        className="fa fa-bars sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="imQolJ"
+      className="sc-ifAKCX FpDji"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1004,7 +1004,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -1015,44 +1015,44 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       </span>
     </a>
     <nav
-      className="fccBMc">
+      className="sc-bxivhb hWVPkT">
       <button
-        className="fa fa-bars gQqvlC"
+        className="fa fa-bars sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="kdRzQx">
+    className="sc-hzDkRC mvnZI">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="jinfUS"
+    className="sc-jhAzac DasKa"
     name="content-wrapper" />
   <footer
-    className="iRrCnw" />
+    className="sc-fBuWsC hIVrtF" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
 <div
-  className="jYCcpo">
+  className="sc-fMiknA kzKKbV">
   <header
-    className="Sdzae">
+    className="sc-kpOJdX bMoDGb">
     <a
-      className="imQolJ"
+      className="sc-ifAKCX FpDji"
       href="/"
       name="navbar-logo">
       <span
-        className="ibQovi"
+        className="sc-EHOje cdEqWa"
         name="navbar-logo-lg">
         <span>
           <b>
@@ -1062,7 +1062,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
         </span>
       </span>
       <span
-        className="hboVZB"
+        className="sc-bZQynM jPpCfL"
         name="navbar-logo-sm">
         <span>
           <b>
@@ -1073,29 +1073,29 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="fccBMc">
+      className="sc-bxivhb hWVPkT">
       <button
-        className="fa fa-bars gQqvlC"
+        className="fa fa-bars sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
-        className="cTsgzF">
+        className="sc-htpNat ghgEpK">
         <ul
-          className="bAXwxe"
+          className="sc-bwzfXH kmcEOQ"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="bDXcDG">
+    className="sc-hzDkRC bGgrrJ">
     <section
-      className="hZXMYD"
+      className="sc-bRBYWo jPsxBi"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="gnzgiC"
+    className="sc-jhAzac gNnmPl"
     name="content-wrapper" />
   <footer
-    className="tiBAO" />
+    className="sc-fBuWsC jsOlaO" />
 </div>
 `;

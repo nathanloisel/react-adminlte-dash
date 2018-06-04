@@ -1,12 +1,12 @@
 exports[`<Header /> renders correctly with collapsed option 1`] = `
 <header
-  className="Sdzae">
+  className="sc-kpOJdX bMoDGb">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -16,7 +16,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -27,15 +27,15 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -44,13 +44,13 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
 
 exports[`<Header /> renders correctly with default options 1`] = `
 <header
-  className="Sdzae">
+  className="sc-kpOJdX bMoDGb">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -60,7 +60,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -71,15 +71,15 @@ exports[`<Header /> renders correctly with default options 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -88,13 +88,13 @@ exports[`<Header /> renders correctly with default options 1`] = `
 
 exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 <header
-  className="glmcVm">
+  className="sc-kpOJdX fBGbcj">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -104,7 +104,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -115,15 +115,15 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -132,13 +132,13 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 
 exports[`<Header /> renders correctly with fixed option 1`] = `
 <header
-  className="glmcVm">
+  className="sc-kpOJdX fBGbcj">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -148,7 +148,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -159,15 +159,15 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -176,20 +176,20 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
 
 exports[`<Header /> renders correctly with given large logo 1`] = `
 <header
-  className="Sdzae">
+  className="sc-kpOJdX bMoDGb">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         Large
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -200,15 +200,15 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -217,13 +217,13 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
 
 exports[`<Header /> renders correctly with given small logo 1`] = `
 <header
-  className="Sdzae">
+  className="sc-kpOJdX bMoDGb">
   <a
-    className="cykMTm"
+    className="sc-ifAKCX kgLOve"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -233,7 +233,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         Small
@@ -241,15 +241,15 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     </span>
   </a>
   <nav
-    className="kHaBoX">
+    className="sc-bxivhb fGPksR">
     <button
-      className="fa fa-bars iXEfD"
+      className="fa fa-bars sc-bdVaJa frGQqo"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -258,13 +258,13 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
 
 exports[`<Header /> renders correctly with theme 1`] = `
 <header
-  className="Sdzae">
+  className="sc-kpOJdX bMoDGb">
   <a
-    className="dXzCJS"
+    className="sc-ifAKCX jSovmm"
     href="/"
     name="navbar-logo">
     <span
-      className="ibQovi"
+      className="sc-EHOje cdEqWa"
       name="navbar-logo-lg">
       <span>
         <b>
@@ -274,7 +274,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
       </span>
     </span>
     <span
-      className="hboVZB"
+      className="sc-bZQynM jPpCfL"
       name="navbar-logo-sm">
       <span>
         <b>
@@ -285,15 +285,15 @@ exports[`<Header /> renders correctly with theme 1`] = `
     </span>
   </a>
   <nav
-    className="rOyox">
+    className="sc-bxivhb kuJgEm">
     <button
-      className="fa fa-bars jatJFQ"
+      className="fa fa-bars sc-bdVaJa jxNjZi"
       name="sidebar-toggle"
       onClick={[Function]} />
     <div
-      className="cTsgzF">
+      className="sc-htpNat ghgEpK">
       <ul
-        className="bAXwxe"
+        className="sc-bwzfXH kmcEOQ"
         name="navbar-menu-wrapper" />
     </div>
   </nav>

@@ -1,18 +1,18 @@
 exports[`<UserPanel /> renders children correctly 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -21,19 +21,19 @@ exports[`<UserPanel /> renders children correctly 1`] = `
 
 exports[`<UserPanel /> renders correctly with collapse option 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="foAVXO">
+    className="sc-bxivhb eIFiiD">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -42,19 +42,19 @@ exports[`<UserPanel /> renders correctly with collapse option 1`] = `
 
 exports[`<UserPanel /> renders correctly with default options 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -63,19 +63,19 @@ exports[`<UserPanel /> renders correctly with default options 1`] = `
 
 exports[`<UserPanel /> renders correctly with image 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src="/some/path" />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -84,19 +84,19 @@ exports[`<UserPanel /> renders correctly with image 1`] = `
 
 exports[`<UserPanel /> renders correctly with link 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href="/a/link">
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -105,21 +105,21 @@ exports[`<UserPanel /> renders correctly with link 1`] = `
 
 exports[`<UserPanel /> renders correctly with name 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH">
+      className="sc-bwzfXH ePSCHy">
       My Name
     </p>
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>
@@ -128,19 +128,19 @@ exports[`<UserPanel /> renders correctly with name 1`] = `
 
 exports[`<UserPanel /> renders correctly with online status option 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle kjiaUJ" />
+        className="fa fa-circle sc-bdVaJa gbfvFu" />
        Online
     </a>
   </div>
@@ -149,19 +149,19 @@ exports[`<UserPanel /> renders correctly with online status option 1`] = `
 
 exports[`<UserPanel /> renders correctly with theme 1`] = `
 <div
-  className="kQgkAT">
+  className="sc-EHOje xDBnt">
   <img
-    className="efDOAf"
+    className="sc-ifAKCX bYelyc"
     src={undefined} />
   <div
-    className="cJYUpA">
+    className="sc-bxivhb ivIdti">
     <p
-      className="bjsuPH" />
+      className="sc-bwzfXH ePSCHy" />
     <a
-      className="jJSizu"
+      className="sc-htpNat fMzrxf"
       href={null}>
       <i
-        className="fa fa-circle imGDoo" />
+        className="fa fa-circle sc-bdVaJa dEANaN" />
        Offline
     </a>
   </div>

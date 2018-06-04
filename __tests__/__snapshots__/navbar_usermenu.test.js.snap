@@ -1,165 +1,165 @@
 exports[`<UserMenu /> opens and closes when clicked 1`] = `
 <li
-  className="bpGGKb"
+  className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src={undefined} />
   <span
-    className="jMbPMO" />
+    className="sc-htpNat eEPncd" />
   <ul
-    className="edtLSL"
+    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
     open={false}>
     <li
-      className="fpRjhm">
+      className="sc-bxivhb lgaxW">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src={undefined} />
       <p
-        className="fVcwYn" />
+        className="sc-EHOje dMSiCa" />
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> opens and closes when clicked 2`] = `
 <li
-  className="bpGGKb"
+  className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src={undefined} />
   <span
-    className="jMbPMO" />
+    className="sc-htpNat eEPncd" />
   <ul
-    className="iDtJkf"
+    className="sc-htoDjs dcmiNN sc-bdVaJa hrCPNf"
     open={true}>
     <li
-      className="fpRjhm">
+      className="sc-bxivhb lgaxW">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src={undefined} />
       <p
-        className="fVcwYn" />
+        className="sc-EHOje dMSiCa" />
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with default options 1`] = `
 <li
-  className="bpGGKb"
+  className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src={undefined} />
   <span
-    className="jMbPMO" />
+    className="sc-htpNat eEPncd" />
   <ul
-    className="edtLSL"
+    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
     open={false}>
     <li
-      className="fpRjhm">
+      className="sc-bxivhb lgaxW">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src={undefined} />
       <p
-        className="fVcwYn" />
+        className="sc-EHOje dMSiCa" />
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with image 1`] = `
 <li
-  className="bpGGKb"
+  className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src="/some/path" />
   <span
-    className="jMbPMO" />
+    className="sc-htpNat eEPncd" />
   <ul
-    className="edtLSL"
+    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
     open={false}>
     <li
-      className="fpRjhm">
+      className="sc-bxivhb lgaxW">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src="/some/path" />
       <p
-        className="fVcwYn" />
+        className="sc-EHOje dMSiCa" />
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with name 1`] = `
 <li
-  className="bpGGKb"
+  className="sc-dnqmqq fgXeCH"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src={undefined} />
   <span
-    className="jMbPMO">
+    className="sc-htpNat eEPncd">
     Another name
   </span>
   <ul
-    className="edtLSL"
+    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
     open={false}>
     <li
-      className="fpRjhm">
+      className="sc-bxivhb lgaxW">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src={undefined} />
       <p
-        className="fVcwYn">
+        className="sc-EHOje dMSiCa">
         Another name
       </p>
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;
 
 exports[`<UserMenu /> renders correctly with theme 1`] = `
 <li
-  className="cfQGye"
+  className="sc-dnqmqq kkSNAT"
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="guSIJB"
+    className="sc-bwzfXH fQDxRm"
     src={undefined} />
   <span
-    className="jMbPMO" />
+    className="sc-htpNat eEPncd" />
   <ul
-    className="edtLSL"
+    className="sc-htoDjs dcmiNN sc-bdVaJa uaJWD"
     open={false}>
     <li
-      className="fuYsiq">
+      className="sc-bxivhb dmJpqD">
       <img
-        className="drgPqv"
+        className="sc-ifAKCX iAcooV"
         src={undefined} />
       <p
-        className="fVcwYn" />
+        className="sc-EHOje dMSiCa" />
     </li>
     <li
-      className="aecUu" />
+      className="sc-gzVnrw jOZrNO" />
   </ul>
 </li>
 `;

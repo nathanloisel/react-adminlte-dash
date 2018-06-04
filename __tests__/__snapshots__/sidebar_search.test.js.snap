@@ -1,23 +1,23 @@
 exports[`<Search /> renders correctly with collapse option 1`] = `
 <form
-  className="fYGkSh">
+  className="sc-EHOje nkKUs">
   <div
-    className="cpFzdp">
+    className="sc-ifAKCX jNXDeU">
     <input
-      className="cHCFFC"
+      className="sc-bxivhb btxRqx"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
       type="text"
       value="" />
     <span
-      className="fCSDnh">
+      className="sc-htpNat fDfNpS">
       <button
-        className="dcZpol"
+        className="sc-bwzfXH bKkVBc"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search dzIkgv" />
+          className="fa fa-search sc-bdVaJa gkgBBI" />
       </button>
     </span>
   </div>
@@ -26,24 +26,24 @@ exports[`<Search /> renders correctly with collapse option 1`] = `
 
 exports[`<Search /> renders correctly with default options 1`] = `
 <form
-  className="bgmSUP">
+  className="sc-EHOje ekyeSd">
   <div
-    className="cpFzdp">
+    className="sc-ifAKCX jNXDeU">
     <input
-      className="cHCFFC"
+      className="sc-bxivhb btxRqx"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
       type="text"
       value="" />
     <span
-      className="fCSDnh">
+      className="sc-htpNat fDfNpS">
       <button
-        className="dcZpol"
+        className="sc-bwzfXH bKkVBc"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search dzIkgv" />
+          className="fa fa-search sc-bdVaJa gkgBBI" />
       </button>
     </span>
   </div>
@@ -52,24 +52,24 @@ exports[`<Search /> renders correctly with default options 1`] = `
 
 exports[`<Search /> renders correctly with input field name 1`] = `
 <form
-  className="bgmSUP">
+  className="sc-EHOje ekyeSd">
   <div
-    className="cpFzdp">
+    className="sc-ifAKCX jNXDeU">
     <input
-      className="cHCFFC"
+      className="sc-bxivhb btxRqx"
       name="Field"
       onChange={[Function]}
       placeholder="Search..."
       type="text"
       value="" />
     <span
-      className="fCSDnh">
+      className="sc-htpNat fDfNpS">
       <button
-        className="dcZpol"
+        className="sc-bwzfXH bKkVBc"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search dzIkgv" />
+          className="fa fa-search sc-bdVaJa gkgBBI" />
       </button>
     </span>
   </div>
@@ -78,24 +78,24 @@ exports[`<Search /> renders correctly with input field name 1`] = `
 
 exports[`<Search /> renders correctly with placeholder 1`] = `
 <form
-  className="bgmSUP">
+  className="sc-EHOje ekyeSd">
   <div
-    className="cpFzdp">
+    className="sc-ifAKCX jNXDeU">
     <input
-      className="cHCFFC"
+      className="sc-bxivhb btxRqx"
       name={undefined}
       onChange={[Function]}
       placeholder="???"
       type="text"
       value="" />
     <span
-      className="fCSDnh">
+      className="sc-htpNat fDfNpS">
       <button
-        className="dcZpol"
+        className="sc-bwzfXH bKkVBc"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search dzIkgv" />
+          className="fa fa-search sc-bdVaJa gkgBBI" />
       </button>
     </span>
   </div>
@@ -104,24 +104,24 @@ exports[`<Search /> renders correctly with placeholder 1`] = `
 
 exports[`<Search /> renders correctly with theme 1`] = `
 <form
-  className="ushJz">
+  className="sc-EHOje WwdyQ">
   <div
-    className="cpFzdp">
+    className="sc-ifAKCX jNXDeU">
     <input
-      className="kNBdgX"
+      className="sc-bxivhb jShQtQ"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
       type="text"
       value="" />
     <span
-      className="fCSDnh">
+      className="sc-htpNat fDfNpS">
       <button
-        className="jdntdv"
+        className="sc-bwzfXH dnRFXu"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search dzIkgv" />
+          className="fa fa-search sc-bdVaJa gkgBBI" />
       </button>
     </span>
   </div>

@@ -1,8 +1,8 @@
 exports[`<Menu /> renders children correctly 1`] = `
 <ul
-  className="jHSOkj">
+  className="sc-dnqmqq sGEvq">
   <li
-    className="iWVFUU" />
+    className="sc-htoDjs hHyFTq" />
   <span
     collapse={undefined}>
     Child
@@ -12,25 +12,25 @@ exports[`<Menu /> renders children correctly 1`] = `
 
 exports[`<Menu /> renders correctly with collapse option 1`] = `
 <ul
-  className="jHSOkj">
+  className="sc-dnqmqq sGEvq">
   <li
-    className="jvSApm" />
+    className="sc-htoDjs kDSOKE" />
 </ul>
 `;
 
 exports[`<Menu /> renders correctly with default options 1`] = `
 <ul
-  className="jHSOkj">
+  className="sc-dnqmqq sGEvq">
   <li
-    className="iWVFUU" />
+    className="sc-htoDjs hHyFTq" />
 </ul>
 `;
 
 exports[`<Menu /> renders correctly with header 1`] = `
 <ul
-  className="jHSOkj">
+  className="sc-dnqmqq sGEvq">
   <li
-    className="iWVFUU">
+    className="sc-htoDjs hHyFTq">
     A Header
   </li>
 </ul>
@@ -38,8 +38,8 @@ exports[`<Menu /> renders correctly with header 1`] = `
 
 exports[`<Menu /> renders correctly with theme 1`] = `
 <ul
-  className="jHSOkj">
+  className="sc-dnqmqq sGEvq">
   <li
-    className="bZjOvQ" />
+    className="sc-htoDjs kbGUIQ" />
 </ul>
 `;
