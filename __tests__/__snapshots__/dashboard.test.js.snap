@@ -31,7 +31,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
     <nav
       className="sc-bxivhb fGPksR">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa beLtwZ"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -89,7 +89,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
     <nav
       className="sc-bxivhb fGPksR">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa beLtwZ"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -147,7 +147,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -205,7 +205,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -263,7 +263,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -321,7 +321,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -379,7 +379,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
     <nav
       className="sc-bxivhb jHIWoV">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -437,7 +437,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
     <nav
       className="sc-bxivhb kigmzE">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa gicuGo"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa gicuGo"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -495,7 +495,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
     <nav
       className="sc-bxivhb kigmzE">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa gicuGo"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa gicuGo"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -553,7 +553,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
     <nav
       className="sc-bxivhb jHIWoV">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -611,7 +611,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -669,7 +669,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -727,7 +727,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
     <nav
       className="sc-bxivhb jwLIpi">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa cKgFyI"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -785,7 +785,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
     <nav
       className="sc-bxivhb jwLIpi">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa cKgFyI"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -843,7 +843,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
     <nav
       className="sc-bxivhb kuJgEm">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jxNjZi"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -901,7 +901,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
     <nav
       className="sc-bxivhb kuJgEm">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jxNjZi"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -959,7 +959,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
     <nav
       className="sc-bxivhb ciCesD">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa jwsHtM"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -1017,7 +1017,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
     <nav
       className="sc-bxivhb hWVPkT">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa dDYcHZ"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div
@@ -1075,7 +1075,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
     <nav
       className="sc-bxivhb hWVPkT">
       <button
-        className="fa fa-bars sc-ifAKCX bixEKO sc-bdVaJa dDYcHZ"
+        className="fa fa-bars sc-ifAKCX eNChgL sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
         onClick={[Function]} />
       <div

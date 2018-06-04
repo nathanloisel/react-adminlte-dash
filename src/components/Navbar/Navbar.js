@@ -94,9 +94,9 @@ const NoPaddingToggleButton = styled(ToggleButton)`
   ::before {
     padding: 15px;
   }
-  :hover::before, :hover > * {
+  :active::before, :active > * {
     transition: scale ease-in-out 150ms;
-    transform: scale(1.3);
+    transform: scale(0.8);
   }
 `;
 
