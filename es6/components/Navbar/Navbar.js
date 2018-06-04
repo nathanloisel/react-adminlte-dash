@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
 var _templateObject = _taggedTemplateLiteral(['\n  -webkit-margin-before: 1em;\n  -webkit-margin-after: 1em;\n  -webkit-margin-start: 0px;\n  -webkit-margin-end: 0px;\n  -webkit-padding-start: 40px;\n  box-sizing: border-box;\n  display: block;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n\n  /* media queries */\n  @media (max-width: ', ') {\n    float: left;\n  }\n  @media (min-width: ', ') {\n    float: right;\n  }\n'], ['\n  -webkit-margin-before: 1em;\n  -webkit-margin-after: 1em;\n  -webkit-margin-start: 0px;\n  -webkit-margin-end: 0px;\n  -webkit-padding-start: 40px;\n  box-sizing: border-box;\n  display: block;\n  list-style: none;\n  margin: 0;\n  padding: 0;\n\n  /* media queries */\n  @media (max-width: ', ') {\n    float: left;\n  }\n  @media (min-width: ', ') {\n    float: right;\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  box-sizing: border-box;\n  display: block;\n  float: right;\n'], ['\n  box-sizing: border-box;\n  display: block;\n  float: right;\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  /* clearfix */\n  &:before, &:after {\n    display: table;\n    content: " ";\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  /* transitions */\n  -webkit-transition: margin-left ', ' ', ';\n  -o-transition: margin-left ', ' ', ';\n  transition: margin-left ', ' ', ';\n\n  color: ', ';\n  display: block;\n  font-weight: 400;\n  position: relative;\n  min-height: ', ';\n  z-index: 1000;\n  margin-bottom: 0;\n  margin-left: ', ';\n  border: none;\n  border-radius: 0;\n  background-color: ', ';\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    margin: 0;\n  }\n  @media (min-width: ', ') {\n    margin-left: ', ';\n  }\n'], ['\n  /* clearfix */\n  &:before, &:after {\n    display: table;\n    content: " ";\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  /* transitions */\n  -webkit-transition: margin-left ', ' ', ';\n  -o-transition: margin-left ', ' ', ';\n  transition: margin-left ', ' ', ';\n\n  color: ', ';\n  display: block;\n  font-weight: 400;\n  position: relative;\n  min-height: ', ';\n  z-index: 1000;\n  margin-bottom: 0;\n  margin-left: ', ';\n  border: none;\n  border-radius: 0;\n  background-color: ', ';\n\n  /* media queries */\n  @media (max-width: ', ') {\n    width: 100%;\n    float: none;\n    margin: 0;\n  }\n  @media (min-width: ', ') {\n    margin-left: ', ';\n  }\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\n  padding: 0;\n'], ['\n  padding: 0;\n']);
+    _templateObject4 = _taggedTemplateLiteral(['\n  padding: 0;\n  display: flex;\n  justify-items: center;\n  align-items: center;\n  width:  ', ';\n  height: ', ';\n  overflow:hidden;\n  ::before {\n    padding: 15px;\n  }\n  :hover::before, :hover > * {\n    transition: scale ease-in-out 150ms;\n    transform: scale(1.3);\n  }\n'], ['\n  padding: 0;\n  display: flex;\n  justify-items: center;\n  align-items: center;\n  width:  ', ';\n  height: ', ';\n  overflow:hidden;\n  ::before {\n    padding: 15px;\n  }\n  :hover::before, :hover > * {\n    transition: scale ease-in-out 150ms;\n    transform: scale(1.3);\n  }\n']);
 
 var _react = require('react');
 
@@ -51,7 +51,8 @@ var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.t
       collapse = _ref4.collapse;
   return !topNav && sidebarMini && collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
 });
-var NoPaddingToggleButton = (0, _styledComponents2.default)(_ToggleButton2.default)(_templateObject4);
+
+var NoPaddingToggleButton = (0, _styledComponents2.default)(_ToggleButton2.default)(_templateObject4, _variables.navbarHeight, _variables.navbarHeight);
 
 function getToggleButton(toggle, toggleIcon) {
   if (typeof toggleIcon !== 'undefined') {
@@ -72,7 +73,7 @@ function getToggleButton(toggle, toggleIcon) {
       });
     }
   }
-  return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: toggle });
+  return _react2.default.createElement(NoPaddingToggleButton, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: toggle });
 }
 
 var Navbar = function Navbar(_ref5) {

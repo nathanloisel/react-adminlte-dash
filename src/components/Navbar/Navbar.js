@@ -82,8 +82,22 @@ const StyledNavbar = styled.nav`
       sidebarWidth)};
   }
 `;
+
 const NoPaddingToggleButton = styled(ToggleButton)`
   padding: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width:  ${navbarHeight};
+  height: ${navbarHeight};
+  overflow:hidden;
+  ::before {
+    padding: 15px;
+  }
+  :hover::before, :hover > * {
+    transition: scale ease-in-out 150ms;
+    transform: scale(1.3);
+  }
 `;
 
 
@@ -108,7 +122,7 @@ function getToggleButton(toggle, toggleIcon) {
       );
     }
   }
-  return <ToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={toggle} />;
+  return <NoPaddingToggleButton name="sidebar-toggle" className="fa fa-bars" onClick={toggle} />;
 }
 
 const Navbar = ({ topNav, sidebarMini, collapse, toggle, children, toggleIcon }) => (
