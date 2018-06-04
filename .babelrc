@@ -1,58 +1,7 @@
 {
-  "env": {
-    "build": {
-      "presets": [
-        "latest",
-        "react"
-      ],
-      "plugins": [
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ]
-      ]
-    },
-    "start": {
-      "presets": [
-        "latest",
-        "react",
-        "react-hmre"
-      ],
-      "plugins": [
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ]
-      ]
-    },
-    "test": {
-      "presets": [
-        "latest",
-        "react"
-      ],
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        "istanbul"
-      ]
-    },
-    "commonjs": {
-      "presets": [
-        "latest",
-        "react"
-      ],
-      "plugins": [
-        ["transform-es2015-modules-commonjs", { "loose": false }],
-        [
-          "transform-react-remove-prop-types",
-          {
-            "mode": "wrap"
-          }
-        ]
-      ]
-    }
-  }
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ]
 }
