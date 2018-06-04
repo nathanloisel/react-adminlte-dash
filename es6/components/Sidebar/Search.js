@@ -78,14 +78,18 @@ var StyledInput = _styledComponents2.default.input(_templateObject4, function (p
 
 var InputGroup = _styledComponents2.default.div(_templateObject5);
 
-var StyledForm = _styledComponents2.default.form(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase, function (props) {
-  return props.theme.sidebarFormBorderRadius || '0';
-}, function (props) {
-  return props.theme.sidebarFormBorder || '0';
-}, function (props) {
-  return props.theme.sidebarFormMargin || '0';
-}, function (props) {
-  return props.collapse && '\n    display: none !important;\n    -webkit-transform: translateZ(0);\n  ';
+var StyledForm = _styledComponents2.default.form(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase, function (_ref) {
+  var theme = _ref.theme;
+  return theme.sidebarFormBorderRadius || '0';
+}, function (_ref2) {
+  var theme = _ref2.theme;
+  return theme.sidebarFormBorder || '0';
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.sidebarFormMargin || '0';
+}, function (_ref4) {
+  var collapse = _ref4.collapse;
+  return collapse && '\n    display: none !important;\n    -webkit-transform: translateZ(0);\n  ';
 });
 
 var Search = function (_React$Component) {
@@ -116,18 +120,36 @@ var Search = function (_React$Component) {
       this.setState({ value: '' });
     }
   }, {
+    key: 'getSearchIcon',
+    value: function getSearchIcon() {
+      var searchIcon = this.props.searchIcon;
+
+      if (typeof searchIcon !== 'undefined') {
+        if (typeof searchIcon === 'string') {
+          return _react2.default.createElement(StyledIcon, { className: searchIcon });
+        }
+        return searchIcon;
+      }
+      return _react2.default.createElement(StyledIcon, { className: 'fa fa-search' });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _props = this.props,
+          name = _props.name,
+          placeholder = _props.placeholder,
+          collapse = _props.collapse;
+
       return _react2.default.createElement(
         StyledForm,
-        { collapse: this.props.collapse },
+        { collapse: collapse },
         _react2.default.createElement(
           InputGroup,
           null,
           _react2.default.createElement(StyledInput, {
             type: 'text',
-            name: this.props.name,
-            placeholder: this.props.placeholder,
+            name: name,
+            placeholder: placeholder,
             value: this.state.value,
             onChange: this._changeValue
           }),
@@ -137,7 +159,7 @@ var Search = function (_React$Component) {
             _react2.default.createElement(
               StyledButton,
               { name: 'searchButton', onClick: this._buttonClick },
-              _react2.default.createElement(StyledIcon, { className: 'fa fa-search' })
+              this.getSearchIcon()
             )
           )
         )
@@ -152,7 +174,8 @@ Search.propTypes = {
   name: _propTypes2.default.string,
   placeholder: _propTypes2.default.string,
   onClick: _propTypes2.default.func,
-  collapse: _propTypes2.default.bool
+  collapse: _propTypes2.default.bool,
+  searchIcon: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string])
 };
 
 Search.defaultProps = {

@@ -135,10 +135,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
 
-	var StyledDashboard = _styledComponents2.default.div(_templateObject, function (props) {
-	  return props.theme.sidebarBg && 'background-color: ' + props.theme.sidebarBg + ';';
-	}, function (props) {
-	  return props.boxed && '\n    max-width: ' + _variables.boxedLayoutMaxWidth + ';\n    margin: 0 auto;\n    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);\n    position: relative;\n  ';
+	var StyledDashboard = _styledComponents2.default.div(_templateObject, function (_ref) {
+	  var theme = _ref.theme;
+	  return theme.sidebarBg && 'background-color: ' + theme.sidebarBg + ';';
+	}, function (_ref2) {
+	  var boxed = _ref2.boxed;
+	  return boxed && '\n    max-width: ' + _variables.boxedLayoutMaxWidth + ';\n    margin: 0 auto;\n    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);\n    position: relative;\n  ';
 	});
 
 	var Dashboard = function (_React$Component) {
@@ -166,6 +168,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    key: 'render',
 	    value: function render() {
 	      var theme = _styles2.default[this.props.theme];
+	      var _props = this.props,
+	          logoOnClick = _props.logoOnClick,
+	          logoHref = _props.logoHref,
+	          logoLg = _props.logoLg,
+	          logoSm = _props.logoSm,
+	          fixed = _props.fixed,
+	          sidebarMini = _props.sidebarMini,
+	          sidebarToggleIcon = _props.sidebarToggleIcon,
+	          navbarChildren = _props.navbarChildren,
+	          sidebarChildren = _props.sidebarChildren,
+	          children = _props.children,
+	          footerChildren = _props.footerChildren;
+
 	      return _react2.default.createElement(
 	        StyledDashboard,
 	        null,
@@ -175,16 +190,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            _Header2.default,
 	            {
-	              logoOnClick: this.props.logoOnClick,
-	              logoHref: this.props.logoHref,
-	              logoLg: this.props.logoLg,
-	              logoSm: this.props.logoSm,
-	              fixed: this.props.fixed,
+	              logoOnClick: logoOnClick,
+	              logoHref: logoHref,
+	              logoLg: logoLg,
+	              logoSm: logoSm,
+	              fixed: fixed,
 	              sidebarToggle: this._sidebarToggle,
 	              sidebarCollapse: this.state.sidebarCollapse,
-	              sidebarMini: this.props.sidebarMini
+	              sidebarMini: sidebarMini,
+	              sidebarToggleIcon: sidebarToggleIcon
 	            },
-	            this.props.navbarChildren
+	            navbarChildren
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -193,11 +209,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            _Sidebar2.default,
 	            {
-	              fixed: this.props.fixed,
+	              fixed: fixed,
 	              sidebarCollapse: this.state.sidebarCollapse,
-	              sidebarMini: this.props.sidebarMini
+	              sidebarMini: sidebarMini
 	            },
-	            this.props.sidebarChildren
+	            sidebarChildren
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -206,12 +222,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _react2.default.createElement(
 	            _Content2.default,
 	            {
-	              fixed: this.props.fixed,
+	              fixed: fixed,
 	              name: 'content-wrapper',
 	              sidebarCollapse: this.state.sidebarCollapse,
-	              sidebarMini: this.props.sidebarMini
+	              sidebarMini: sidebarMini
 	            },
-	            this.props.children
+	            children
 	          )
 	        ),
 	        _react2.default.createElement(
@@ -221,9 +237,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _Footer2.default,
 	            {
 	              sidebarCollapse: this.state.sidebarCollapse,
-	              sidebarMini: this.props.sidebarMini
+	              sidebarMini: sidebarMini
 	            },
-	            this.props.footerChildren
+	            footerChildren
 	          )
 	        )
 	      );
@@ -245,6 +261,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  fixed: _propTypes2.default.bool,
 	  sidebarMini: _propTypes2.default.bool,
 	  initialCollapse: _propTypes2.default.bool,
+	  sidebarToggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
 	  theme: _propTypes2.default.string
 	};
 
@@ -9360,34 +9377,48 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
 
-	var StyledHeader = _styledComponents2.default.header(_templateObject, function (props) {
-	  return props.fixed ? 'fixed' : 'relative';
-	}, function (props) {
-	  return props.boxed ? '1024px' : '100%';
-	}, function (props) {
-	  return props.theme.headerBoxShadow && '\n    -webkit-box-shadow: ' + props.theme.headerBoxShadow + ';\n    box-shadow: ' + props.theme.headerBoxShadow + ';\n  ';
+	var StyledHeader = _styledComponents2.default.header(_templateObject, function (_ref) {
+	  var fixed = _ref.fixed;
+	  return fixed ? 'fixed' : 'relative';
+	}, function (_ref2) {
+	  var boxed = _ref2.boxed;
+	  return boxed ? '1024px' : '100%';
+	}, function (_ref3) {
+	  var theme = _ref3.theme;
+	  return theme.headerBoxShadow && '\n    -webkit-box-shadow: ' + theme.headerBoxShadow + ';\n    box-shadow: ' + theme.headerBoxShadow + ';\n  ';
 	});
 
-	var Header = function Header(props) {
+	var Header = function Header(_ref4) {
+	  var fixed = _ref4.fixed,
+	      sidebarCollapse = _ref4.sidebarCollapse,
+	      sidebarMini = _ref4.sidebarMini,
+	      logoOnClick = _ref4.logoOnClick,
+	      logoHref = _ref4.logoHref,
+	      logoLg = _ref4.logoLg,
+	      logoSm = _ref4.logoSm,
+	      sidebarToggle = _ref4.sidebarToggle,
+	      sidebarToggleIcon = _ref4.sidebarToggleIcon,
+	      children = _ref4.children;
 	  return _react2.default.createElement(
 	    StyledHeader,
-	    { fixed: props.fixed },
+	    { fixed: fixed },
 	    _react2.default.createElement(_Logo2.default, {
-	      collapse: props.sidebarCollapse,
-	      sidebarMini: props.sidebarMini,
-	      onClick: props.logoOnClick,
-	      href: props.logoHref,
-	      logoLg: props.logoLg,
-	      logoSm: props.logoSm
+	      collapse: sidebarCollapse,
+	      sidebarMini: sidebarMini,
+	      onClick: logoOnClick,
+	      href: logoHref,
+	      logoLg: logoLg,
+	      logoSm: logoSm
 	    }),
 	    _react2.default.createElement(
 	      _Navbar2.default,
 	      {
-	        toggle: props.sidebarToggle,
-	        collapse: props.sidebarCollapse,
-	        sidebarMini: props.sidebarMini
+	        toggle: sidebarToggle,
+	        toggleIcon: sidebarToggleIcon,
+	        collapse: sidebarCollapse,
+	        sidebarMini: sidebarMini
 	      },
-	      props.children
+	      children
 	    )
 	  );
 	};
@@ -9401,7 +9432,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  logoSm: _propTypes2.default.element,
 	  sidebarMini: _propTypes2.default.bool,
 	  sidebarCollapse: _propTypes2.default.bool,
-	  sidebarToggle: _propTypes2.default.func.isRequired
+	  sidebarToggle: _propTypes2.default.func.isRequired,
+	  sidebarToggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element])
 	};
 
 	Header.defaultProps = {
@@ -9476,32 +9508,59 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var StyledNavbarMenu = _styledComponents2.default.div(_templateObject2);
 
-	var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, function (props) {
-	  return props.theme.navbarFontColor || '#333';
-	}, _variables.navbarHeight, function (props) {
-	  return props.topNav ? '0' : _variables.sidebarWidth;
-	}, function (props) {
-	  return props.theme.backgroundColor || '#fff';
-	}, _variables.screenHeaderCollapse, _variables.screenSmMin, function (props) {
-	  return !props.topNav && props.sidebarMini && props.collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
+	var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, function (_ref) {
+	  var theme = _ref.theme;
+	  return theme.navbarFontColor || '#333';
+	}, _variables.navbarHeight, function (_ref2) {
+	  var topNav = _ref2.topNav;
+	  return topNav ? '0' : _variables.sidebarWidth;
+	}, function (_ref3) {
+	  var theme = _ref3.theme;
+	  return theme.backgroundColor || '#fff';
+	}, _variables.screenHeaderCollapse, _variables.screenSmMin, function (_ref4) {
+	  var topNav = _ref4.topNav,
+	      sidebarMini = _ref4.sidebarMini,
+	      collapse = _ref4.collapse;
+	  return !topNav && sidebarMini && collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
 	});
 
-	var Navbar = function Navbar(props) {
+	function getToggleButton(toggle, toggleIcon) {
+	  if (typeof icon !== 'undefined') {
+	    if (typeof icon !== 'string') {
+	      return _react2.default.createElement(
+	        _ToggleButton2.default,
+	        { name: 'sidebar-toggle', onClick: toggle },
+	        toggleIcon
+	      );
+	    } else if (typeof icon === 'string') {
+	      return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: toggleIcon, onClick: toggle });
+	    }
+	  }
+	  return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: toggle });
+	}
+
+	var Navbar = function Navbar(_ref5) {
+	  var topNav = _ref5.topNav,
+	      sidebarMini = _ref5.sidebarMini,
+	      collapse = _ref5.collapse,
+	      toggle = _ref5.toggle,
+	      children = _ref5.children,
+	      toggleIcon = _ref5.toggleIcon;
 	  return _react2.default.createElement(
 	    StyledNavbar,
 	    {
-	      topNav: props.topNav,
-	      sidebarMini: props.sidebarMini,
-	      collapse: props.collapse
+	      topNav: topNav,
+	      sidebarMini: sidebarMini,
+	      collapse: collapse
 	    },
-	    _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: props.toggle }),
+	    getToggleButton(toggle, toggleIcon),
 	    _react2.default.createElement(
 	      StyledNavbarMenu,
 	      null,
 	      _react2.default.createElement(
 	        StyledNavbarMenuList,
 	        { name: 'navbar-menu-wrapper' },
-	        props.children
+	        children
 	      )
 	    )
 	  );
@@ -9512,7 +9571,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  toggle: _propTypes2.default.func.isRequired,
 	  topNav: _propTypes2.default.bool,
 	  sidebarMini: _propTypes2.default.bool,
-	  collapse: _propTypes2.default.bool
+	  collapse: _propTypes2.default.bool,
+	  toggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element])
 	};
 
 	exports.default = Navbar;
@@ -11056,30 +11116,39 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return props.theme.navbarItemBorder || 'none';
 	}, function (props) {
 	  return props.theme.logoHover || '#f6f6f6';
-	}, _variables.navbarHeight, _variables.navbarHeight, _variables.screenHeaderCollapse, function (props) {
-	  return props.theme.logoSmallVariant || '';
-	}, _variables.screenSmMin, function (props) {
-	  return props.sidebarMini && props.collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
-	}, function (props) {
-	  return props.sidebarMini && props.collapse && 'padding: 0;';
+	}, _variables.navbarHeight, _variables.navbarHeight, _variables.screenHeaderCollapse, function (_ref) {
+	  var theme = _ref.theme;
+	  return theme.logoSmallVariant || '';
+	}, _variables.screenSmMin, function (_ref2) {
+	  var sidebarMini = _ref2.sidebarMini,
+	      collapse = _ref2.collapse;
+	  return sidebarMini && collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
+	}, function (_ref3) {
+	  var sidebarMini = _ref3.sidebarMini,
+	      collapse = _ref3.collapse;
+	  return sidebarMini && collapse && 'padding: 0;';
 	});
 
-	var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (props) {
-	  return props.sidebarMini && props.collapse ? 'none' : 'block';
+	var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (_ref4) {
+	  var sidebarMini = _ref4.sidebarMini,
+	      collapse = _ref4.collapse;
+	  return sidebarMini && collapse ? 'none' : 'block';
 	});
 
-	var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (props) {
-	  return props.sidebarMini && props.collapse ? 'block' : 'none';
+	var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (_ref5) {
+	  var sidebarMini = _ref5.sidebarMini,
+	      collapse = _ref5.collapse;
+	  return sidebarMini && collapse ? 'block' : 'none';
 	});
 
-	var Logo = function Logo(_ref) {
-	  var _ref$href = _ref.href,
-	      href = _ref$href === undefined ? '/' : _ref$href,
-	      onClick = _ref.onClick,
-	      logoLg = _ref.logoLg,
-	      logoSm = _ref.logoSm,
-	      sidebarMini = _ref.sidebarMini,
-	      collapse = _ref.collapse;
+	var Logo = function Logo(_ref6) {
+	  var _ref6$href = _ref6.href,
+	      href = _ref6$href === undefined ? '/' : _ref6$href,
+	      onClick = _ref6.onClick,
+	      logoLg = _ref6.logoLg,
+	      logoSm = _ref6.logoSm,
+	      sidebarMini = _ref6.sidebarMini,
+	      collapse = _ref6.collapse;
 	  return onClick ? _react2.default.createElement(
 	    StyledLogo,
 	    { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', onClick: onClick, href: null },
@@ -11139,7 +11208,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _templateObject5 = _taggedTemplateLiteral(['\n  z-index: 5;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  font-size: 17px;\n  margin-top: 10px;\n'], ['\n  z-index: 5;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  font-size: 17px;\n  margin-top: 10px;\n']),
 	    _templateObject6 = _taggedTemplateLiteral(['\n  color: #666666;\n  box-shadow: none;\n  border: 1px solid transparent;\n  border-width: 1px;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  border-color: #ddd;\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: ', ';\n  font-weight: ', ';\n  line-height: ', ';\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n\n  &:hover {\n    @media (max-width: ', ') {\n      background-color: #f9f9f9;\n    }\n  }\n'], ['\n  color: #666666;\n  box-shadow: none;\n  border: 1px solid transparent;\n  border-width: 1px;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  border-color: #ddd;\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: ', ';\n  font-weight: ', ';\n  line-height: ', ';\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n\n  &:hover {\n    @media (max-width: ', ') {\n      background-color: #f9f9f9;\n    }\n  }\n']),
 	    _templateObject7 = _taggedTemplateLiteral(['\n  /* clearfix */\n  &:before,\n  &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  background-color: #f9f9f9;\n  padding: 10px;\n'], ['\n  /* clearfix */\n  &:before,\n  &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  background-color: #f9f9f9;\n  padding: 10px;\n']),
-	    _templateObject8 = _taggedTemplateLiteral(['\n  border-top-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n'], ['\n  border-top-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n']),
+	    _templateObject8 = _taggedTemplateLiteral(['\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n'], ['\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n']),
 	    _templateObject9 = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  box-sizing: border-box;\n\n  float: left;\n  background-color: transparent;\n  background-image: none;\n  border: none;\n  outline: none;\n  padding: ', ' ', ';\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n  &:focus,\n  &:active {\n    background: transparent;\n  }\n\n  /* theme */\n  color: ', ';\n  border-left: ', ';\n  &:hover {\n    color: ', ';\n    background-color: ', ';\n  }\n\n  @media (max-width: ', ') {\n    padding: ', ' 5px;\n  }\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  box-sizing: border-box;\n\n  float: left;\n  background-color: transparent;\n  background-image: none;\n  border: none;\n  outline: none;\n  padding: ', ' ', ';\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n  &:focus,\n  &:active {\n    background: transparent;\n  }\n\n  /* theme */\n  color: ', ';\n  border-left: ', ';\n  &:hover {\n    color: ', ';\n    background-color: ', ';\n  }\n\n  @media (max-width: ', ') {\n    padding: ', ' 5px;\n  }\n']);
 
 	var _react = __webpack_require__(2);
@@ -11234,16 +11303,81 @@ return /******/ (function(modules) { // webpackBootstrap
 	      });
 	    }
 	  }, {
-	    key: 'render',
-	    value: function render() {
+	    key: 'getUserMenuDropDown',
+	    value: function getUserMenuDropDown() {
 	      var _props = this.props,
-	          userImageRenderer = _props.userImageRenderer,
 	          headerImageRenderer = _props.headerImageRenderer,
 	          image = _props.image,
-	          profileAction = _props.profileAction,
-	          signOutAction = _props.signOutAction,
-	          name = _props.name,
-	          className = _props.className;
+	          name = _props.name;
+
+	      if (name || image || headerImageRenderer) {
+	        return _react2.default.createElement(
+	          UserMenuHeader,
+	          null,
+	          headerImageRenderer ? headerImageRenderer() : image && _react2.default.createElement(UserMenuHeaderImage, { src: image }),
+	          name && _react2.default.createElement(
+	            UserMenuHeaderName,
+	            null,
+	            name
+	          )
+	        );
+	      }
+	      return null;
+	    }
+	  }, {
+	    key: 'getUserMenuHeader',
+	    value: function getUserMenuHeader() {
+	      var _props2 = this.props,
+	          userImageRenderer = _props2.userImageRenderer,
+	          image = _props2.image,
+	          name = _props2.name;
+
+	      if (name || image || userImageRenderer) {
+	        return [userImageRenderer ? userImageRenderer('userMenuImage') : image && _react2.default.createElement(StyledUserImage, { src: image, key: 'userMenuImage' }), name && _react2.default.createElement(
+	          StyledUserName,
+	          { key: 'userMenuName' },
+	          name
+	        )];
+	      }
+	      return null;
+	    }
+	  }, {
+	    key: 'getSignOutAction',
+	    value: function getSignOutAction() {
+	      var signOutAction = this.props.signOutAction;
+
+	      return signOutAction && _react2.default.createElement(
+	        'div',
+	        { style: { float: 'right' } },
+	        _react2.default.createElement(
+	          UserFooterButton,
+	          { onClick: signOutAction },
+	          'Sign Out'
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'getProfileAction',
+	    value: function getProfileAction() {
+	      var profileAction = this.props.profileAction;
+
+	      return profileAction && _react2.default.createElement(
+	        'div',
+	        { style: { float: 'left' } },
+	        _react2.default.createElement(
+	          UserFooterButton,
+	          { onClick: profileAction },
+	          'Profile'
+	        )
+	      );
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props3 = this.props,
+	          className = _props3.className,
+	          signOutAction = _props3.signOutAction,
+	          profileAction = _props3.profileAction;
 
 	      return _react2.default.createElement(
 	        StyledUserMenu,
@@ -11252,46 +11386,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	          onMouseLeave: this._closeMenu,
 	          className: className
 	        },
-	        userImageRenderer ? userImageRenderer(image) : _react2.default.createElement(StyledUserImage, { src: image }),
-	        _react2.default.createElement(
-	          StyledUserName,
-	          null,
-	          name
-	        ),
+	        this.getUserMenuHeader(),
 	        _react2.default.createElement(
 	          UserDropDown,
 	          { open: this.state.open },
-	          _react2.default.createElement(
-	            UserMenuHeader,
-	            null,
-	            headerImageRenderer ? headerImageRenderer(image) : _react2.default.createElement(UserMenuHeaderImage, { src: image }),
-	            _react2.default.createElement(
-	              UserMenuHeaderName,
-	              null,
-	              name
-	            )
-	          ),
-	          _react2.default.createElement(
+	          this.getUserMenuDropDown(),
+	          profileAction && signOutAction && _react2.default.createElement(
 	            UserFooter,
 	            null,
-	            profileAction && _react2.default.createElement(
-	              'div',
-	              { style: { float: 'left' } },
-	              _react2.default.createElement(
-	                UserFooterButton,
-	                { onClick: profileAction },
-	                'Profile'
-	              )
-	            ),
-	            signOutAction && _react2.default.createElement(
-	              'div',
-	              { style: { float: 'right' } },
-	              _react2.default.createElement(
-	                UserFooterButton,
-	                { onClick: signOutAction },
-	                'Sign Out'
-	              )
-	            )
+	            this.getProfileAction(),
+	            this.getSignOutAction()
 	          )
 	        )
 	      );
@@ -11565,11 +11669,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 	var _templateObject = _taggedTemplateLiteral(['\n  margin-right: 3px;\n  color: ', ';\n'], ['\n  margin-right: 3px;\n  color: ', ';\n']),
 	    _templateObject2 = _taggedTemplateLiteral(['\n  margin: 0 0 9px 0;\n  font-weight: 600;\n'], ['\n  margin: 0 0 9px 0;\n  font-weight: 600;\n']),
 	    _templateObject3 = _taggedTemplateLiteral(['\n  text-decoration: none !important;\n  padding-right: 5px;\n  margin-top: 3px;\n  font-size: 11px;\n  background-color: transparent;\n  color: ', ' !important;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n'], ['\n  text-decoration: none !important;\n  padding-right: 5px;\n  margin-top: 3px;\n  font-size: 11px;\n  background-color: transparent;\n  color: ', ' !important;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n']),
 	    _templateObject4 = _taggedTemplateLiteral(['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  color: ', ';\n  display: ', ';\n  float: left !important;\n  padding: 5px 5px 5px 15px;\n  line-height: 1;\n  position: absolute;\n  left: 55px;\n\n  /* collapse transform */\n  ', '\n'], ['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  color: ', ';\n  display: ', ';\n  float: left !important;\n  padding: 5px 5px 5px 15px;\n  line-height: 1;\n  position: absolute;\n  left: 55px;\n\n  /* collapse transform */\n  ', '\n']),
-	    _templateObject5 = _taggedTemplateLiteral(['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block;\n  float: left!important;\n  width: 100%;\n  max-width: 45px;\n  vertical-align: middle;\n  height: auto;\n  border-radius: 50%;\n  border: 0;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n'], ['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block;\n  float: left!important;\n  width: 100%;\n  max-width: 45px;\n  vertical-align: middle;\n  height: auto;\n  border-radius: 50%;\n  border: 0;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n']),
+	    _templateObject5 = _taggedTemplateLiteral(['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block;\n  float: left!important;\n  width: 100%;\n  max-width: 45px;\n  height: auto;\n  border-radius: 50%;\n  border: 0;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n'], ['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: block;\n  float: left!important;\n  width: 100%;\n  max-width: 45px;\n  height: auto;\n  border-radius: 50%;\n  border: 0;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n']),
 	    _templateObject6 = _taggedTemplateLiteral(['\n  /* clearfix */\n  &:before, &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  box-sizing: border-box;\n\n  position: relative;\n  width: 100%;\n  padding: 10px;\n  overflow: hidden;\n  display: block;\n  white-space: nowrap;\n'], ['\n  /* clearfix */\n  &:before, &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  box-sizing: border-box;\n\n  position: relative;\n  width: 100%;\n  padding: 10px;\n  overflow: hidden;\n  display: block;\n  white-space: nowrap;\n']);
 
 	var _react = __webpack_require__(2);
@@ -11597,29 +11703,50 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var StyledP = _styledComponents2.default.p(_templateObject2);
 
-	var StyledLink = _styledComponents2.default.a(_templateObject3, function (props) {
-	  return props.theme.userPanelColor || '#fff';
+	var StyledLink = _styledComponents2.default.a(_templateObject3, function (_ref) {
+	  var theme = _ref.theme;
+	  return theme.userPanelColor || '#fff';
 	});
 
-	var StyledInfo = _styledComponents2.default.div(_templateObject4, function (props) {
-	  return props.theme.userPanelColor || '#fff';
-	}, function (props) {
-	  return props.collapse ? 'none !important' : 'block';
-	}, function (props) {
-	  return props.collapse && '-webkit-transform: translateZ(0);';
+	var StyledInfo = _styledComponents2.default.div(_templateObject4, function (_ref2) {
+	  var theme = _ref2.theme;
+	  return theme.userPanelColor || '#fff';
+	}, function (_ref3) {
+	  var collapse = _ref3.collapse;
+	  return collapse ? 'none !important' : 'block';
+	}, function (_ref4) {
+	  var collapse = _ref4.collapse;
+	  return collapse && '-webkit-transform: translateZ(0);';
 	});
 
 	var StyledImage = _styledComponents2.default.img(_templateObject5);
 
 	var StyledPanel = _styledComponents2.default.div(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase);
 
-	var UserPanel = function UserPanel(_ref) {
-	  var name = _ref.name,
-	      image = _ref.image,
-	      _ref$href = _ref.href,
-	      href = _ref$href === undefined ? null : _ref$href,
-	      online = _ref.online,
-	      collapse = _ref.collapse;
+	function getAuthStatusIcon(online, authStatusIcon) {
+	  if (typeof authStatusIcon !== 'undefined') {
+	    if ((typeof authStatusIcon === 'undefined' ? 'undefined' : _typeof(authStatusIcon)) === 'object' && typeof authStatusIcon.online !== 'undefined' && typeof authStatusIcon.offline !== 'undefined') {
+	      if (online) {
+	        return authStatusIcon.online;
+	      }
+	      return authStatusIcon.offline;
+	    } else if (typeof authStatusIcon === 'string') {
+	      return _react2.default.createElement(StyledIcon, { className: authStatusIcon, online: online });
+	    }
+	    console.warn('if authStatusIcon is an object, it must have an online and a offline property otherwise, use a string that represente the class name.'); // eslint-disable-line no-console
+	    return null;
+	  }
+	  return _react2.default.createElement(StyledIcon, { className: 'fa fa-circle', online: online });
+	}
+
+	var UserPanel = function UserPanel(_ref5) {
+	  var name = _ref5.name,
+	      image = _ref5.image,
+	      _ref5$href = _ref5.href,
+	      href = _ref5$href === undefined ? null : _ref5$href,
+	      online = _ref5.online,
+	      collapse = _ref5.collapse,
+	      authStatusIcon = _ref5.authStatusIcon;
 	  return _react2.default.createElement(
 	    StyledPanel,
 	    { collapse: collapse },
@@ -11635,7 +11762,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      _react2.default.createElement(
 	        StyledLink,
 	        { href: href },
-	        _react2.default.createElement(StyledIcon, { className: 'fa fa-circle', online: online }),
+	        getAuthStatusIcon(online, authStatusIcon),
 	        online ? ' Online' : ' Offline'
 	      )
 	    )
@@ -11647,7 +11774,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  image: _propTypes2.default.string,
 	  href: _propTypes2.default.string,
 	  online: _propTypes2.default.bool,
-	  collapse: _propTypes2.default.bool
+	  collapse: _propTypes2.default.bool,
+	  authStatusIcon: _propTypes2.default.shape({
+	    online: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string]),
+	    offline: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string])
+	  })
 	};
 
 	exports.default = UserPanel;
@@ -11736,14 +11867,18 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var InputGroup = _styledComponents2.default.div(_templateObject5);
 
-	var StyledForm = _styledComponents2.default.form(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase, function (props) {
-	  return props.theme.sidebarFormBorderRadius || '0';
-	}, function (props) {
-	  return props.theme.sidebarFormBorder || '0';
-	}, function (props) {
-	  return props.theme.sidebarFormMargin || '0';
-	}, function (props) {
-	  return props.collapse && '\n    display: none !important;\n    -webkit-transform: translateZ(0);\n  ';
+	var StyledForm = _styledComponents2.default.form(_templateObject6, _variables.fontFamilyBase, _variables.fontWeightBase, _variables.fontSizeBase, _variables.lineHeightBase, function (_ref) {
+	  var theme = _ref.theme;
+	  return theme.sidebarFormBorderRadius || '0';
+	}, function (_ref2) {
+	  var theme = _ref2.theme;
+	  return theme.sidebarFormBorder || '0';
+	}, function (_ref3) {
+	  var theme = _ref3.theme;
+	  return theme.sidebarFormMargin || '0';
+	}, function (_ref4) {
+	  var collapse = _ref4.collapse;
+	  return collapse && '\n    display: none !important;\n    -webkit-transform: translateZ(0);\n  ';
 	});
 
 	var Search = function (_React$Component) {
@@ -11774,18 +11909,36 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({ value: '' });
 	    }
 	  }, {
+	    key: 'getSearchIcon',
+	    value: function getSearchIcon() {
+	      var searchIcon = this.props.searchIcon;
+
+	      if (typeof searchIcon !== 'undefined') {
+	        if (typeof searchIcon === 'string') {
+	          return _react2.default.createElement(StyledIcon, { className: searchIcon });
+	        }
+	        return searchIcon;
+	      }
+	      return _react2.default.createElement(StyledIcon, { className: 'fa fa-search' });
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
+	      var _props = this.props,
+	          name = _props.name,
+	          placeholder = _props.placeholder,
+	          collapse = _props.collapse;
+
 	      return _react2.default.createElement(
 	        StyledForm,
-	        { collapse: this.props.collapse },
+	        { collapse: collapse },
 	        _react2.default.createElement(
 	          InputGroup,
 	          null,
 	          _react2.default.createElement(StyledInput, {
 	            type: 'text',
-	            name: this.props.name,
-	            placeholder: this.props.placeholder,
+	            name: name,
+	            placeholder: placeholder,
 	            value: this.state.value,
 	            onChange: this._changeValue
 	          }),
@@ -11795,7 +11948,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            _react2.default.createElement(
 	              StyledButton,
 	              { name: 'searchButton', onClick: this._buttonClick },
-	              _react2.default.createElement(StyledIcon, { className: 'fa fa-search' })
+	              this.getSearchIcon()
 	            )
 	          )
 	        )
@@ -11810,7 +11963,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  name: _propTypes2.default.string,
 	  placeholder: _propTypes2.default.string,
 	  onClick: _propTypes2.default.func,
-	  collapse: _propTypes2.default.bool
+	  collapse: _propTypes2.default.bool,
+	  searchIcon: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string])
 	};
 
 	Search.defaultProps = {
@@ -11912,6 +12066,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -12114,6 +12270,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.setState({ hover: state });
 	    }
 	  }, {
+	    key: 'getCollapseIcon',
+	    value: function getCollapseIcon() {
+	      var collapseIcon = this.props.collapseIcon;
+
+	      if (typeof collapseIcon !== 'undefined') {
+	        if (typeof collapseIcon === 'string') {
+	          return _react2.default.createElement(StyledRightIcon, {
+	            className: collapseIcon,
+	            open: this.state.open,
+	            collapse: this.props.collapse,
+	            hover: this.state.hover
+	          });
+	        }
+
+	        return collapseIcon;
+	      }
+	      return _react2.default.createElement(StyledRightIcon, {
+	        className: 'fa fa-angle-left',
+	        open: this.state.open,
+	        collapse: this.props.collapse,
+	        hover: this.state.hover
+	      });
+	    }
+	  }, {
+	    key: 'getItemMenuIcon',
+	    value: function getItemMenuIcon() {
+	      var icon = this.props.icon;
+
+	      if (typeof icon !== 'undefined' && (typeof icon === 'undefined' ? 'undefined' : _typeof(icon)) === 'object' && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined') || typeof icon === 'undefined') {
+	        return _react2.default.createElement(StyledLeftIcon, {
+	          className: this.props.icon.className || 'fa fa-circle-o',
+	          color: this.props.icon.color || 'none'
+	        });
+	      }
+	      return icon;
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var _this2 = this;
@@ -12141,10 +12334,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	              return _this2._toggleHover(true);
 	            }
 	          },
-	          _react2.default.createElement(StyledLeftIcon, {
-	            className: 'fa ' + (this.props.icon.className || 'fa-circle-o'),
-	            color: this.props.icon.color || 'none'
-	          }),
 	          _react2.default.createElement(
 	            StyledTitle,
 	            {
@@ -12154,6 +12343,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            },
 	            this.props.title
 	          ),
+	          this.getItemMenuIcon(),
 	          _react2.default.createElement(
 	            RightSpan,
 	            {
@@ -12161,12 +12351,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              hover: this.state.hover,
 	              level: this.props.level
 	            },
-	            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && _react2.default.createElement(StyledRightIcon, {
-	              className: 'fa fa-angle-left',
-	              open: this.state.open,
-	              collapse: this.props.collapse,
-	              hover: this.state.hover
-	            })
+	            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && this.getCollapseIcon()
 	          )
 	        ),
 	        this.props.children && _react2.default.createElement(
@@ -12190,7 +12375,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  children: _propTypes2.default.node,
 	  active: _propTypes2.default.bool,
 	  collapse: _propTypes2.default.bool,
-	  icon: _propTypes2.default.objectOf(_propTypes2.default.string),
+	  icon: _propTypes2.default.oneOfType([_propTypes2.default.shape({
+	    className: _propTypes2.default.string,
+	    color: _propTypes2.default.string
+	  }), _propTypes2.default.element]),
+	  collapseIcon: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string]),
 	  href: _propTypes2.default.string,
 	  labels: _propTypes2.default.arrayOf(_propTypes2.default.object),
 	  level: _propTypes2.default.number,

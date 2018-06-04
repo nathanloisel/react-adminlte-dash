@@ -4,6 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n']),
@@ -205,6 +207,43 @@ var MenuItem = function (_React$Component) {
       this.setState({ hover: state });
     }
   }, {
+    key: 'getCollapseIcon',
+    value: function getCollapseIcon() {
+      var collapseIcon = this.props.collapseIcon;
+
+      if (typeof collapseIcon !== 'undefined') {
+        if (typeof collapseIcon === 'string') {
+          return _react2.default.createElement(StyledRightIcon, {
+            className: collapseIcon,
+            open: this.state.open,
+            collapse: this.props.collapse,
+            hover: this.state.hover
+          });
+        }
+
+        return collapseIcon;
+      }
+      return _react2.default.createElement(StyledRightIcon, {
+        className: 'fa fa-angle-left',
+        open: this.state.open,
+        collapse: this.props.collapse,
+        hover: this.state.hover
+      });
+    }
+  }, {
+    key: 'getItemMenuIcon',
+    value: function getItemMenuIcon() {
+      var icon = this.props.icon;
+
+      if (typeof icon !== 'undefined' && (typeof icon === 'undefined' ? 'undefined' : _typeof(icon)) === 'object' && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined') || typeof icon === 'undefined') {
+        return _react2.default.createElement(StyledLeftIcon, {
+          className: this.props.icon.className || 'fa fa-circle-o',
+          color: this.props.icon.color || 'none'
+        });
+      }
+      return icon;
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -232,10 +271,6 @@ var MenuItem = function (_React$Component) {
               return _this2._toggleHover(true);
             }
           },
-          _react2.default.createElement(StyledLeftIcon, {
-            className: 'fa ' + (this.props.icon.className || 'fa-circle-o'),
-            color: this.props.icon.color || 'none'
-          }),
           _react2.default.createElement(
             StyledTitle,
             {
@@ -245,6 +280,7 @@ var MenuItem = function (_React$Component) {
             },
             this.props.title
           ),
+          this.getItemMenuIcon(),
           _react2.default.createElement(
             RightSpan,
             {
@@ -252,12 +288,7 @@ var MenuItem = function (_React$Component) {
               hover: this.state.hover,
               level: this.props.level
             },
-            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && _react2.default.createElement(StyledRightIcon, {
-              className: 'fa fa-angle-left',
-              open: this.state.open,
-              collapse: this.props.collapse,
-              hover: this.state.hover
-            })
+            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && this.getCollapseIcon()
           )
         ),
         this.props.children && _react2.default.createElement(
@@ -281,7 +312,11 @@ MenuItem.propTypes = {
   children: _propTypes2.default.node,
   active: _propTypes2.default.bool,
   collapse: _propTypes2.default.bool,
-  icon: _propTypes2.default.objectOf(_propTypes2.default.string),
+  icon: _propTypes2.default.oneOfType([_propTypes2.default.shape({
+    className: _propTypes2.default.string,
+    color: _propTypes2.default.string
+  }), _propTypes2.default.element]),
+  collapseIcon: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.string]),
   href: _propTypes2.default.string,
   labels: _propTypes2.default.arrayOf(_propTypes2.default.object),
   level: _propTypes2.default.number,

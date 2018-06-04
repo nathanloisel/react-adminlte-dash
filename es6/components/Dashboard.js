@@ -53,10 +53,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
 
-var StyledDashboard = _styledComponents2.default.div(_templateObject, function (props) {
-  return props.theme.sidebarBg && 'background-color: ' + props.theme.sidebarBg + ';';
-}, function (props) {
-  return props.boxed && '\n    max-width: ' + _variables.boxedLayoutMaxWidth + ';\n    margin: 0 auto;\n    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);\n    position: relative;\n  ';
+var StyledDashboard = _styledComponents2.default.div(_templateObject, function (_ref) {
+  var theme = _ref.theme;
+  return theme.sidebarBg && 'background-color: ' + theme.sidebarBg + ';';
+}, function (_ref2) {
+  var boxed = _ref2.boxed;
+  return boxed && '\n    max-width: ' + _variables.boxedLayoutMaxWidth + ';\n    margin: 0 auto;\n    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);\n    position: relative;\n  ';
 });
 
 var Dashboard = function (_React$Component) {
@@ -84,6 +86,19 @@ var Dashboard = function (_React$Component) {
     key: 'render',
     value: function render() {
       var theme = _styles2.default[this.props.theme];
+      var _props = this.props,
+          logoOnClick = _props.logoOnClick,
+          logoHref = _props.logoHref,
+          logoLg = _props.logoLg,
+          logoSm = _props.logoSm,
+          fixed = _props.fixed,
+          sidebarMini = _props.sidebarMini,
+          sidebarToggleIcon = _props.sidebarToggleIcon,
+          navbarChildren = _props.navbarChildren,
+          sidebarChildren = _props.sidebarChildren,
+          children = _props.children,
+          footerChildren = _props.footerChildren;
+
       return _react2.default.createElement(
         StyledDashboard,
         null,
@@ -93,16 +108,17 @@ var Dashboard = function (_React$Component) {
           _react2.default.createElement(
             _Header2.default,
             {
-              logoOnClick: this.props.logoOnClick,
-              logoHref: this.props.logoHref,
-              logoLg: this.props.logoLg,
-              logoSm: this.props.logoSm,
-              fixed: this.props.fixed,
+              logoOnClick: logoOnClick,
+              logoHref: logoHref,
+              logoLg: logoLg,
+              logoSm: logoSm,
+              fixed: fixed,
               sidebarToggle: this._sidebarToggle,
               sidebarCollapse: this.state.sidebarCollapse,
-              sidebarMini: this.props.sidebarMini
+              sidebarMini: sidebarMini,
+              sidebarToggleIcon: sidebarToggleIcon
             },
-            this.props.navbarChildren
+            navbarChildren
           )
         ),
         _react2.default.createElement(
@@ -111,11 +127,11 @@ var Dashboard = function (_React$Component) {
           _react2.default.createElement(
             _Sidebar2.default,
             {
-              fixed: this.props.fixed,
+              fixed: fixed,
               sidebarCollapse: this.state.sidebarCollapse,
-              sidebarMini: this.props.sidebarMini
+              sidebarMini: sidebarMini
             },
-            this.props.sidebarChildren
+            sidebarChildren
           )
         ),
         _react2.default.createElement(
@@ -124,12 +140,12 @@ var Dashboard = function (_React$Component) {
           _react2.default.createElement(
             _Content2.default,
             {
-              fixed: this.props.fixed,
+              fixed: fixed,
               name: 'content-wrapper',
               sidebarCollapse: this.state.sidebarCollapse,
-              sidebarMini: this.props.sidebarMini
+              sidebarMini: sidebarMini
             },
-            this.props.children
+            children
           )
         ),
         _react2.default.createElement(
@@ -139,9 +155,9 @@ var Dashboard = function (_React$Component) {
             _Footer2.default,
             {
               sidebarCollapse: this.state.sidebarCollapse,
-              sidebarMini: this.props.sidebarMini
+              sidebarMini: sidebarMini
             },
-            this.props.footerChildren
+            footerChildren
           )
         )
       );
@@ -163,6 +179,7 @@ Dashboard.propTypes = {
   fixed: _propTypes2.default.bool,
   sidebarMini: _propTypes2.default.bool,
   initialCollapse: _propTypes2.default.bool,
+  sidebarToggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element]),
   theme: _propTypes2.default.string
 };
 

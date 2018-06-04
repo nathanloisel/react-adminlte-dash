@@ -13,7 +13,7 @@ var _templateObject = _taggedTemplateLiteral(['\n  box-sizing: border-box;\n  fl
     _templateObject5 = _taggedTemplateLiteral(['\n  z-index: 5;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  font-size: 17px;\n  margin-top: 10px;\n'], ['\n  z-index: 5;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  font-size: 17px;\n  margin-top: 10px;\n']),
     _templateObject6 = _taggedTemplateLiteral(['\n  color: #666666;\n  box-shadow: none;\n  border: 1px solid transparent;\n  border-width: 1px;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  border-color: #ddd;\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: ', ';\n  font-weight: ', ';\n  line-height: ', ';\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n\n  &:hover {\n    @media (max-width: ', ') {\n      background-color: #f9f9f9;\n    }\n  }\n'], ['\n  color: #666666;\n  box-shadow: none;\n  border: 1px solid transparent;\n  border-width: 1px;\n  border-radius: 0;\n  background-color: #f4f4f4;\n  border-color: #ddd;\n  display: inline-block;\n  padding: 6px 12px;\n  margin-bottom: 0;\n  font-size: ', ';\n  font-weight: ', ';\n  line-height: ', ';\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: middle;\n  -ms-touch-action: manipulation;\n  touch-action: manipulation;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  background-image: none;\n\n  &:hover {\n    @media (max-width: ', ') {\n      background-color: #f9f9f9;\n    }\n  }\n']),
     _templateObject7 = _taggedTemplateLiteral(['\n  /* clearfix */\n  &:before,\n  &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  background-color: #f9f9f9;\n  padding: 10px;\n'], ['\n  /* clearfix */\n  &:before,\n  &:after {\n    display: table;\n    content: " ";\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n  &:after {\n    clear: both;\n  }\n\n  background-color: #f9f9f9;\n  padding: 10px;\n']),
-    _templateObject8 = _taggedTemplateLiteral(['\n  border-top-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n'], ['\n  border-top-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n']),
+    _templateObject8 = _taggedTemplateLiteral(['\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n'], ['\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-top: 0;\n  padding: 1px 0 0 0;\n  width: 280px;\n']),
     _templateObject9 = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  box-sizing: border-box;\n\n  float: left;\n  background-color: transparent;\n  background-image: none;\n  border: none;\n  outline: none;\n  padding: ', ' ', ';\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n  &:focus,\n  &:active {\n    background: transparent;\n  }\n\n  /* theme */\n  color: ', ';\n  border-left: ', ';\n  &:hover {\n    color: ', ';\n    background-color: ', ';\n  }\n\n  @media (max-width: ', ') {\n    padding: ', ' 5px;\n  }\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  font-weight: ', ';\n  font-size: ', ';\n  line-height: ', ';\n  box-sizing: border-box;\n\n  float: left;\n  background-color: transparent;\n  background-image: none;\n  border: none;\n  outline: none;\n  padding: ', ' ', ';\n  position: relative;\n  text-decoration: none;\n  cursor: pointer;\n  &:focus,\n  &:active {\n    background: transparent;\n  }\n\n  /* theme */\n  color: ', ';\n  border-left: ', ';\n  &:hover {\n    color: ', ';\n    background-color: ', ';\n  }\n\n  @media (max-width: ', ') {\n    padding: ', ' 5px;\n  }\n']);
 
 var _react = require('react');
@@ -108,16 +108,81 @@ var UserMenu = function (_React$Component) {
       });
     }
   }, {
-    key: 'render',
-    value: function render() {
+    key: 'getUserMenuDropDown',
+    value: function getUserMenuDropDown() {
       var _props = this.props,
-          userImageRenderer = _props.userImageRenderer,
           headerImageRenderer = _props.headerImageRenderer,
           image = _props.image,
-          profileAction = _props.profileAction,
-          signOutAction = _props.signOutAction,
-          name = _props.name,
-          className = _props.className;
+          name = _props.name;
+
+      if (name || image || headerImageRenderer) {
+        return _react2.default.createElement(
+          UserMenuHeader,
+          null,
+          headerImageRenderer ? headerImageRenderer() : image && _react2.default.createElement(UserMenuHeaderImage, { src: image }),
+          name && _react2.default.createElement(
+            UserMenuHeaderName,
+            null,
+            name
+          )
+        );
+      }
+      return null;
+    }
+  }, {
+    key: 'getUserMenuHeader',
+    value: function getUserMenuHeader() {
+      var _props2 = this.props,
+          userImageRenderer = _props2.userImageRenderer,
+          image = _props2.image,
+          name = _props2.name;
+
+      if (name || image || userImageRenderer) {
+        return [userImageRenderer ? userImageRenderer('userMenuImage') : image && _react2.default.createElement(StyledUserImage, { src: image, key: 'userMenuImage' }), name && _react2.default.createElement(
+          StyledUserName,
+          { key: 'userMenuName' },
+          name
+        )];
+      }
+      return null;
+    }
+  }, {
+    key: 'getSignOutAction',
+    value: function getSignOutAction() {
+      var signOutAction = this.props.signOutAction;
+
+      return signOutAction && _react2.default.createElement(
+        'div',
+        { style: { float: 'right' } },
+        _react2.default.createElement(
+          UserFooterButton,
+          { onClick: signOutAction },
+          'Sign Out'
+        )
+      );
+    }
+  }, {
+    key: 'getProfileAction',
+    value: function getProfileAction() {
+      var profileAction = this.props.profileAction;
+
+      return profileAction && _react2.default.createElement(
+        'div',
+        { style: { float: 'left' } },
+        _react2.default.createElement(
+          UserFooterButton,
+          { onClick: profileAction },
+          'Profile'
+        )
+      );
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props3 = this.props,
+          className = _props3.className,
+          signOutAction = _props3.signOutAction,
+          profileAction = _props3.profileAction;
 
       return _react2.default.createElement(
         StyledUserMenu,
@@ -126,46 +191,16 @@ var UserMenu = function (_React$Component) {
           onMouseLeave: this._closeMenu,
           className: className
         },
-        userImageRenderer ? userImageRenderer(image) : _react2.default.createElement(StyledUserImage, { src: image }),
-        _react2.default.createElement(
-          StyledUserName,
-          null,
-          name
-        ),
+        this.getUserMenuHeader(),
         _react2.default.createElement(
           UserDropDown,
           { open: this.state.open },
-          _react2.default.createElement(
-            UserMenuHeader,
-            null,
-            headerImageRenderer ? headerImageRenderer(image) : _react2.default.createElement(UserMenuHeaderImage, { src: image }),
-            _react2.default.createElement(
-              UserMenuHeaderName,
-              null,
-              name
-            )
-          ),
-          _react2.default.createElement(
+          this.getUserMenuDropDown(),
+          profileAction && signOutAction && _react2.default.createElement(
             UserFooter,
             null,
-            profileAction && _react2.default.createElement(
-              'div',
-              { style: { float: 'left' } },
-              _react2.default.createElement(
-                UserFooterButton,
-                { onClick: profileAction },
-                'Profile'
-              )
-            ),
-            signOutAction && _react2.default.createElement(
-              'div',
-              { style: { float: 'right' } },
-              _react2.default.createElement(
-                UserFooterButton,
-                { onClick: signOutAction },
-                'Sign Out'
-              )
-            )
+            this.getProfileAction(),
+            this.getSignOutAction()
           )
         )
       );

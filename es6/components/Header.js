@@ -39,34 +39,48 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); } /* eslint-disable react/jsx-filename-extension */
 
 
-var StyledHeader = _styledComponents2.default.header(_templateObject, function (props) {
-  return props.fixed ? 'fixed' : 'relative';
-}, function (props) {
-  return props.boxed ? '1024px' : '100%';
-}, function (props) {
-  return props.theme.headerBoxShadow && '\n    -webkit-box-shadow: ' + props.theme.headerBoxShadow + ';\n    box-shadow: ' + props.theme.headerBoxShadow + ';\n  ';
+var StyledHeader = _styledComponents2.default.header(_templateObject, function (_ref) {
+  var fixed = _ref.fixed;
+  return fixed ? 'fixed' : 'relative';
+}, function (_ref2) {
+  var boxed = _ref2.boxed;
+  return boxed ? '1024px' : '100%';
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.headerBoxShadow && '\n    -webkit-box-shadow: ' + theme.headerBoxShadow + ';\n    box-shadow: ' + theme.headerBoxShadow + ';\n  ';
 });
 
-var Header = function Header(props) {
+var Header = function Header(_ref4) {
+  var fixed = _ref4.fixed,
+      sidebarCollapse = _ref4.sidebarCollapse,
+      sidebarMini = _ref4.sidebarMini,
+      logoOnClick = _ref4.logoOnClick,
+      logoHref = _ref4.logoHref,
+      logoLg = _ref4.logoLg,
+      logoSm = _ref4.logoSm,
+      sidebarToggle = _ref4.sidebarToggle,
+      sidebarToggleIcon = _ref4.sidebarToggleIcon,
+      children = _ref4.children;
   return _react2.default.createElement(
     StyledHeader,
-    { fixed: props.fixed },
+    { fixed: fixed },
     _react2.default.createElement(_Logo2.default, {
-      collapse: props.sidebarCollapse,
-      sidebarMini: props.sidebarMini,
-      onClick: props.logoOnClick,
-      href: props.logoHref,
-      logoLg: props.logoLg,
-      logoSm: props.logoSm
+      collapse: sidebarCollapse,
+      sidebarMini: sidebarMini,
+      onClick: logoOnClick,
+      href: logoHref,
+      logoLg: logoLg,
+      logoSm: logoSm
     }),
     _react2.default.createElement(
       _Navbar2.default,
       {
-        toggle: props.sidebarToggle,
-        collapse: props.sidebarCollapse,
-        sidebarMini: props.sidebarMini
+        toggle: sidebarToggle,
+        toggleIcon: sidebarToggleIcon,
+        collapse: sidebarCollapse,
+        sidebarMini: sidebarMini
       },
-      props.children
+      children
     )
   );
 };
@@ -80,7 +94,8 @@ Header.propTypes = {
   logoSm: _propTypes2.default.element,
   sidebarMini: _propTypes2.default.bool,
   sidebarCollapse: _propTypes2.default.bool,
-  sidebarToggle: _propTypes2.default.func.isRequired
+  sidebarToggle: _propTypes2.default.func.isRequired,
+  sidebarToggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element])
 };
 
 Header.defaultProps = {

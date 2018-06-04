@@ -37,30 +37,39 @@ var StyledLogo = _styledComponents2.default.a(_templateObject, _variables.transi
   return props.theme.navbarItemBorder || 'none';
 }, function (props) {
   return props.theme.logoHover || '#f6f6f6';
-}, _variables.navbarHeight, _variables.navbarHeight, _variables.screenHeaderCollapse, function (props) {
-  return props.theme.logoSmallVariant || '';
-}, _variables.screenSmMin, function (props) {
-  return props.sidebarMini && props.collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
-}, function (props) {
-  return props.sidebarMini && props.collapse && 'padding: 0;';
+}, _variables.navbarHeight, _variables.navbarHeight, _variables.screenHeaderCollapse, function (_ref) {
+  var theme = _ref.theme;
+  return theme.logoSmallVariant || '';
+}, _variables.screenSmMin, function (_ref2) {
+  var sidebarMini = _ref2.sidebarMini,
+      collapse = _ref2.collapse;
+  return sidebarMini && collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
+}, function (_ref3) {
+  var sidebarMini = _ref3.sidebarMini,
+      collapse = _ref3.collapse;
+  return sidebarMini && collapse && 'padding: 0;';
 });
 
-var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (props) {
-  return props.sidebarMini && props.collapse ? 'none' : 'block';
+var LargeLogo = _styledComponents2.default.span(_templateObject2, _variables.screenSmMin, function (_ref4) {
+  var sidebarMini = _ref4.sidebarMini,
+      collapse = _ref4.collapse;
+  return sidebarMini && collapse ? 'none' : 'block';
 });
 
-var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (props) {
-  return props.sidebarMini && props.collapse ? 'block' : 'none';
+var SmallLogo = _styledComponents2.default.span(_templateObject3, _variables.screenSmMin, function (_ref5) {
+  var sidebarMini = _ref5.sidebarMini,
+      collapse = _ref5.collapse;
+  return sidebarMini && collapse ? 'block' : 'none';
 });
 
-var Logo = function Logo(_ref) {
-  var _ref$href = _ref.href,
-      href = _ref$href === undefined ? '/' : _ref$href,
-      onClick = _ref.onClick,
-      logoLg = _ref.logoLg,
-      logoSm = _ref.logoSm,
-      sidebarMini = _ref.sidebarMini,
-      collapse = _ref.collapse;
+var Logo = function Logo(_ref6) {
+  var _ref6$href = _ref6.href,
+      href = _ref6$href === undefined ? '/' : _ref6$href,
+      onClick = _ref6.onClick,
+      logoLg = _ref6.logoLg,
+      logoSm = _ref6.logoSm,
+      sidebarMini = _ref6.sidebarMini,
+      collapse = _ref6.collapse;
   return onClick ? _react2.default.createElement(
     StyledLogo,
     { sidebarMini: sidebarMini, collapse: collapse, name: 'navbar-logo', onClick: onClick, href: null },

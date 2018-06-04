@@ -15,7 +15,7 @@
     "gh-pages:deploy": "gh-pages -d gh-pages",
     "gh-pages:stats": "webpack --profile --json > stats.json",
     "dist": "webpack",
-    "build": "npm run build:umd && npm run build:es6 && npm run build:cjs",
+    "build": "npm run build:umd && npm run build:es6",
     "build:es6": "cross-env NODE_ENV=build babel ./src -d es6",
     "build:umd": "npm run dist && npm run dist:min",
     "dist:min": "webpack",

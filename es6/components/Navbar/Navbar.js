@@ -35,32 +35,59 @@ var StyledNavbarMenuList = _styledComponents2.default.ul(_templateObject, _varia
 
 var StyledNavbarMenu = _styledComponents2.default.div(_templateObject2);
 
-var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, function (props) {
-  return props.theme.navbarFontColor || '#333';
-}, _variables.navbarHeight, function (props) {
-  return props.topNav ? '0' : _variables.sidebarWidth;
-}, function (props) {
-  return props.theme.backgroundColor || '#fff';
-}, _variables.screenHeaderCollapse, _variables.screenSmMin, function (props) {
-  return !props.topNav && props.sidebarMini && props.collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
+var StyledNavbar = _styledComponents2.default.nav(_templateObject3, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, function (_ref) {
+  var theme = _ref.theme;
+  return theme.navbarFontColor || '#333';
+}, _variables.navbarHeight, function (_ref2) {
+  var topNav = _ref2.topNav;
+  return topNav ? '0' : _variables.sidebarWidth;
+}, function (_ref3) {
+  var theme = _ref3.theme;
+  return theme.backgroundColor || '#fff';
+}, _variables.screenHeaderCollapse, _variables.screenSmMin, function (_ref4) {
+  var topNav = _ref4.topNav,
+      sidebarMini = _ref4.sidebarMini,
+      collapse = _ref4.collapse;
+  return !topNav && sidebarMini && collapse ? _variables.sidebarMiniWidth : _variables.sidebarWidth;
 });
 
-var Navbar = function Navbar(props) {
+function getToggleButton(toggle, toggleIcon) {
+  if (typeof icon !== 'undefined') {
+    if (typeof icon !== 'string') {
+      return _react2.default.createElement(
+        _ToggleButton2.default,
+        { name: 'sidebar-toggle', onClick: toggle },
+        toggleIcon
+      );
+    } else if (typeof icon === 'string') {
+      return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: toggleIcon, onClick: toggle });
+    }
+  }
+  return _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: toggle });
+}
+
+var Navbar = function Navbar(_ref5) {
+  var topNav = _ref5.topNav,
+      sidebarMini = _ref5.sidebarMini,
+      collapse = _ref5.collapse,
+      toggle = _ref5.toggle,
+      children = _ref5.children,
+      toggleIcon = _ref5.toggleIcon;
   return _react2.default.createElement(
     StyledNavbar,
     {
-      topNav: props.topNav,
-      sidebarMini: props.sidebarMini,
-      collapse: props.collapse
+      topNav: topNav,
+      sidebarMini: sidebarMini,
+      collapse: collapse
     },
-    _react2.default.createElement(_ToggleButton2.default, { name: 'sidebar-toggle', className: 'fa fa-bars', onClick: props.toggle }),
+    getToggleButton(toggle, toggleIcon),
     _react2.default.createElement(
       StyledNavbarMenu,
       null,
       _react2.default.createElement(
         StyledNavbarMenuList,
         { name: 'navbar-menu-wrapper' },
-        props.children
+        children
       )
     )
   );
@@ -71,7 +98,8 @@ Navbar.propTypes = {
   toggle: _propTypes2.default.func.isRequired,
   topNav: _propTypes2.default.bool,
   sidebarMini: _propTypes2.default.bool,
-  collapse: _propTypes2.default.bool
+  collapse: _propTypes2.default.bool,
+  toggleIcon: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.element])
 };
 
 exports.default = Navbar;
