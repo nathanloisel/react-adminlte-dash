@@ -106,12 +106,12 @@ class Dashboard extends React.Component {
           </Content>
         </ThemeProvider>
         <ThemeProvider theme={theme}>
-          <Footer
+          {footerChildren && <Footer
             sidebarCollapse={this.state.sidebarCollapse}
             sidebarMini={sidebarMini}
           >
             {footerChildren}
-          </Footer>
+          </Footer>}
         </ThemeProvider>
       </StyledDashboard>
     );

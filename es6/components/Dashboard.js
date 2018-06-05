@@ -152,7 +152,7 @@ var Dashboard = function (_React$Component) {
         _react2.default.createElement(
           _styledComponents.ThemeProvider,
           { theme: theme },
-          _react2.default.createElement(
+          footerChildren && _react2.default.createElement(
             _Footer2.default,
             {
               sidebarCollapse: this.state.sidebarCollapse,

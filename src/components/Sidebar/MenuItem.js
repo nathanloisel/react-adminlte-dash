@@ -229,7 +229,7 @@ const StyledSubMenu = styled.ul`
   ${props => props.collapse &&
     `@media (min-width: ${screenSmMin}) {
       ${props.theme.sidebarSubmenuLgBorderLeft &&
-        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft}`}
+        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft};`}
     }`
   }
   ${props => (props.collapse && props.open && !props.level) &&
@@ -241,7 +241,7 @@ const StyledSubMenu = styled.ul`
       margin-left: 0;
       border-bottom-right-radius: 4px;
       ${(props.theme.sidebarSubmenuLgBorderLeft) &&
-        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft}`}
+        `border-left: ${props.theme.sidebarSubmenuLgBorderLeft};`}
     }`
   }
 `;
