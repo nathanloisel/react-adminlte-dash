@@ -367,59 +367,72 @@ class MenuItem extends React.Component {
   }
 
   render() {
+    const {
+      collapse,
+      parentHover,
+      level,
+      active,
+      children,
+      onClick,
+      href,
+      title,
+      labels,
+      iconRight,
+    } = this.props;
     return (
       <StyledMenuItem
-        collapse={this.props.collapse}
-        hover={this.props.parentHover}
-        level={this.props.level}
+        collapse={collapse}
+        hover={parentHover}
+        level={level}
         onMouseLeave={() => this._toggleHover(false)}
       >
         <StyledLink
-          active={this.props.active}
-          collapse={this.props.collapse}
+          active={active}
+          collapse={collapse}
           hover={this.state.hover}
-          href={(this.props.children || this.props.onClick) ?
-            null : this.props.href}
-          level={this.props.level}
-          onClick={this.props.children ?
-            this._toggleMenu : this.props.onClick}
+          href={(children || onClick) ?
+            null : href}
+          level={level}
+          onClick={children ?
+            this._toggleMenu : onClick}
           onMouseEnter={() => this._toggleHover(true)}
         >
+          {!iconRight && this.getItemMenuIcon()}
           <StyledTitle
-            collapse={this.props.collapse}
+            collapse={collapse}
             hover={this.state.hover}
-            level={this.props.level}
+            level={level}
           >
-            {this.props.title}
+            {title}
           </StyledTitle>
-          {this.getItemMenuIcon()}
+          {iconRight && this.getItemMenuIcon()}
           <RightSpan
-            collapse={this.props.collapse}
+            collapse={collapse}
             hover={this.state.hover}
-            level={this.props.level}
+            level={level}
           >
-            {(this.props.labels ?
+            {(labels ?
               renderLabels(
-                this.props.labels,
-                this.props.collapse,
+                labels,
+                collapse,
                 this.state.hover,
               ) :
-              this.props.children && this.getCollapseIcon()
+              children && this.getCollapseIcon()
             )}
           </RightSpan>
         </StyledLink>
-        {this.props.children && (
+        {children && (
           <StyledSubMenu
-            collapse={this.props.collapse}
+            collapse={collapse}
             hover={this.state.hover}
-            level={this.props.level}
+            level={level}
             open={this.state.open}
           >
             {renderChildren(
-              this.props.children,
-              this.props.collapse,
-              this.props.level,
-              (this.state.hover || this.props.parentHover),
+              children,
+              collapse,
+              level,
+              (this.state.hover || parentHover),
             )}
           </StyledSubMenu>
         )}
@@ -445,6 +458,7 @@ MenuItem.propTypes = {
   level: PropTypes.number,
   onClick: PropTypes.func,
   parentHover: PropTypes.bool,
+  iconRight: PropTypes.bool,
   title: PropTypes.string,
 };
 
