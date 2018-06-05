@@ -16,11 +16,11 @@ import {
 } from '../../styles/variables';
 
 const StyledNavbarMenuList = styled.ul`
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 40px;
   box-sizing: border-box;
   display: block;
   list-style: none;
@@ -54,8 +54,6 @@ const StyledNavbar = styled.nav`
   }
 
   /* transitions */
-  -webkit-transition: margin-left ${transitionSpeed} ${transitionFn};
-  -o-transition: margin-left ${transitionSpeed} ${transitionFn};
   transition: margin-left ${transitionSpeed} ${transitionFn};
 
   color: ${({ theme }) => theme.navbarFontColor || '#333'};

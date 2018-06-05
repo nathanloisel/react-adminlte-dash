@@ -11,9 +11,6 @@ import {
 } from '../styles/variables';
 
 const Footer = styled.footer`
-  -webkit-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -o-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
 
   box-sizing: border-box;

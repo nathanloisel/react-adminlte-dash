@@ -1,6 +1,6 @@
 exports[`<Sidebar /> renders children correctly 1`] = `
 <aside
-  className="sc-dxgOiQ diWYSQ">
+  className="sc-dxgOiQ iICRON">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper">
@@ -14,7 +14,7 @@ exports[`<Sidebar /> renders children correctly 1`] = `
 
 exports[`<Sidebar /> renders correctly with collapsed option 1`] = `
 <aside
-  className="sc-dxgOiQ jpBZaL">
+  className="sc-dxgOiQ hzKUeb">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -23,7 +23,7 @@ exports[`<Sidebar /> renders correctly with collapsed option 1`] = `
 
 exports[`<Sidebar /> renders correctly with default options 1`] = `
 <aside
-  className="sc-dxgOiQ diWYSQ">
+  className="sc-dxgOiQ iICRON">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -32,7 +32,7 @@ exports[`<Sidebar /> renders correctly with default options 1`] = `
 
 exports[`<Sidebar /> renders correctly with fixed and collapsed options 1`] = `
 <aside
-  className="sc-dxgOiQ fibbUg">
+  className="sc-dxgOiQ zBNQK">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -41,7 +41,7 @@ exports[`<Sidebar /> renders correctly with fixed and collapsed options 1`] = `
 
 exports[`<Sidebar /> renders correctly with fixed option 1`] = `
 <aside
-  className="sc-dxgOiQ jCSIDM">
+  className="sc-dxgOiQ bmqvyk">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -50,7 +50,7 @@ exports[`<Sidebar /> renders correctly with fixed option 1`] = `
 
 exports[`<Sidebar /> renders correctly with mini and collapsed options 1`] = `
 <aside
-  className="sc-dxgOiQ cxcOf">
+  className="sc-dxgOiQ dwmDXi">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -59,7 +59,7 @@ exports[`<Sidebar /> renders correctly with mini and collapsed options 1`] = `
 
 exports[`<Sidebar /> renders correctly with mini and fixed options 1`] = `
 <aside
-  className="sc-dxgOiQ jCSIDM">
+  className="sc-dxgOiQ bmqvyk">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -68,7 +68,7 @@ exports[`<Sidebar /> renders correctly with mini and fixed options 1`] = `
 
 exports[`<Sidebar /> renders correctly with mini option 1`] = `
 <aside
-  className="sc-dxgOiQ diWYSQ">
+  className="sc-dxgOiQ iICRON">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -77,7 +77,7 @@ exports[`<Sidebar /> renders correctly with mini option 1`] = `
 
 exports[`<Sidebar /> renders correctly with mini, fixed, and collapsed options 1`] = `
 <aside
-  className="sc-dxgOiQ cUtBUN">
+  className="sc-dxgOiQ gMoMyv">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />
@@ -86,7 +86,7 @@ exports[`<Sidebar /> renders correctly with mini, fixed, and collapsed options 1
 
 exports[`<Sidebar /> renders correctly with theme 1`] = `
 <aside
-  className="sc-dxgOiQ cnfzRs">
+  className="sc-dxgOiQ gQgZge">
   <section
     className="sc-kpOJdX lmOAbF"
     name="sidebar-wrapper" />

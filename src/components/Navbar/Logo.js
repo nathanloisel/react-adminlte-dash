@@ -15,8 +15,6 @@ import {
 
 const StyledLogo = styled.a`
   /* transitions */
-  -webkit-transition: width ${transitionSpeed} ${transitionFn};
-  -o-transition: width ${transitionSpeed} ${transitionFn};
   transition: width ${transitionSpeed} ${transitionFn};
 
   /* theme */

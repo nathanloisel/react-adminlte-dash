@@ -19,8 +19,6 @@ const Content = styled.div`
   &:before, &:after {
     display: table;
     content: " ";
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   &:after {
@@ -44,9 +42,6 @@ const Content = styled.div`
   margin-left: ${props => (props.topNav ? '0' : sidebarWidth)};
   z-index: 800;
 
-  -webkit-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -o-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
 
   /* fixed layout */

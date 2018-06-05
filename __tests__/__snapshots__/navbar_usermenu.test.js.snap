@@ -4,7 +4,7 @@ exports[`<UserMenu /> opens and closes when clicked 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa fwDiLE"
     open={false} />
 </li>
 `;
@@ -15,7 +15,7 @@ exports[`<UserMenu /> opens and closes when clicked 2`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa hrCPNf"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa bttEHe"
     open={true} />
 </li>
 `;
@@ -26,7 +26,7 @@ exports[`<UserMenu /> renders correctly with default options 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa fwDiLE"
     open={false} />
 </li>
 `;
@@ -37,10 +37,10 @@ exports[`<UserMenu /> renders correctly with image 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <img
-    className="sc-bwzfXH fQDxRm"
+    className="sc-bwzfXH letCZi"
     src="/some/path" />
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa fwDiLE"
     open={false}>
     <li
       className="sc-bxivhb lgaxW">
@@ -58,11 +58,11 @@ exports[`<UserMenu /> renders correctly with name 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <span
-    className="sc-htpNat eEPncd">
+    className="sc-htpNat eHnauc">
     Another name
   </span>
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa fwDiLE"
     open={false}>
     <li
       className="sc-bxivhb lgaxW">
@@ -81,7 +81,7 @@ exports[`<UserMenu /> renders correctly with theme 1`] = `
   onClick={[Function]}
   onMouseLeave={[Function]}>
   <ul
-    className="sc-htoDjs cRiYQQ sc-bdVaJa uaJWD"
+    className="sc-htoDjs cRiYQQ sc-bdVaJa fwDiLE"
     open={false} />
 </li>
 `;

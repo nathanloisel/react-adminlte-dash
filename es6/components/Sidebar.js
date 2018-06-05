@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _templateObject = _taggedTemplateLiteral(['\n  height: auto;\n  padding-bottom: 10px;\n  display: block;\n'], ['\n  height: auto;\n  padding-bottom: 10px;\n  display: block;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  &:before, &:after {\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  -webkit-transition: ', ' ', ', width ', ' ', ';\n  -moz-transition: ', ' ', ', width ', ' ', ';\n  -o-transition: ', ' ', ', width ', ' ', ';\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n'], ['\n  &:before, &:after {\n    -webkit-box-sizing: border-box;\n    -moz-box-sizing: border-box;\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  -webkit-transition: ', ' ', ', width ', ' ', ';\n  -moz-transition: ', ' ', ', width ', ' ', ';\n  -o-transition: ', ' ', ', width ', ' ', ';\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n  &:before, &:after {\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n'], ['\n  &:before, &:after {\n    box-sizing: border-box;\n  }\n\n  /* theme */\n  background-color: ', ';\n\n  position: ', ';\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100vh;\n  height: 100%;\n  width: ', ';\n  z-index: 810;\n\n  transition: ', ' ', ', width ', ' ', ';\n\n  /* media queries */\n  /* sidebar on large screens */\n  @media (min-width: ', ') {\n    margin-left: 0;\n    ', '\n  }\n  /* sidebar on small screens */\n  @media (max-width: ', ') {\n    padding-top: 100px;\n    ', ';\n  }\n']);
 
 var _react = require('react');
 
@@ -44,16 +44,16 @@ var StyledAside = _styledComponents2.default.aside(_templateObject2, function (p
   return props.theme.sidebarBg;
 }, function (props) {
   return props.fixed ? 'fixed' : 'absolute';
-}, _variables.sidebarWidth, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.screenSmMin, function (props) {
+}, _variables.sidebarWidth, _variables.transitionSpeed, _variables.transitionFn, _variables.transitionSpeed, _variables.transitionFn, _variables.screenSmMin, function (props) {
   if (props.collapse) {
     if (props.mini) {
       return '\n            width: ' + _variables.sidebarMiniWidth + ';\n            z-index: 850;\n          ';
     }
-    return '\n          -webkit-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          -ms-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          -o-transform: translate(-' + _variables.sidebarWidth + ', 0);\n          transform: translate(-' + _variables.sidebarWidth + ', 0);\n        ';
+    return '\n          transform: translate(-' + _variables.sidebarWidth + ', 0);\n        ';
   }
-  return '\n        -webkit-transform: translate(0, 0);\n        -ms-transform: translate(0, 0);\n        -o-transform: translate(0, 0);\n        transform: translate(0, 0);\n      ';
+  return '\n        transform: translate(0, 0);\n      ';
 }, _variables.screenXsMax, function (props) {
-  return props.collapse ? '\n      -webkit-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      -ms-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      -o-transform: translate(-' + _variables.sidebarWidth + ', 0);\n      transform: translate(-' + _variables.sidebarWidth + ', 0);\n    ' : '\n      -webkit-transform: translate(0, 0);\n      -ms-transform: translate(0, 0);\n      -o-transform: translate(0, 0);\n      transform: translate(0, 0);\n    ';
+  return props.collapse ? '\n      transform: translate(-' + _variables.sidebarWidth + ', 0);\n    ' : '\n      transform: translate(0, 0);\n    ';
 });
 
 var renderChildren = function renderChildren(children, sidebarCollapse) {

@@ -12,12 +12,7 @@ import {
 
 const StyledIcon = styled.i`
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 `;
 
 const StyledButton = styled.button`
@@ -33,12 +28,7 @@ const StyledButton = styled.button`
   cursor: pointer;
   vertical-align: middle;
   touch-action: manipulation;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 
   /* theme */
   color: ${props => props.theme.sidebarFormButtonColor};
@@ -78,14 +68,10 @@ const StyledInput = styled.input`
 
   /* form-control */
   padding: 6px 12px;
-  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 
   &:not(select) {
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
   }
 
   position: relative;
@@ -126,8 +112,6 @@ const StyledForm = styled.form`
   font-weight: ${fontWeightBase};
   font-size: ${fontSizeBase};
   line-height: ${lineHeightBase};
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   overflow: hidden;
@@ -139,7 +123,7 @@ const StyledForm = styled.form`
   /* collapse */
   ${({ collapse }) => collapse && `
     display: none !important;
-    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
   `}
 `;
 

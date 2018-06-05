@@ -1,10 +1,10 @@
 exports[`<Search /> renders correctly with collapse option 1`] = `
 <form
-  className="sc-EHOje nkKUs">
+  className="sc-EHOje dLVqgW">
   <div
     className="sc-ifAKCX jNXDeU">
     <input
-      className="sc-bxivhb btxRqx"
+      className="sc-bxivhb bcOkHq"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
@@ -13,11 +13,11 @@ exports[`<Search /> renders correctly with collapse option 1`] = `
     <span
       className="sc-htpNat fDfNpS">
       <button
-        className="sc-bwzfXH bKkVBc"
+        className="sc-bwzfXH bJyNys"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search sc-bdVaJa gkgBBI" />
+          className="fa fa-search sc-bdVaJa bKSUtd" />
       </button>
     </span>
   </div>
@@ -26,11 +26,11 @@ exports[`<Search /> renders correctly with collapse option 1`] = `
 
 exports[`<Search /> renders correctly with default options 1`] = `
 <form
-  className="sc-EHOje ekyeSd">
+  className="sc-EHOje cvEhrq">
   <div
     className="sc-ifAKCX jNXDeU">
     <input
-      className="sc-bxivhb btxRqx"
+      className="sc-bxivhb bcOkHq"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
@@ -39,11 +39,11 @@ exports[`<Search /> renders correctly with default options 1`] = `
     <span
       className="sc-htpNat fDfNpS">
       <button
-        className="sc-bwzfXH bKkVBc"
+        className="sc-bwzfXH bJyNys"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search sc-bdVaJa gkgBBI" />
+          className="fa fa-search sc-bdVaJa bKSUtd" />
       </button>
     </span>
   </div>
@@ -52,11 +52,11 @@ exports[`<Search /> renders correctly with default options 1`] = `
 
 exports[`<Search /> renders correctly with input field name 1`] = `
 <form
-  className="sc-EHOje ekyeSd">
+  className="sc-EHOje cvEhrq">
   <div
     className="sc-ifAKCX jNXDeU">
     <input
-      className="sc-bxivhb btxRqx"
+      className="sc-bxivhb bcOkHq"
       name="Field"
       onChange={[Function]}
       placeholder="Search..."
@@ -65,11 +65,11 @@ exports[`<Search /> renders correctly with input field name 1`] = `
     <span
       className="sc-htpNat fDfNpS">
       <button
-        className="sc-bwzfXH bKkVBc"
+        className="sc-bwzfXH bJyNys"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search sc-bdVaJa gkgBBI" />
+          className="fa fa-search sc-bdVaJa bKSUtd" />
       </button>
     </span>
   </div>
@@ -78,11 +78,11 @@ exports[`<Search /> renders correctly with input field name 1`] = `
 
 exports[`<Search /> renders correctly with placeholder 1`] = `
 <form
-  className="sc-EHOje ekyeSd">
+  className="sc-EHOje cvEhrq">
   <div
     className="sc-ifAKCX jNXDeU">
     <input
-      className="sc-bxivhb btxRqx"
+      className="sc-bxivhb bcOkHq"
       name={undefined}
       onChange={[Function]}
       placeholder="???"
@@ -91,11 +91,11 @@ exports[`<Search /> renders correctly with placeholder 1`] = `
     <span
       className="sc-htpNat fDfNpS">
       <button
-        className="sc-bwzfXH bKkVBc"
+        className="sc-bwzfXH bJyNys"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search sc-bdVaJa gkgBBI" />
+          className="fa fa-search sc-bdVaJa bKSUtd" />
       </button>
     </span>
   </div>
@@ -104,11 +104,11 @@ exports[`<Search /> renders correctly with placeholder 1`] = `
 
 exports[`<Search /> renders correctly with theme 1`] = `
 <form
-  className="sc-EHOje WwdyQ">
+  className="sc-EHOje fJunRy">
   <div
     className="sc-ifAKCX jNXDeU">
     <input
-      className="sc-bxivhb jShQtQ"
+      className="sc-bxivhb iNzbeP"
       name={undefined}
       onChange={[Function]}
       placeholder="Search..."
@@ -117,11 +117,11 @@ exports[`<Search /> renders correctly with theme 1`] = `
     <span
       className="sc-htpNat fDfNpS">
       <button
-        className="sc-bwzfXH dnRFXu"
+        className="sc-bwzfXH fgRaXS"
         name="searchButton"
         onClick={[Function]}>
         <i
-          className="fa fa-search sc-bdVaJa gkgBBI" />
+          className="fa fa-search sc-bdVaJa bKSUtd" />
       </button>
     </span>
   </div>

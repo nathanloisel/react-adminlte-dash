@@ -1,10 +1,10 @@
 exports[`<Dashboard /> renders correctly with black theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ fItfJW">
+    className="sc-dxgOiQ gLSVNS">
     <a
-      className="sc-EHOje eDNBGO"
+      className="sc-EHOje jOaPbK"
       href="/"
       name="navbar-logo">
       <span
@@ -29,7 +29,7 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb fGPksR">
+      className="sc-bxivhb jYevDf">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
@@ -37,30 +37,30 @@ exports[`<Dashboard /> renders correctly with black theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ fItfJW">
+    className="sc-dxgOiQ gLSVNS">
     <a
-      className="sc-EHOje eDNBGO"
+      className="sc-EHOje jOaPbK"
       href="/"
       name="navbar-logo">
       <span
@@ -85,7 +85,7 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb fGPksR">
+      className="sc-bxivhb jYevDf">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa beLtwZ"
         name="sidebar-toggle"
@@ -93,30 +93,30 @@ exports[`<Dashboard /> renders correctly with black-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with blue theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -141,7 +141,7 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -149,30 +149,30 @@ exports[`<Dashboard /> renders correctly with blue theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -197,7 +197,7 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -205,30 +205,30 @@ exports[`<Dashboard /> renders correctly with blue-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ fhLSeg">
+    className="sc-dxgOiQ dpGHpC">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -253,7 +253,7 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -261,30 +261,30 @@ exports[`<Dashboard /> renders correctly with fixed and sidebarMini options 1`] 
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eRCimD">
+    className="sc-jhAzac cNPHju">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC fZoGIV"
+    className="sc-fBuWsC fOBFjv"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed option 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ fhLSeg">
+    className="sc-dxgOiQ dpGHpC">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -309,7 +309,7 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -317,30 +317,30 @@ exports[`<Dashboard /> renders correctly with fixed option 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eRCimD">
+    className="sc-jhAzac cNPHju">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC fZoGIV"
+    className="sc-fBuWsC fOBFjv"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sidebarMini options 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ fhLSeg">
+    className="sc-dxgOiQ dpGHpC">
     <a
-      className="sc-EHOje dNKqEX"
+      className="sc-EHOje bCgDJo"
       href="/"
       name="navbar-logo">
       <span
@@ -365,7 +365,7 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       </span>
     </a>
     <nav
-      className="sc-bxivhb jHIWoV">
+      className="sc-bxivhb jVUgSf">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -373,30 +373,30 @@ exports[`<Dashboard /> renders correctly with fixed, initialCollapse, and sideba
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gyZpHT">
+    className="sc-jhAzac dwXnaN">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC hAdJiw"
+    className="sc-fBuWsC dtDRty"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with green theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje bQORtE"
+      className="sc-EHOje bDexaS"
       href="/"
       name="navbar-logo">
       <span
@@ -421,7 +421,7 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb kigmzE">
+      className="sc-bxivhb eEquTz">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa gicuGo"
         name="sidebar-toggle"
@@ -429,30 +429,30 @@ exports[`<Dashboard /> renders correctly with green theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje bQORtE"
+      className="sc-EHOje bDexaS"
       href="/"
       name="navbar-logo">
       <span
@@ -477,7 +477,7 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb kigmzE">
+      className="sc-bxivhb eEquTz">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa gicuGo"
         name="sidebar-toggle"
@@ -485,30 +485,30 @@ exports[`<Dashboard /> renders correctly with green-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini options 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje dNKqEX"
+      className="sc-EHOje bCgDJo"
       href="/"
       name="navbar-logo">
       <span
@@ -533,7 +533,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       </span>
     </a>
     <nav
-      className="sc-bxivhb jHIWoV">
+      className="sc-bxivhb jVUgSf">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -541,30 +541,30 @@ exports[`<Dashboard /> renders correctly with initialCollapse and sidebarMini op
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac cvKlFP">
+    className="sc-jhAzac eJNHJs">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC ihfCpo"
+    className="sc-fBuWsC fhzCXG"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -589,7 +589,7 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -597,30 +597,30 @@ exports[`<Dashboard /> renders correctly with initialCollapse option 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac iKNtCZ">
+    className="sc-jhAzac lfwlYz">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC iftlhE"
+    className="sc-fBuWsC bPvGlc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with no options 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -645,7 +645,7 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -653,30 +653,30 @@ exports[`<Dashboard /> renders correctly with no options 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with purple theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje bWHJWZ"
+      className="sc-EHOje jypGmw"
       href="/"
       name="navbar-logo">
       <span
@@ -701,7 +701,7 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb jwLIpi">
+      className="sc-bxivhb kDuBPx">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
@@ -709,30 +709,30 @@ exports[`<Dashboard /> renders correctly with purple theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje bWHJWZ"
+      className="sc-EHOje jypGmw"
       href="/"
       name="navbar-logo">
       <span
@@ -757,7 +757,7 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb jwLIpi">
+      className="sc-bxivhb kDuBPx">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa cKgFyI"
         name="sidebar-toggle"
@@ -765,30 +765,30 @@ exports[`<Dashboard /> renders correctly with purple-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with red theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje iFCtkw"
+      className="sc-EHOje cZVIGq"
       href="/"
       name="navbar-logo">
       <span
@@ -813,7 +813,7 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb kuJgEm">
+      className="sc-bxivhb beTifj">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
@@ -821,30 +821,30 @@ exports[`<Dashboard /> renders correctly with red theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje iFCtkw"
+      className="sc-EHOje cZVIGq"
       href="/"
       name="navbar-logo">
       <span
@@ -869,7 +869,7 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb kuJgEm">
+      className="sc-bxivhb beTifj">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jxNjZi"
         name="sidebar-toggle"
@@ -877,30 +877,30 @@ exports[`<Dashboard /> renders correctly with red-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hNXHJf"
+      className="sc-EHOje iStSoG"
       href="/"
       name="navbar-logo">
       <span
@@ -925,7 +925,7 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb ciCesD">
+      className="sc-bxivhb LwRLE">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jwsHtM"
         name="sidebar-toggle"
@@ -933,30 +933,30 @@ exports[`<Dashboard /> renders correctly with sidebarMini option 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hfRqGT"
+      className="sc-EHOje iyJFGS"
       href="/"
       name="navbar-logo">
       <span
@@ -981,7 +981,7 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb hWVPkT">
+      className="sc-bxivhb cXBSaj">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
@@ -989,30 +989,30 @@ exports[`<Dashboard /> renders correctly with yellow theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac gJhOku">
+    className="sc-jhAzac iSIfGR">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC kKPHnP"
+    className="sc-fBuWsC ifkPGC"
     name="content-wrapper" />
 </div>
 `;
 
 exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
 <div
-  className="sc-dVhcbM bZEVIZ">
+  className="sc-dVhcbM hwNSaB">
   <header
-    className="sc-dxgOiQ huMqzU">
+    className="sc-dxgOiQ jrHiKF">
     <a
-      className="sc-EHOje hfRqGT"
+      className="sc-EHOje iyJFGS"
       href="/"
       name="navbar-logo">
       <span
@@ -1037,7 +1037,7 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       </span>
     </a>
     <nav
-      className="sc-bxivhb hWVPkT">
+      className="sc-bxivhb cXBSaj">
       <button
         className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa dDYcHZ"
         name="sidebar-toggle"
@@ -1045,19 +1045,19 @@ exports[`<Dashboard /> renders correctly with yellow-light theme 1`] = `
       <div
         className="sc-htpNat ghgEpK">
         <ul
-          className="sc-bwzfXH kmcEOQ"
+          className="sc-bwzfXH cOlCUL"
           name="navbar-menu-wrapper" />
       </div>
     </nav>
   </header>
   <aside
-    className="sc-jhAzac eNOrfK">
+    className="sc-jhAzac eZHpDK">
     <section
       className="sc-hzDkRC FrKTt"
       name="sidebar-wrapper" />
   </aside>
   <div
-    className="sc-fBuWsC cazmzY"
+    className="sc-fBuWsC dYGDnc"
     name="content-wrapper" />
 </div>
 `;

@@ -24,8 +24,6 @@ const StyledSection = styled.section`
 
 const StyledAside = styled.aside`
   &:before, &:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -41,9 +39,6 @@ const StyledAside = styled.aside`
   width: ${sidebarWidth};
   z-index: 810;
 
-  -webkit-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -moz-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
-  -o-transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
   transition: ${transitionSpeed} ${transitionFn}, width ${transitionSpeed} ${transitionFn};
 
   /* media queries */
@@ -59,16 +54,10 @@ const StyledAside = styled.aside`
           `;
         }
         return `
-          -webkit-transform: translate(-${sidebarWidth}, 0);
-          -ms-transform: translate(-${sidebarWidth}, 0);
-          -o-transform: translate(-${sidebarWidth}, 0);
           transform: translate(-${sidebarWidth}, 0);
         `;
       }
       return `
-        -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-        -o-transform: translate(0, 0);
         transform: translate(0, 0);
       `;
     }}
@@ -77,14 +66,8 @@ const StyledAside = styled.aside`
   @media (max-width: ${screenXsMax}) {
     padding-top: 100px;
     ${props => (props.collapse ? `
-      -webkit-transform: translate(-${sidebarWidth}, 0);
-      -ms-transform: translate(-${sidebarWidth}, 0);
-      -o-transform: translate(-${sidebarWidth}, 0);
       transform: translate(-${sidebarWidth}, 0);
     ` : `
-      -webkit-transform: translate(0, 0);
-      -ms-transform: translate(0, 0);
-      -o-transform: translate(0, 0);
       transform: translate(0, 0);
     `)};
   }

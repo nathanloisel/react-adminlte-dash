@@ -13,11 +13,11 @@ const DropdownMenu = styled.ul`
   /* shared */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 40px;
-  -webkit-margin-before: 0px;
-  -webkit-margin-after: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: ${baseColor};
   font-size: ${fontSizeBase};
   line-height: ${lineHeightBase};
@@ -39,10 +39,8 @@ const DropdownMenu = styled.ul`
   text-align: left;
   list-style: none;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.15);
-  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
   box-shadow: 0 6px 12px rgba(0,0,0,.175);
   border-color: #eee;
 

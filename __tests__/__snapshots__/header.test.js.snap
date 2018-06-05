@@ -1,8 +1,8 @@
 exports[`<Header /> renders correctly with collapsed option 1`] = `
 <header
-  className="sc-dxgOiQ huMqzU">
+  className="sc-dxgOiQ jrHiKF">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -27,7 +27,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -35,7 +35,7 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -44,9 +44,9 @@ exports[`<Header /> renders correctly with collapsed option 1`] = `
 
 exports[`<Header /> renders correctly with default options 1`] = `
 <header
-  className="sc-dxgOiQ huMqzU">
+  className="sc-dxgOiQ jrHiKF">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -71,7 +71,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -79,7 +79,7 @@ exports[`<Header /> renders correctly with default options 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -88,9 +88,9 @@ exports[`<Header /> renders correctly with default options 1`] = `
 
 exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 <header
-  className="sc-dxgOiQ fhLSeg">
+  className="sc-dxgOiQ dpGHpC">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -115,7 +115,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -123,7 +123,7 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -132,9 +132,9 @@ exports[`<Header /> renders correctly with fixed and collapsed options 1`] = `
 
 exports[`<Header /> renders correctly with fixed option 1`] = `
 <header
-  className="sc-dxgOiQ fhLSeg">
+  className="sc-dxgOiQ dpGHpC">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -159,7 +159,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -167,7 +167,7 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -176,9 +176,9 @@ exports[`<Header /> renders correctly with fixed option 1`] = `
 
 exports[`<Header /> renders correctly with given large logo 1`] = `
 <header
-  className="sc-dxgOiQ huMqzU">
+  className="sc-dxgOiQ jrHiKF">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -200,7 +200,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -208,7 +208,7 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -217,9 +217,9 @@ exports[`<Header /> renders correctly with given large logo 1`] = `
 
 exports[`<Header /> renders correctly with given small logo 1`] = `
 <header
-  className="sc-dxgOiQ huMqzU">
+  className="sc-dxgOiQ jrHiKF">
   <a
-    className="sc-EHOje iGeBUa"
+    className="sc-EHOje idpIUE"
     href="/"
     name="navbar-logo">
     <span
@@ -241,7 +241,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb fGPksR">
+    className="sc-bxivhb jYevDf">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa frGQqo"
       name="sidebar-toggle"
@@ -249,7 +249,7 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>
@@ -258,9 +258,9 @@ exports[`<Header /> renders correctly with given small logo 1`] = `
 
 exports[`<Header /> renders correctly with theme 1`] = `
 <header
-  className="sc-dxgOiQ huMqzU">
+  className="sc-dxgOiQ jrHiKF">
   <a
-    className="sc-EHOje iFCtkw"
+    className="sc-EHOje cZVIGq"
     href="/"
     name="navbar-logo">
     <span
@@ -285,7 +285,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
     </span>
   </a>
   <nav
-    className="sc-bxivhb kuJgEm">
+    className="sc-bxivhb beTifj">
     <button
       className="fa fa-bars sc-ifAKCX eKOPsl sc-bdVaJa jxNjZi"
       name="sidebar-toggle"
@@ -293,7 +293,7 @@ exports[`<Header /> renders correctly with theme 1`] = `
     <div
       className="sc-htpNat ghgEpK">
       <ul
-        className="sc-bwzfXH kmcEOQ"
+        className="sc-bwzfXH cOlCUL"
         name="navbar-menu-wrapper" />
     </div>
   </nav>

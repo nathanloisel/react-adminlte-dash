@@ -28,12 +28,7 @@ const StyledLink = styled.a`
   color: ${({ theme }) => theme.userPanelColor || '#fff'} !important;
 
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 `;
 
 const StyledInfo = styled.div`
@@ -49,12 +44,10 @@ const StyledInfo = styled.div`
   left: 55px;
 
   /* collapse transform */
-  ${({ collapse }) => collapse && '-webkit-transform: translateZ(0);'}
+  ${({ collapse }) => collapse && 'transform: translateZ(0);'}
 `;
 
 const StyledImage = styled.img`
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   float: left!important;
@@ -65,12 +58,7 @@ const StyledImage = styled.img`
   border: 0;
 
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 `;
 
 const StyledPanel = styled.div`
@@ -78,8 +66,6 @@ const StyledPanel = styled.div`
   &:before, &:after {
     display: table;
     content: " ";
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   &:after {
