@@ -6,11 +6,9 @@ import styled from 'styled-components';
 import MenuItem from './MenuItem';
 
 const StyledHeader = styled.li`
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: ${props => (props.collapse ? 'none !important' : 'list-item')};
-  text-align: -webkit-match-parent;
+  text-align: match-parent;
   position: relative;
   margin: 0;
   white-space: nowrap;
@@ -27,7 +25,7 @@ const StyledHeader = styled.li`
   text-overflow: clip;
 
   /* collapse transform */
-  ${props => props.collapse && '-webkit-transform: translateZ(0);'}
+  ${props => props.collapse && 'transform: translateZ(0);'}
 
   /* theme */
   color: ${props => props.theme.sidebarHeaderColor || '#fff'};

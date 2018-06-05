@@ -24,17 +24,10 @@ const Label = styled.div`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: ${fontFamilyBase};
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 
   font-size: 75%;
   font-weight: 700;
@@ -95,12 +88,7 @@ const RightSpan = styled.span`
 
 const StyledTitle = styled.span`
   cursor: pointer;
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Chrome/Safari/Opera */
-  -khtml-user-select: none; /* Konqueror */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  user-select: none;
 
   /* collapse */
   ${props => (!props.level && props.collapse) &&
@@ -119,7 +107,7 @@ const StyledTitle = styled.span`
         ` :
         `
           display: none !important;
-          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
         `
       )}
     }`
@@ -135,8 +123,6 @@ const StyledRightIcon = styled.i`
   float: right;
 
   ${props => props.open && `
-    -ms-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
   `}
 
@@ -195,9 +181,6 @@ const StyledLink = styled.a`
   border-left: ${props => (!props.level ? props.theme.sidebarLinkBorderLeft : 'none')};
   /* transition */
   ${props => (props.theme.sidebarLinkTransition && `
-    -webkit-transition: ${props.theme.sidebarLinkTransition};
-    -moz-transition: ${props.theme.sidebarLinkTransition};
-    -o-transition: ${props.theme.sidebarLinkTransition};
     transition: ${props.theme.sidebarLinkTransition};
   `)}
   /* font weight */
@@ -253,8 +236,6 @@ const StyledMenuItem = styled.li`
   font-weight: ${fontWeightBase};
   font-size: ${fontSizeBase};
   line-height: ${lineHeightBase};
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   list-style: none;
@@ -263,7 +244,7 @@ const StyledMenuItem = styled.li`
   padding: 0;
   white-space: nowrap;
   display: list-item;
-  text-align: -webkit-match-parent;
+  text-align: match-parent;
 `;
 
 const renderChildren = (children, sidebarCollapse, level, hover) => {

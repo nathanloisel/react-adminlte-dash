@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: ', ';\n  text-align: -webkit-match-parent;\n  position: relative;\n  margin: 0;\n  white-space: nowrap;\n  overflow: hidden;\n  padding: 10px 25px 10px 15px;\n  font-size: 12px;\n  background-attachment: scroll;\n  background-clip: initial;\n  background-image: none;\n  background-origin: initial;\n  background-position: initial;\n  background-repeat: initial;\n  background-size: initial;\n  text-overflow: clip;\n\n  /* collapse transform */\n  ', '\n\n  /* theme */\n  color: ', ';\n  background-color: ', ';\n'], ['\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n  display: ', ';\n  text-align: -webkit-match-parent;\n  position: relative;\n  margin: 0;\n  white-space: nowrap;\n  overflow: hidden;\n  padding: 10px 25px 10px 15px;\n  font-size: 12px;\n  background-attachment: scroll;\n  background-clip: initial;\n  background-image: none;\n  background-origin: initial;\n  background-position: initial;\n  background-repeat: initial;\n  background-size: initial;\n  text-overflow: clip;\n\n  /* collapse transform */\n  ', '\n\n  /* theme */\n  color: ', ';\n  background-color: ', ';\n']),
+var _templateObject = _taggedTemplateLiteral(['\n  box-sizing: border-box;\n  display: ', ';\n  text-align: match-parent;\n  position: relative;\n  margin: 0;\n  white-space: nowrap;\n  overflow: hidden;\n  padding: 10px 25px 10px 15px;\n  font-size: 12px;\n  background-attachment: scroll;\n  background-clip: initial;\n  background-image: none;\n  background-origin: initial;\n  background-position: initial;\n  background-repeat: initial;\n  background-size: initial;\n  text-overflow: clip;\n\n  /* collapse transform */\n  ', '\n\n  /* theme */\n  color: ', ';\n  background-color: ', ';\n'], ['\n  box-sizing: border-box;\n  display: ', ';\n  text-align: match-parent;\n  position: relative;\n  margin: 0;\n  white-space: nowrap;\n  overflow: hidden;\n  padding: 10px 25px 10px 15px;\n  font-size: 12px;\n  background-attachment: scroll;\n  background-clip: initial;\n  background-image: none;\n  background-origin: initial;\n  background-position: initial;\n  background-repeat: initial;\n  background-size: initial;\n  text-overflow: clip;\n\n  /* collapse transform */\n  ', '\n\n  /* theme */\n  color: ', ';\n  background-color: ', ';\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow: hidden;\n\n  &:hover {\n    overflow: visible;\n  }\n'], ['\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow: hidden;\n\n  &:hover {\n    overflow: visible;\n  }\n']);
 
 var _react = require('react');
@@ -31,7 +31,7 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 var StyledHeader = _styledComponents2.default.li(_templateObject, function (props) {
   return props.collapse ? 'none !important' : 'list-item';
 }, function (props) {
-  return props.collapse && '-webkit-transform: translateZ(0);';
+  return props.collapse && 'transform: translateZ(0);';
 }, function (props) {
   return props.theme.sidebarHeaderColor || '#fff';
 }, function (props) {
