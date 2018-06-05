@@ -45,7 +45,6 @@ const Label = styled.div`
   white-space: nowrap;
   vertical-align: baseline;
   border-radius: .25em;
-  float: right!important;
   color: #fff;
   margin-right: 5px;
 
@@ -358,8 +357,8 @@ class MenuItem extends React.Component {
       || typeof icon === 'undefined') {
       return (
         <StyledLeftIcon
-          className={this.props.icon.className || 'fa fa-circle-o'}
-          color={this.props.icon.color || 'none'}
+          className={this.props.icon.className}
+          color={this.props.icon.color}
         />
       );
     }
@@ -377,7 +376,7 @@ class MenuItem extends React.Component {
       href,
       title,
       labels,
-      iconRight,
+      iconLeft,
     } = this.props;
     return (
       <StyledMenuItem
@@ -397,7 +396,7 @@ class MenuItem extends React.Component {
             this._toggleMenu : onClick}
           onMouseEnter={() => this._toggleHover(true)}
         >
-          {!iconRight && this.getItemMenuIcon()}
+          {!!iconLeft && this.getItemMenuIcon()}
           <StyledTitle
             collapse={collapse}
             hover={this.state.hover}
@@ -405,7 +404,7 @@ class MenuItem extends React.Component {
           >
             {title}
           </StyledTitle>
-          {iconRight && this.getItemMenuIcon()}
+          {!iconLeft && this.getItemMenuIcon()}
           <RightSpan
             collapse={collapse}
             hover={this.state.hover}
@@ -458,17 +457,18 @@ MenuItem.propTypes = {
   level: PropTypes.number,
   onClick: PropTypes.func,
   parentHover: PropTypes.bool,
-  iconRight: PropTypes.bool,
+  iconLeft: PropTypes.bool,
   title: PropTypes.string,
 };
 
 MenuItem.defaultProps = {
   collapse: false,
-  icon: { className: 'fa-circle-o' },
+  icon: { className: ' fa fa-circle-o', color: 'none' },
   href: null,
   level: 0,
   parentHover: false,
   title: 'Title',
+  iconLeft: true,
 };
 
 export default MenuItem;

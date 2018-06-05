@@ -35,7 +35,7 @@ const sb = pickTheme => ([
   />,
   <Sidebar.Search key="2" />,
   <Sidebar.Menu header="MAIN NAVIGATION" key="3">
-    <Sidebar.Menu.Item icon={{ className: 'fa-dashboard' }} title="Dashboard Colors" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-dashboard' }} title="Dashboard Colors" >
       <Sidebar.Menu.Item
         icon={{ color: tinycolor('black').toString() }}
         onClick={() => pickTheme('skin-black')}
@@ -98,7 +98,7 @@ const sb = pickTheme => ([
       />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon={{ className: 'fa-files-o' }}
+      icon={{ className: 'fa fa-files-o' }}
       labels={[{ key: 1, type: 'primary', text: '4' }]}
       title="Layout Options"
     >
@@ -108,17 +108,17 @@ const sb = pickTheme => ([
       <Sidebar.Menu.Item title="Collapsed Sidebar" />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon={{ className: 'fa-th' }}
+      icon={{ className: 'fa fa-th' }}
       labels={[{ key: 1, type: 'success', text: 'new' }]}
       title="Widgets"
     />
-    <Sidebar.Menu.Item icon={{ className: 'fa-pie-chart' }} title="Charts" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-pie-chart' }} title="Charts" >
       <Sidebar.Menu.Item title="ChartJS" />
       <Sidebar.Menu.Item title="Morris" />
       <Sidebar.Menu.Item title="Flot" />
       <Sidebar.Menu.Item title="Inline Charts" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon={{ className: 'fa-laptop' }} title="UI Elements" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-laptop' }} title="UI Elements" >
       <Sidebar.Menu.Item title="General" />
       <Sidebar.Menu.Item title="Icons" />
       <Sidebar.Menu.Item title="Buttons" />
@@ -126,17 +126,17 @@ const sb = pickTheme => ([
       <Sidebar.Menu.Item title="Timeline" />
       <Sidebar.Menu.Item title="Modals" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon={{ className: 'fa-edit' }} title="Forms" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-edit' }} title="Forms" >
       <Sidebar.Menu.Item title="General Elements" />
       <Sidebar.Menu.Item title="Advanced Elements" />
       <Sidebar.Menu.Item title="Editors" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon={{ className: 'fa-table' }} title="Tables" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-table' }} title="Tables" >
       <Sidebar.Menu.Item title="Simple tables" />
       <Sidebar.Menu.Item title="Data tables" />
     </Sidebar.Menu.Item>
     <Sidebar.Menu.Item
-      icon={{ className: 'fa-calendar' }}
+      icon={{ className: 'fa fa-calendar' }}
       labels={[
         { key: 1, type: 'primary', text: '17' },
         { key: 2, type: 'danger', text: '3' },
@@ -144,7 +144,7 @@ const sb = pickTheme => ([
       title="Calendar"
     />
     <Sidebar.Menu.Item
-      icon={{ className: 'fa-envelope' }}
+      icon={{ className: 'fa fa-envelope' }}
       labels={[
         { key: 2, type: 'success', text: '16' },
         { key: 1, type: 'warning', text: '12' },
@@ -152,7 +152,7 @@ const sb = pickTheme => ([
       ]}
       title="Mailbox"
     />
-    <Sidebar.Menu.Item icon={{ className: 'fa-folder' }} title="Examples" >
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-folder' }} title="Examples" >
       <Sidebar.Menu.Item title="Invoice" />
       <Sidebar.Menu.Item title="Profile" />
       <Sidebar.Menu.Item title="Login" />
@@ -163,7 +163,7 @@ const sb = pickTheme => ([
       <Sidebar.Menu.Item title="Blank Page" />
       <Sidebar.Menu.Item title="Pace Page" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item icon={{ className: 'fa-share' }} title="Multilevel">
+    <Sidebar.Menu.Item icon={{ className: 'fa fa-share' }} title="Multilevel">
       <Sidebar.Menu.Item title="Level One" />
       <Sidebar.Menu.Item title="Level One" >
         <Sidebar.Menu.Item title="Level Two" />
@@ -173,7 +173,7 @@ const sb = pickTheme => ([
       </Sidebar.Menu.Item>
       <Sidebar.Menu.Item title="Level One" />
     </Sidebar.Menu.Item>
-    <Sidebar.Menu.Item active icon={{ className: 'fa-book' }} title="Documentation" />
+    <Sidebar.Menu.Item active icon={{ className: 'fa fa-book' }} title="Documentation" />
   </Sidebar.Menu>,
   <Sidebar.Menu header="LABELS" key="4">
     <Sidebar.Menu.Item icon={{ color: 'danger' }} title="Danger" />

@@ -38,7 +38,7 @@ describe('<MenuItem />', () => {
 
   it('renders correctly with icon options', () => {
     // primary
-    const icon = { className: 'fa-dashboard', color: 'primary' };
+    const icon = { className: 'fa fa-dashboard', color: 'primary' };
     const wrapper = mount(<MenuItem icon={icon} />);
     expect(toJson(wrapper)).toMatchSnapshot();
 

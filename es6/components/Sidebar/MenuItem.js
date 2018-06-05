@@ -8,7 +8,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  float: right!important;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n']),
+var _templateObject = _taggedTemplateLiteral(['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n'], ['\n  /* shared */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: ', ';\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box;\n\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  font-size: 75%;\n  font-weight: 700;\n  line-height: 1;\n  display: inline;\n  padding: .2em .6em .3em .6em;\n  text-align: center;\n  white-space: nowrap;\n  vertical-align: baseline;\n  border-radius: .25em;\n  color: #fff;\n  margin-right: 5px;\n\n  /* ----- color ----- */\n  background-color: ', ';\n\n  /* ----- collapse ----- */\n  ', '\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -7px;\n\n  color: ', ';\n\n  /* ----- hover ----- */\n  ', '\n'], ['\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -7px;\n\n  color: ', ';\n\n  /* ----- hover ----- */\n  ', '\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  /* collapse */\n  ', '\n'], ['\n  cursor: pointer;\n  -webkit-touch-callout: none; /* iOS Safari */\n  -webkit-user-select: none; /* Chrome/Safari/Opera */\n  -khtml-user-select: none; /* Konqueror */\n  -moz-user-select: none; /* Firefox */\n  -ms-user-select: none; /* Internet Explorer/Edge */\n  user-select: none; /* Non-prefixed version, currently not supported by any browser */\n\n  /* collapse */\n  ', '\n']),
     _templateObject4 = _taggedTemplateLiteral(['\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin-right: 10px;\n  margin-left: .3em;\n  float: right;\n\n  ', '\n\n  /* ----- collapse ----- */\n  ', ';\n'], ['\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin-right: 10px;\n  margin-left: .3em;\n  float: right;\n\n  ', '\n\n  /* ----- collapse ----- */\n  ', ';\n']),
@@ -237,8 +237,8 @@ var MenuItem = function (_React$Component) {
 
       if (typeof icon !== 'undefined' && (typeof icon === 'undefined' ? 'undefined' : _typeof(icon)) === 'object' && (typeof icon.color !== 'undefined' || typeof icon.className !== 'undefined') || typeof icon === 'undefined') {
         return _react2.default.createElement(StyledLeftIcon, {
-          className: this.props.icon.className || 'fa fa-circle-o',
-          color: this.props.icon.color || 'none'
+          className: this.props.icon.className,
+          color: this.props.icon.color
         });
       }
       return icon;
@@ -248,12 +248,24 @@ var MenuItem = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
+      var _props = this.props,
+          collapse = _props.collapse,
+          parentHover = _props.parentHover,
+          level = _props.level,
+          active = _props.active,
+          children = _props.children,
+          onClick = _props.onClick,
+          href = _props.href,
+          title = _props.title,
+          labels = _props.labels,
+          iconLeft = _props.iconLeft;
+
       return _react2.default.createElement(
         StyledMenuItem,
         {
-          collapse: this.props.collapse,
-          hover: this.props.parentHover,
-          level: this.props.level,
+          collapse: collapse,
+          hover: parentHover,
+          level: level,
           onMouseLeave: function onMouseLeave() {
             return _this2._toggleHover(false);
           }
@@ -261,45 +273,46 @@ var MenuItem = function (_React$Component) {
         _react2.default.createElement(
           StyledLink,
           {
-            active: this.props.active,
-            collapse: this.props.collapse,
+            active: active,
+            collapse: collapse,
             hover: this.state.hover,
-            href: this.props.children || this.props.onClick ? null : this.props.href,
-            level: this.props.level,
-            onClick: this.props.children ? this._toggleMenu : this.props.onClick,
+            href: children || onClick ? null : href,
+            level: level,
+            onClick: children ? this._toggleMenu : onClick,
             onMouseEnter: function onMouseEnter() {
               return _this2._toggleHover(true);
             }
           },
+          !!iconLeft && this.getItemMenuIcon(),
           _react2.default.createElement(
             StyledTitle,
             {
-              collapse: this.props.collapse,
+              collapse: collapse,
               hover: this.state.hover,
-              level: this.props.level
+              level: level
             },
-            this.props.title
+            title
           ),
-          this.getItemMenuIcon(),
+          !iconLeft && this.getItemMenuIcon(),
           _react2.default.createElement(
             RightSpan,
             {
-              collapse: this.props.collapse,
+              collapse: collapse,
               hover: this.state.hover,
-              level: this.props.level
+              level: level
             },
-            this.props.labels ? renderLabels(this.props.labels, this.props.collapse, this.state.hover) : this.props.children && this.getCollapseIcon()
+            labels ? renderLabels(labels, collapse, this.state.hover) : children && this.getCollapseIcon()
           )
         ),
-        this.props.children && _react2.default.createElement(
+        children && _react2.default.createElement(
           StyledSubMenu,
           {
-            collapse: this.props.collapse,
+            collapse: collapse,
             hover: this.state.hover,
-            level: this.props.level,
+            level: level,
             open: this.state.open
           },
-          renderChildren(this.props.children, this.props.collapse, this.props.level, this.state.hover || this.props.parentHover)
+          renderChildren(children, collapse, level, this.state.hover || parentHover)
         )
       );
     }
@@ -322,16 +335,18 @@ MenuItem.propTypes = {
   level: _propTypes2.default.number,
   onClick: _propTypes2.default.func,
   parentHover: _propTypes2.default.bool,
+  iconLeft: _propTypes2.default.bool,
   title: _propTypes2.default.string
 };
 
 MenuItem.defaultProps = {
   collapse: false,
-  icon: { className: 'fa-circle-o' },
+  icon: { className: ' fa fa-circle-o', color: 'none' },
   href: null,
   level: 0,
   parentHover: false,
-  title: 'Title'
+  title: 'Title',
+  iconLeft: true
 };
 
 exports.default = MenuItem;
