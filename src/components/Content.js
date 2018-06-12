@@ -26,6 +26,12 @@ const Content = styled.div`
   }
 
   /* shared */
+  bottom: 0;
+  top: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: ${navbarHeight}px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: ${fontFamilyBase};
