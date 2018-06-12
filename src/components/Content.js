@@ -31,7 +31,7 @@ const Content = styled.div`
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: ${navbarHeight}px;
+  margin-top: ${navbarHeight};
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: ${fontFamilyBase};
