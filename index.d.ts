@@ -8,13 +8,11 @@
  *~ Otherwise, delete this declaration.
  */
 
-declare module 'react-adminlte-dash' {
-  import * as React from 'react';
-  export {
-    default as Dashboard,
-    DashboardProps
-  } from './src/components/Dashboard';
-  export { default as Footer, FooterProps } from './src/components/Footer';
-  export { default as Header, HeaderProps } from './src/components/Header';
-  export { default as Sidebar, SidebarProps } from './src/components/Sidebar';
-}
+import * as React from 'react';
+export {
+  default as Dashboard,
+  DashboardProps
+} from './src/components/Dashboard';
+export { default as Footer, FooterProps } from './src/components/Footer';
+export { default as Header, HeaderProps } from './src/components/Header';
+export { default as Sidebar, SidebarProps } from './src/components/Sidebar';

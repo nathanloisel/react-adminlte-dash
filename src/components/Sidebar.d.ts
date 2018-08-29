@@ -1,4 +1,4 @@
-declare module 'react-adminlte-dash/src/components/Sidebar' {
+
   import * as React from 'react';
 
   export interface MenuItemProps {
@@ -56,4 +56,3 @@ declare module 'react-adminlte-dash/src/components/Sidebar' {
     UserPanel: UserPanel;
   }
   export default Sidebar;
-}

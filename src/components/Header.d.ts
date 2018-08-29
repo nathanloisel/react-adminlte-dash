@@ -1,4 +1,3 @@
-declare module 'react-adminlte-dash/src/components/Header' {
   import * as React from 'react';
 
   export interface HeaderUserMenuProps {
@@ -38,4 +37,3 @@ declare module 'react-adminlte-dash/src/components/Header' {
   }
 
   export default Header;
-}

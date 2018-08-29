@@ -1,4 +1,4 @@
-declare module 'react-adminlte-dash/src/components/Footer' {
+
   import * as React from 'react';
 
   export interface FooterProps {

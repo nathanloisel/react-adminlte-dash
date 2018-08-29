@@ -1,4 +1,3 @@
-declare module 'react-adminlte-dash/src/components/Dashboard' {
   import * as React from 'react';
 
   export type DashboardProps = {
@@ -22,4 +21,3 @@ declare module 'react-adminlte-dash/src/components/Dashboard' {
   }
 
   export default Dashboard;
-}
