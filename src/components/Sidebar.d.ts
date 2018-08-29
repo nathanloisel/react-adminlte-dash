@@ -15,7 +15,7 @@
     iconRight?: boolean;
     title?: string;
   }
-  class MenuItem extends React.Component<MenuItemProps> {}
+  declare class MenuItem extends React.Component<MenuItemProps> {}
 
   export interface UserPanelProps {
     name?: string;
@@ -24,7 +24,7 @@
     online?: boolean;
     collapse?: boolean;
   }
-  class UserPanel extends React.Component<UserPanelProps> {}
+  declare class UserPanel extends React.Component<UserPanelProps> {}
 
   export interface SearchProps {
     name?: string;
@@ -32,12 +32,12 @@
     onClick?: (event: React.UIEvent<HTMLButtonElement>) => void;
     collapse?: boolean;
   }
-  class Search extends React.Component<SearchProps> {}
+  declare class Search extends React.Component<SearchProps> {}
 
   export interface MenuProps {
     header: string;
   }
-  class Menu extends React.Component<MenuProps> {
+  declare class Menu extends React.Component<MenuProps> {
     public static Item: typeof MenuItem;
   }
 
@@ -50,7 +50,7 @@
 
   interface SidebarClass extends React.Component<SidebarProps> {}
 
-  class Sidebar extends React.Component<SidebarProps> {
+  declare class Sidebar extends React.Component<SidebarProps> {
     public static Menu: typeof Menu;
     Search: Search;
     UserPanel: UserPanel;

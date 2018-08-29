@@ -16,7 +16,7 @@
     sidebarToggleIcon: JSX.Element | string;
   };
 
-  class Dashboard extends React.Component<DashboardProps> {
+  declare class Dashboard extends React.Component<DashboardProps> {
     sidebarToggle(): void;
   }
 

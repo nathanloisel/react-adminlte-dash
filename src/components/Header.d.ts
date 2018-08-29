@@ -9,7 +9,7 @@
     headerImageRenderer?: () => void;
     userImageRenderer?: (key: string) => void;
   }
-  class HeaderUserMenu extends React.Component<HeaderUserMenuProps> {}
+  declare class HeaderUserMenu extends React.Component<HeaderUserMenuProps> {}
 
   export interface HeaderItemProps {
     title?: string;
@@ -18,7 +18,7 @@
     image?: string;
     iconClass?: string;
   }
-  class HeaderItem extends React.Component<HeaderItemProps> {}
+  declare  class HeaderItem extends React.Component<HeaderItemProps> {}
 
   export interface HeaderProps {
     children?: React.ReactNode;
@@ -31,7 +31,7 @@
     sidebarCollapse?: boolean;
     sidebarToggle: (event: React.UIEvent<HTMLButtonElement>) => void;
   }
-  class Header extends React.Component<HeaderProps> {
+  declare class Header extends React.Component<HeaderProps> {
     public static Item: typeof HeaderItem;
     public static UserMenu: typeof HeaderUserMenu;
   }

@@ -7,7 +7,6 @@
     sidebarMini: boolean;
   }
 
-  class Footer extends React.Component<FooterProps> {}
+  declare class Footer extends React.Component<FooterProps> {}
 
   export default Footer;
-}
