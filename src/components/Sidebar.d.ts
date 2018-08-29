@@ -14,6 +14,7 @@
     parentHover?: boolean;
     iconRight?: boolean;
     title?: string;
+    open?: boolean;
   }
   declare class MenuItem extends React.Component<MenuItemProps> {}
 
