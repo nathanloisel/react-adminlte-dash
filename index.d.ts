@@ -13,8 +13,8 @@ declare module 'react-adminlte-dash' {
   export {
     default as Dashboard,
     DashboardProps
-  } from 'react-adminlte-dash/src/components/Dashboard';
-  export { default as Footer, FooterProps } from 'react-adminlte-dash/src/components/Footer';
-  export { default as Header, HeaderProps } from 'react-adminlte-dash/src/components/Header';
-  export { default as Sidebar, SidebarProps } from 'react-adminlte-dash/src/components/Sidebar';
+  } from './src/components/Dashboard';
+  export { default as Footer, FooterProps } from './src/components/Footer';
+  export { default as Header, HeaderProps } from './src/components/Header';
+  export { default as Sidebar, SidebarProps } from './src/components/Sidebar';
 }
