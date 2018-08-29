@@ -12285,7 +12285,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var _this = _possibleConstructorReturn(this, (MenuItem.__proto__ || Object.getPrototypeOf(MenuItem)).call(this, props));
 
 	    _this.state = {
-	      open: false,
+	      open: props.open || false,
 	      hover: false
 	    };
 	    _this._toggleMenu = _this.toggleMenu.bind(_this);
@@ -12296,7 +12296,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(MenuItem, [{
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps(nextProps) {
-	      nextProps.collapse !== this.props.collapse && this.setState({ open: false });
+	      nextProps.collapse !== this.props.collapse && this.setState({ open: nextProps.open || false });
 	    }
 	  }, {
 	    key: 'toggleMenu',
@@ -12438,7 +12438,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  onClick: _propTypes2.default.func,
 	  parentHover: _propTypes2.default.bool,
 	  iconLeft: _propTypes2.default.bool,
-	  title: _propTypes2.default.string
+	  title: _propTypes2.default.string,
+	  open: _propTypes2.default.bool
 	};
 
 	MenuItem.defaultProps = {

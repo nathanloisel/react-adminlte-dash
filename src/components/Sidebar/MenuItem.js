@@ -440,7 +440,7 @@ MenuItem.propTypes = {
   parentHover: PropTypes.bool,
   iconLeft: PropTypes.bool,
   title: PropTypes.string,
-  open: PropTypes.bool
+  open: PropTypes.bool,
 };
 
 MenuItem.defaultProps = {
