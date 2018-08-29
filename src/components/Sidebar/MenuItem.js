@@ -290,7 +290,7 @@ class MenuItem extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      open: false,
+      open: props.open || false,
       hover: false,
     };
     this._toggleMenu = this.toggleMenu.bind(this);
@@ -299,7 +299,7 @@ class MenuItem extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     (nextProps.collapse !== this.props.collapse) &&
-      this.setState({ open: false });
+      this.setState({ open: nextProps.open || false });
   }
 
   toggleMenu() {
@@ -440,6 +440,7 @@ MenuItem.propTypes = {
   parentHover: PropTypes.bool,
   iconLeft: PropTypes.bool,
   title: PropTypes.string,
+  open: PropTypes.bool
 };
 
 MenuItem.defaultProps = {
